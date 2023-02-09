@@ -1,44 +1,67 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --color-text: #7A7A7A;
+  --color-text-button: #F3C653;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  --color-text-link: #C79002;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --color-button: rgba(0, 0, 0, 0.4);
+  --color-button-hover: #FFFFFF;
+
+  --back-color-footer: #0E0C07;
+  --back-color-criam: #FFFDEE;
+  --back-color-criam-dark: #F0ECD6;
 }
-.mobmenu__btn {
-  margin-top: 40px;
-  width: 194px;
-  height: 40px;
-  background-color:teal;
-  border: 1px solid #FF6C00;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--accent-color);
-  transition: background-color var(--animation), color var(--animation);
+
+html {
+  box-sizing: border-box;
 }
-.mobmenu__btn:hover,
-.mobmenu__btn:focus {
-  background-color: var(--hover-color);
-  color: #FFFFFF;
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+ul, li, a, p {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* приховати код */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*/
+
+
+@media screen and (min-width: 1024px) {
+
+}
+@media screen and (min-width: 1280px) {
+
 }
