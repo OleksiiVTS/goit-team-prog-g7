@@ -14,6 +14,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,6 +27,11 @@ body {
 *::after {
   box-sizing: inherit;
 }
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
@@ -40,6 +46,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+button, link {
+  cursor: pointer;
 }
 
 /* приховати код */
