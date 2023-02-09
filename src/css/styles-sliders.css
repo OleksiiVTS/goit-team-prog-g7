@@ -1,0 +1,74 @@
+.container {
+  width: 700px;
+  height: 700px;
+  background-color: rgb(67, 67, 67);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper {
+  /* width: 400px; */
+  height: 300px;
+  background-color: #b9b9b9;
+}
+
+.swiper-2 {
+  width: 300px;
+  height: 300px;
+  background-color: #b9b9b9;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: grab;
+}
+
+.swiper-btn-position {
+  position: absolute;
+  bottom: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  /* right: 0; */
+  width: 98px;
+  height: 32px;
+  z-index: 10;
+}
+
+/* /////////////// */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-rtl .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "";
+}
+
+.swiper-rtl .svg-arrows {
+  transform: rotate(180deg);
+}
+
+.svg-arrows {
+  fill: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.svg-arrows:hover {
+  fill: #f3c653;
+}
