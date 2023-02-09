@@ -22,3 +22,23 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.mobmenu__btn {
+  margin-top: 40px;
+  width: 194px;
+  height: 40px;
+  background-color:teal;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  transition: background-color var(--animation), color var(--animation);
+}
+.mobmenu__btn:hover,
+.mobmenu__btn:focus {
+  background-color: var(--hover-color);
+  color: #FFFFFF;
+}
