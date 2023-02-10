@@ -279,8 +279,21 @@ button, link {
 
 
 @media screen and (min-width: 1024px) {
-
+  .container {
+    min-width: 1024x;
+  }
+  .button-big-pointed {
+    min-width: 592px;
+    font-size: 24px;;
+  }
 }
 @media screen and (min-width: 1280px) {
-
+  .container {
+    min-width: 1280x;
+  }
+  .button-big {
+    min-width: 434px;
+    height: 65px;
+    font-size: 24px;;
+  }
 }
