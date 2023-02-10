@@ -396,4 +396,58 @@ button, link {
     height: 65px;
     font-size: 24px;;
   }
+
+
+  /* Details of our restaurant (door) */
+  .door > .container {
+    width: 1280px;
+    max-width: 1600px;
+    /* 47+236+29+662+50 = 1024 */
+  }
+
+  .door {
+    max-width: 1600px;
+
+    background-image: linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)),
+      url("../images/door/door-bg-desktop.jpg");
+  }
+  .door-title {
+    margin-left: 323px;
+    /* 338-15=323 */
+  }
+  .door-sub-title {
+    margin-left: 323px;
+    /* 338-15=323 */
+  }
+  .door-text {
+    margin-left: 323px;
+    /* 338-15=323 */
+    margin-right: 317px;
+    /* 332-15=317 */
+  }
+  .door-nav-slider {
+    gap: 32px;
+    margin-left: 70px; 
+    /* 85-15=70 */
+    margin-right: 37px; 
+    /* 52-15=37 */
+  }
+  .door-slider {
+    width: 875px;
+  }
+
+  .door-slider-list-desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 87px;
+    overflow: hidden;
+  
+    margin-bottom: 24px;
+  }
+  
+  .door-slider-list-tablet { display: none };
+
 }
