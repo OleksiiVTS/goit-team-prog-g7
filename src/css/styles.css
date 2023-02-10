@@ -352,6 +352,7 @@ button, link {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
+    align-items: flex-end;
     gap: 29px;
 
     margin-left: 32px; 
@@ -361,9 +362,10 @@ button, link {
   }
 
   .door-slider {
+    width: 662px;
     margin: 0;
   }
-  .door-slider-list-mobile {display: none;}
+  .door-slider-list-mobile { display: none; }
   .door-slider-list-tablet {
     display: flex;
     flex-wrap: nowrap;
@@ -372,9 +374,15 @@ button, link {
   
     margin-bottom: 24px;
   }
-  
+
   .door-img {
+    width: 100%;
     max-width: 270px;
+    height: auto;
+  }
+  .door-btns {
+    margin-bottom: 60px; 
+    /* 32 + 24 + 2*2 = 60 */
   }
 }
 
