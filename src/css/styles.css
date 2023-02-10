@@ -67,19 +67,23 @@ button, link {
 
 /*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*/
 
+
+  /* Details of our restaurant (door) */
 .door-container {
   width: 414px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
-  /* Details of our restaurant (door) */
 .door {
-  max-width: 1600px;
+  max-width: 1023px;
+
   margin-left: auto;
   margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 40px;
+
   background-color: black;
   background-image: linear-gradient(
       to right, 
@@ -99,7 +103,6 @@ button, link {
   letter-spacing: 0.3em;
 
   color: #FFFFFF;
-  margin-top: 24px;
   margin-left: 140px;
   margin-bottom: 12px;
 }
@@ -127,12 +130,12 @@ button, link {
   margin-left: 140px;
   margin-right: 15px;
   margin-bottom: 48px;
-  outline: 1px solid red;
 }
 
 .door-slider {
   margin-bottom: 32px;
-  outline: 1px solid red;
+  margin-left: 25px;
+  margin-right: -15px;
 }
 .door-slider-list-img {
   display: flex;
@@ -142,14 +145,21 @@ button, link {
 
   margin-bottom: 16px;
 }
-.door-slider-item {
-}
+
 .door-img {
   width: 274px;
   height: 270px;
   max-width: 274px;
 }
+
 .door-btns {
+  width: 236px;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 16px;
+
   margin: 0 auto;
 }
 
@@ -159,19 +169,47 @@ button, link {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  padding: 14px 24px;
+
+  height: 48px;
   color: var(--color-text-button);
   background-color: var(--color-button);
+
   border: 2px solid var(--color-button-hover);
   border-radius: 25px;
 
   transition: background-color var(--transition), 
               border-color var(--transition)
-              color var(--transition);
-  
-  margin-bottom: 16px;
-  
+              color var(--transition);  
 }
+
+.door-btn:hover,
+.door-btn:focus {
+  background-color: var(--color-text-button);
+  border: 1px solid var(--color-text-button);
+  color: black;
+}
+
+.door-btn-prev,
+.door-btn-next {
+  padding: 0;
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+  fill: white;
+}
+
+.door-btn-prev {
+  margin-right: 32px;
+}
+
+.door-btn-prev:hover,
+.door-btn-prev:focus,
+.door-btn-next:hover,
+.door-btn-next:focus {
+  fill: var(--color-text-button);
+}
+
 
 
 @media screen and (min-width: 1024px) {
