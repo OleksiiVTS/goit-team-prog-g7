@@ -135,12 +135,12 @@ button, link {
 
 
   /* Details of our restaurant (door) */
-.door-container {
+/* .door-container {
   width: 414px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
+} */
 
 .door {
   max-width: 1023px;
@@ -250,9 +250,8 @@ button, link {
 
 .door-btn:hover,
 .door-btn:focus {
-  background-color: var(--color-text-button);
-  border: 1px solid var(--color-text-button);
-  color: black;
+  background-color: white;
+  border-color: var(--color-text-button);
 }
 
 .door-btn-prev,
