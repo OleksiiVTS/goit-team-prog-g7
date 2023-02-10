@@ -65,12 +65,26 @@ button, link {
   overflow: hidden;
 }
 
+.section {
+  margin: 0 auto;
+  background-color: var(--back-color-criam);
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 414px;
+}
+
 /*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*/
 
 
 @media screen and (min-width: 1024px) {
-
+  .container {
+    min-width: 1024x;
+  }
 }
 @media screen and (min-width: 1280px) {
-
+  .container {
+    min-width: 1280x;
+  }
 }
