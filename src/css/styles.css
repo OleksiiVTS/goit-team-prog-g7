@@ -161,7 +161,7 @@ button, link {
   background-repeat: no-repeat;
 }
 
-.door-title {
+.door-sub-title {
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 40px;
@@ -174,7 +174,7 @@ button, link {
   margin-bottom: 12px;
 }
 
-.door-sub-title {
+.door-title {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 20px;
@@ -246,7 +246,7 @@ button, link {
 
   height: 48px;
   color: var(--color-text-button);
-  background-color: var(--color-button);
+  background-color: #000000;
 
   border: 2px solid var(--color-button-hover);
   border-radius: 25px;
@@ -319,7 +319,7 @@ button, link {
       rgba(0, 0, 0, 0.65)),
       url("../images/door/door-bg-tablet.jpg");
   }
-  .door-title {
+  .door-sub-title {
     font-size: 64px;
     line-height: calc(69 / 64);
     letter-spacing: 0.3em;
@@ -328,7 +328,7 @@ button, link {
     margin-bottom: 16px;
   }
 
-  .door-sub-title {
+  .door-title {
     font-size: 24px;
     line-height: calc(29 / 24);
 
@@ -414,11 +414,11 @@ button, link {
       rgba(0, 0, 0, 0.65)),
       url("../images/door/door-bg-desktop.jpg");
   }
-  .door-title {
+  .door-sub-title {
     margin-left: 323px;
     /* 338-15=323 */
   }
-  .door-sub-title {
+  .door-title {
     margin-left: 323px;
     /* 338-15=323 */
   }
@@ -447,7 +447,7 @@ button, link {
   
     margin-bottom: 24px;
   }
-  
+
   .door-slider-list-tablet { display: none };
 
 }
