@@ -276,6 +276,9 @@ button, link {
 
   background-color: transparent;
   fill: white;
+  
+  transition: background-color var(--transition), 
+              fill var(--transition);
 }
 
 .door-btn-prev {
