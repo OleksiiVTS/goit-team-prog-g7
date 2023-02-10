@@ -123,6 +123,12 @@ button, link {
   margin-bottom: 32px;
   outline: 1px solid red;
 }
+.door-slider-list-img {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow: hidden;
+}
 .door-btns {
   margin: 0 auto;
 }
