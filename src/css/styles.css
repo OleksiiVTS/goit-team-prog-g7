@@ -77,10 +77,18 @@ button, link {
 
   /* Details of our restaurant (door) */
 .door {
-  padding: 24px 0 40px 40px;
-  outline: 1px solid red;
-
-  background-image: url(../);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  background-image: linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)),
+      url("../images/door/door-bg-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .door-title {
@@ -89,8 +97,11 @@ button, link {
   font-size: 40px;
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
+
   color: #FFFFFF;
-  outline: 1px solid red;
+  margin-top: 24px;
+  margin-left: 140px;
+  margin-bottom: 12px;
 }
 
 .door-sub-title {
@@ -101,7 +112,8 @@ button, link {
   letter-spacing: 0.02em;
 
   color: #FFFFFF;
-  outline: 1px solid red;
+  margin-left: 140px;
+  margin-bottom: 20px;
 }
 
 .door-text {
@@ -114,24 +126,33 @@ button, link {
   color: #BABABA;
   margin-left: 140px;
   margin-right: 15px;
+  margin-bottom: 48px;
   outline: 1px solid red;
 }
 
 .door-slider {
-  width: calc(274px + 20px + 82px);
-  height: calc(270px + 16px + 32px);
   margin-bottom: 32px;
   outline: 1px solid red;
 }
 .door-slider-list-img {
   display: flex;
   flex-wrap: nowrap;
-  gap: 20px;
+  column-gap: 20px;
   overflow: hidden;
+
+  margin-bottom: 16px;
+}
+.door-slider-item {
+}
+.door-img {
+  width: 274px;
+  height: 270px;
+  max-width: 274px;
 }
 .door-btns {
   margin: 0 auto;
 }
+
 .door-btn {
   font-family: inherit;
   font-weight: 700;
@@ -143,11 +164,13 @@ button, link {
   background-color: var(--color-button);
   border: 2px solid var(--color-button-hover);
   border-radius: 25px;
+
   transition: background-color var(--transition), 
               border-color var(--transition)
               color var(--transition);
   
   margin-bottom: 16px;
+  
 }
 
 
