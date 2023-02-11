@@ -140,6 +140,10 @@ button, link {
 
   background-color: var(--back-color-criam);
 }
+.map-contacts-card {
+  height: 279px;
+  margin-bottom: 32px;
+}
 
 .map-sub-title {
   font-family: 'Film P3';
@@ -167,11 +171,16 @@ button, link {
 .map-field-card {
   position: relative;
   height: 40px;
-
+  
+  padding-top: calc(40 / (20 * (24/20)) / 2);
   margin-bottom: 16px;
 }
 
 .map-label-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(25%);
 
   font-family: 'Montserrat';
   font-weight: 500;
@@ -184,11 +193,10 @@ button, link {
 }
 
 .map-field-text {
-  position: absolute;
-  top: 0;
-  left: 139px;
-
-  width: 100%;
+ 
+  /* 139 - 15 = 124 */
+  margin-left: 124px;
+  width: calc(100% - 124px);
 
   font-family: inherit;;
   font-weight: 400;
@@ -208,17 +216,35 @@ button, link {
 }
 
 .map-tel-rest {
-  width: 144px;
+  max-width: 144px;
   text-align: center;
 }
+.map-address {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.01em;
 
+  padding-top: 8px;
+  padding-bottom: 7px;
+  height: 76px;
+}
 
 .map-icon {
   position: absolute;
   top: 0;
-  left: 147px;
+  left: 132px;
 
   transform: translateY(25%);
+  fill: var(--color-text-link);
+}
+
+
+
+.map-image {
+  max-width: 384px;
+  height: 220px;
 }
 
 @media screen and (min-width: 1024px) {

@@ -37,13 +37,14 @@
     <!--map-->
       <section class="section map-contacts" id="map">
         <div class="container">
-          <div class="contacts-card">
+
+          <div class="map-contacts-card">
             <h3 class="map-sub-title">MIMIHO</h3>
             <h2 class="map-title visually-hidden">Контакти та мапа розташування</h2>
             <p class="map-text">Ресторанно-готельний комплекс</p>
             <form>
               <div class="map-field-card">
-                <label class="map-label-text">Ресторан
+                
                   <input 
                     class="map-field-text map-tel-rest" 
                     type="tel" 
@@ -52,16 +53,17 @@
                     placeholder=" "
                     readonly
                     value="095 555 95 33">
+                  <label class="map-label-text" for="map-phone-restaurant">Ресторан</label>
                   <span class="map-icon">
                     <svg width="24" height="24">
                       <use href="./images/map/sprite.svg#icon-phone"></use>
                     </svg>
                   </span>
-                </label>
+                
               </div>
 
               <div class="map-field-card">
-                <label class="map-label-text">Готель
+                
                   <input 
                     class="map-field-text" 
                     type="tel" 
@@ -70,17 +72,18 @@
                     placeholder=" "
                     readonly
                     value="066 849 10 89&nbsp;&nbsp;067 275 85 40">
+                  <label class="map-label-text" for="map-phone-hotel">Готель</label>
                   <span class="map-icon">
                     <svg width="24" height="24">
                       <use href="./images/map/sprite.svg#icon-phone"></use>
                     </svg>
                   </span>
-                </label>
+                
               </div>
 
               <div class="map-field-card">
                   <textarea 
-                    class="map-field-text" 
+                    class="map-field-text map-address" 
                     name="map-address" 
                     rows="3"
                     placeholder=" "
@@ -99,8 +102,8 @@
           <div class="map-image">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.923397025346!2d34.5265463!3d49.59919399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0LLRg9C70LjRhtGPINCc0LDRgNGI0LDQu9CwINCR0ZbRgNGO0LfQvtCy0LAsIDE1LCDQn9C-0LvRgtCw0LLQsCwg0J_QvtC70YLQsNCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCwLCAzNjAwMA!5e0!3m2!1suk!2sde!4v1676137902068!5m2!1suk!2sde" 
-              width="384" 
-              height="220" 
+              width="100%" 
+              height="100%" 
               style="border:0;" 
               allowfullscreen="" 
               loading="lazy" 
