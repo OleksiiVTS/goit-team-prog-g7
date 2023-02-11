@@ -150,8 +150,76 @@ button, link {
   letter-spacing: 0.3em;
 
   color: #494848;
+  margin-bottom: 12px;
 }
 
+.map-text {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.map-field-card {
+  position: relative;
+  height: 40px;
+
+  margin-bottom: 16px;
+}
+
+.map-label-text {
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+
+  color: var(--color-text-link);
+
+}
+
+.map-field-text {
+  position: absolute;
+  top: 0;
+  left: 139px;
+
+  width: 100%;
+
+  font-family: inherit;;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+
+  color: #494848;
+  background-color: var(--color-button-hover);
+
+  height: 40px;
+  border: 0.5px solid var(--color-text-button);
+  border-radius: 2px;
+  resize: none;
+  padding-left: 32px;
+  padding-right: 8px;
+}
+
+.map-tel-rest {
+  width: 144px;
+  text-align: center;
+}
+
+
+.map-icon {
+  position: absolute;
+  top: 0;
+  left: 147px;
+
+  transform: translateY(25%);
+}
 
 @media screen and (min-width: 1024px) {
   .container {

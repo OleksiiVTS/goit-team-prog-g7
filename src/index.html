@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <!--fouts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"/>
+          rel="stylesheet">
     <!--Нормалізатор стилів-->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
           integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
           crossorigin="anonymous"
-          referrerpolicy="no-referrer"/>
+          referrerpolicy="no-referrer">
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body> 
   <!--header-->
@@ -39,59 +39,64 @@
         <div class="container">
           <div class="contacts-card">
             <h3 class="map-sub-title">MIMIHO</h3>
-            <h2 class="map-title visually-hidden">Контакти</h2>
+            <h2 class="map-title visually-hidden">Контакти та мапа розташування</h2>
             <p class="map-text">Ресторанно-готельний комплекс</p>
             <form>
+              <div class="map-field-card">
+                <label class="map-label-text">Ресторан
+                  <input 
+                    class="map-field-text map-tel-rest" 
+                    type="tel" 
+                    name="map-phone-restaurant" 
+                    id="map-phone-restaurant" 
+                    placeholder=" "
+                    readonly
+                    value="095 555 95 33">
+                  <span class="map-icon">
+                    <svg width="24" height="24">
+                      <use href="./images/map/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
 
-              <label>Ресторан
-                <input 
-                  class="map-field-text" 
-                  type="tel" 
-                  name="map-phone-restoran" 
-                  id="map-phone-restoran" 
-                  placeholder=" "
-                  value="095 555 95 33">
-                <span class="map-icon-phone">
-                  <svg widht="24" height="24">
-                    <use href="./"></use>
-                  </svg>
-                </span>
-              </label>
+              <div class="map-field-card">
+                <label class="map-label-text">Готель
+                  <input 
+                    class="map-field-text" 
+                    type="tel" 
+                    name="map-phone-hotel" 
+                    id="map-phone-hotel" 
+                    placeholder=" "
+                    readonly
+                    value="066 849 10 89&nbsp;&nbsp;067 275 85 40">
+                  <span class="map-icon">
+                    <svg width="24" height="24">
+                      <use href="./images/map/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
 
-              <label>Готель
-                <input 
-                  class="map-field-text" 
-                  type="tel" 
-                  name="map-phone-hotel" 
-                  id="map-phone-hotel" 
-                  placeholder=" "
-                  value="066 849 10 89&npcs&npcs067 275 85 40">
-                <span class="map-icon-phone">
-                  <svg widht="24" height="24">
-                    <use href="./"></use>
-                  </svg>
-                </span>
-              </label>
-
-              <label>Адреса
-                <input 
-                  class="map-field-text" 
-                  type="text" 
-                  name="map-phone-restoran" 
-                  id="map-phone-restoran" 
-                  placeholder=" "
-                  value="Україна, м. Полтава,
-                  вул. Маршала Бірюзова, 15">
-                <span class="map-icon-addrres">
-                  <svg widht="24" height="24">
-                    <use href="./"></use>
-                  </svg>
-                </span>
-              </label>
-              
+              <div class="map-field-card">
+                  <textarea 
+                    class="map-field-text" 
+                    name="map-address" 
+                    rows="3"
+                    placeholder=" "
+                    readonly
+                  >Україна, м. Полтава, вул. Маршала Бірюзова, 15
+                  </textarea>
+                  <span class="map-icon">
+                    <svg width="24" height="24">
+                      <use href="./images/map/sprite.svg#icon-map-location-pin"></use>
+                    </svg>
+                  </span>
+              </div>
             </form>
           </div>
-          <div class="map-img">
+
+          <div class="map-image">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.923397025346!2d34.5265463!3d49.59919399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0LLRg9C70LjRhtGPINCc0LDRgNGI0LDQu9CwINCR0ZbRgNGO0LfQvtCy0LAsIDE1LCDQn9C-0LvRgtCw0LLQsCwg0J_QvtC70YLQsNCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCwLCAzNjAwMA!5e0!3m2!1suk!2sde!4v1676137902068!5m2!1suk!2sde" 
               width="384" 
