@@ -193,8 +193,8 @@ button, link {
 
 }
 
-.map-field-text {
-  /* 139 - 15 = 124 */
+
+/* .map-field-text {
   margin-left: 124px;
   width: calc(100% - 124px);
 
@@ -213,11 +213,65 @@ button, link {
 
   padding-left: 38px;
   padding-right: 8px;
+} */
+
+.map-field-label {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+
+  color: var(--color-text-link);
 }
+
 
 .map-tel-restaurant {
   max-width: 144px;
 }
+
+.map-tels-hotel,
+.map-tel-restaurant {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 3px;
+}
+
+.map-tel-restaurant,
+.map-tels-hotel,
+.map-field-text {
+  /* 139 - 15 = 124 */
+  margin-left: 124px;
+
+  width: calc(100% - 124px);
+  min-height: 40px;
+
+  border: 0.5px solid var(--color-text-button);
+  border-radius: 2px;
+  background-color: var(--color-button-hover);
+
+  padding-left: 38px;
+  /* padding-right: 8px; */
+}
+
+.map-link-phone {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+
+  color: #494848;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}
+
+.map-link-phone:hover,
+.map-link-phone:focus {
+  color: var(--color-text-button);
+}
+
 
 .map-address {
   font-family: inherit;
@@ -280,6 +334,7 @@ button, link {
   }
   .map-contacts-card {
     height: 425px;
+    margin-left: 32px;
     margin-bottom: 0;
   }
   .map-sub-title {
@@ -331,6 +386,7 @@ button, link {
     width: 535px;
     height: 412px;
     margin-top: 13px;
+    margin-right: 32px;
   }
 }
 

@@ -42,17 +42,12 @@
               <h3 class="map-sub-title">MIMIHO</h3>
               <h2 class="map-title visually-hidden">Контакти та мапа розташування</h2>
               <p class="map-text">Ресторанно-готельний комплекс</p>
-              <form>
+
                 <div class="map-field-restaurant">
-                    <input 
-                      class="map-field-text map-tel-restaurant" 
-                      type="tel" 
-                      name="map-phone-restaurant" 
-                      id="map-phone-restaurant" 
-                      placeholder=" "
-                      readonly
-                      value="095 555 95 33">
-                    <label class="map-label-text" for="map-phone-restaurant">Ресторан</label>
+                    <div class="map-tel-restaurant">
+                      <a class="map-link-phone" href="tel:+380955559533">095 555 95 33</a>
+                    </div>
+                    <p class="map-label-text">Ресторан</p>
                     <span class="map-icon">
                       <svg width="24" height="24">
                         <use href="./images/map/sprite.svg#icon-phone"></use>
@@ -61,15 +56,11 @@
                 </div>
               
                 <div class="map-field-hotel">
-                    <input 
-                      class="map-field-text" 
-                      type="tel" 
-                      name="map-phone-hotel" 
-                      id="map-phone-hotel" 
-                      placeholder=" "
-                      readonly
-                      value="066 849 10 89&nbsp;&nbsp;067 275 85 40">
-                    <label class="map-label-text" for="map-phone-hotel">Готель</label>
+                    <ul class="map-tels-hotel">
+                      <li><a class="map-link-phone" href="tel:+380668491089">066 849 10 89</a></li>
+                      <li><a class="map-link-phone" href="tel:+380672758540">067 275 85 40</a></li>
+                    </ul>
+                    <p class="map-label-text">Готель</p>
                     <span class="map-icon">
                       <svg width="24" height="24">
                         <use href="./images/map/sprite.svg#icon-phone"></use>
@@ -78,21 +69,14 @@
                 </div>
               
                 <div class="map-field-address">
-                    <textarea 
-                      class="map-field-text map-address" 
-                      name="map-address" 
-                      rows="3"
-                      placeholder=" "
-                      readonly
-                    >Україна, м. Полтава, вул. Маршала Бірюзова, 15
-                    </textarea>
+                    <p class="map-field-text map-address">Україна, м. Полтава, вул. Маршала Бірюзова, 15</p>
                     <span class="map-icon">
                       <svg width="24" height="24">
                         <use href="./images/map/sprite.svg#icon-map-location-pin"></use>
                       </svg>
                     </span>
                 </div>
-              </form>
+
             </div>
           
             <div class="map-google-map">
