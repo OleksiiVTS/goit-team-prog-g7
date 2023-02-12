@@ -168,11 +168,12 @@ button, link {
   margin-bottom: 16px;
 }
 
-.map-field-card {
+.map-field-restaurant,
+.map-field-hotel,
+.map-field-address {
   position: relative;
   height: 40px;
   
-  padding-top: calc(40 / (20 * (24/20)) / 2);
   margin-bottom: 16px;
 }
 
@@ -182,7 +183,7 @@ button, link {
   left: 0;
   transform: translateY(25%);
 
-  font-family: 'Montserrat';
+  font-family: inherit;
   font-weight: 500;
   font-size: 20px;
   line-height: calc(24 / 20);
@@ -201,7 +202,7 @@ button, link {
   font-family: inherit;;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: calc(17 / 14);
   letter-spacing: 0.02em;
 
   color: #494848;
@@ -210,24 +211,28 @@ button, link {
   height: 40px;
   border: 0.5px solid var(--color-text-button);
   border-radius: 2px;
-  resize: none;
-  padding-left: 32px;
+
+  padding-left: 38px;
   padding-right: 8px;
 }
 
-.map-tel-rest {
+.map-tel-restaurant {
   max-width: 144px;
-  text-align: center;
 }
+
 .map-address {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.01em;
+  resize: none;
+  overflow: hidden;
 
   padding-top: 8px;
   padding-bottom: 7px;
+  padding-left: 42px;
+  padding-right: 33px;
   height: 76px;
 }
 
@@ -240,22 +245,89 @@ button, link {
   fill: var(--color-text-link);
 }
 
+.map-address + .map-icon {
+  transform: translateY(80%);
+}
 
 
-.map-image {
+.map-google-map {
   max-width: 384px;
   height: 220px;
 }
 
 @media screen and (min-width: 1024px) {
   .container {
-    min-width: 1024x;
+    min-width: 1024px;
   }
   .button-big-pointed {
     min-width: 592px;
     font-size: 24px;;
   }
+
+  /* ======== Map + Contacts ========= */
+  .map-contacts {
+    padding-top: 56px;
+    padding-bottom: 40px;
+    
+  }
+  .map-contacts > .container{
+    max-width: 1279px;
+  }
+  .map-card {
+    display: flex;
+    gap: 100px;
+  }
+  .map-contacts-card {
+    height: 425px;
+    margin-bottom: 0;
+  }
+  .map-sub-title {
+    /* font-size: 64px;
+    line-height: calc(69 / 64); */
+
+    margin-bottom: 8px;
+  }
+  .map-text {
+    margin-bottom: 84px;
+  }
+  .map-field-restaurant {
+    margin-bottom: 56px;
+  }
+  .map-label-text {
+    transform: translateY(-100%);
+  }
+  .map-field-text {
+    margin-left: 0;
+    width: 264px;
+  }
+  .map-tel-restaurant {
+    max-width: 144px;
+  }
+  .map-field-hotel {
+    margin-bottom: 48px;
+  }
+  .map-field-address {
+    margin-bottom: 4px;
+  }
+  .map-address {
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 44px;
+    padding-right: 8px;
+    height: 56px;
+  }
+
+  .map-icon {
+    left: 8px;   
+  }
+
+  .map-google-map {
+    max-width: 535px;
+    height: 412px;
+    margin-top: 13px;
+  }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     min-width: 1280x;
