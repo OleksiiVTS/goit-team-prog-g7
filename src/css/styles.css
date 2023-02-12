@@ -194,7 +194,6 @@ button, link {
 }
 
 .map-field-text {
- 
   /* 139 - 15 = 124 */
   margin-left: 124px;
   width: calc(100% - 124px);
@@ -276,14 +275,16 @@ button, link {
   .map-card {
     display: flex;
     gap: 100px;
+    justify-content: center;
+    align-items: flex-end;
   }
   .map-contacts-card {
     height: 425px;
     margin-bottom: 0;
   }
   .map-sub-title {
-    /* font-size: 64px;
-    line-height: calc(69 / 64); */
+    font-size: 64px;
+    line-height: calc(69 / 64);
 
     margin-bottom: 8px;
   }
@@ -294,6 +295,7 @@ button, link {
     margin-bottom: 56px;
   }
   .map-label-text {
+    top: -8px;
     transform: translateY(-100%);
   }
   .map-field-text {
@@ -307,6 +309,7 @@ button, link {
     margin-bottom: 48px;
   }
   .map-field-address {
+    width: 285px;
     margin-bottom: 4px;
   }
   .map-address {
@@ -320,9 +323,12 @@ button, link {
   .map-icon {
     left: 8px;   
   }
-
+  .map-address + .map-icon {
+    transform: translateY(50%);
+  }
   .map-google-map {
     max-width: 535px;
+    width: 535px;
     height: 412px;
     margin-top: 13px;
   }
@@ -336,5 +342,38 @@ button, link {
     min-width: 434px;
     height: 65px;
     font-size: 24px;;
+  }
+
+  /* ======== Map + Contacts ========= */
+  .map-contacts {
+    padding-bottom: 73px;
+  }
+  .map-contacts > .container{
+    max-width: 1600px;
+  }
+  .map-card {
+    gap: 108px;
+  }
+  .map-contacts-card {
+    /* height: 368px; */
+  }
+  .map-sub-title {
+    margin-bottom: 16px;
+  }
+  .map-text {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+
+    margin-bottom: 72px;
+  }
+  .map-field-address {
+    margin-bottom: 0;
+  }
+
+  .map-google-map {
+    max-width: 634px;
+    width: 634px;
+    height: 412px;
+    margin-top: 8px;
   }
 }
