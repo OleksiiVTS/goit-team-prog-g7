@@ -135,7 +135,7 @@ button, link {
 
 @media screen and (min-width: 1024px) {
   .container {
-    min-width: 1024x;
+    min-width: 1024px;
     padding: 0 47px;
   }
   .button-big-pointed {
@@ -146,7 +146,7 @@ button, link {
 @media screen and (min-width: 1280px) {
   .container {
     padding: 0 85px;
-    min-width: 1280x;
+    min-width: 1280px;
   }
   .button-big {
     min-width: 434px;
