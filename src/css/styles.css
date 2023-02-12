@@ -336,7 +336,7 @@ button, link {
 
 @media screen and (min-width: 1280px) {
   .container {
-    min-width: 1280x;
+    min-width: 1280px;
   }
   .button-big {
     min-width: 434px;
