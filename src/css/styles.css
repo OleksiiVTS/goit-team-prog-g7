@@ -209,7 +209,7 @@ button, link {
 }
 
 
-.door-slider-list-mobile {
+.door-slider-list {
   display: flex;
   flex-wrap: nowrap;
   column-gap: 20px;
@@ -218,8 +218,8 @@ button, link {
   margin-bottom: 16px;
 }
 
-.door-slider-list-tablet { display: none; }
-.door-slider-list-desktop { display: none; }
+/* .door-slider-list-tablet { display: none; }
+.door-slider-list-desktop { display: none; } */
 
 .door-img {
   width: 274px;
