@@ -152,3 +152,84 @@ button, link {
     font-size: 24px;;
   }
 }
+/* ===========================================<HEADER>============================================ */
+
+
+/* =====================<DISCARD TO MAX WIDTH>===================== */
+
+/* from 0 to 1025 =====> for mobile */
+@media screen and (max-width: 1023px) {
+  .header-navigation-tel {
+    display: none;
+  }
+  
+}
+    
+/* from 1024 to 1280 =====> for tablet */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    
+}
+/* from 1280 to infinity =====> for laptop */
+@media screen and (min-width: 1280px) {
+}
+
+/* =====================</DISCARD TO MAX WIDTH>==================== */
+
+.header {
+  background-color: navy;
+  padding-top: 16px;
+  padding-bottom: 9px;
+}
+
+.header-logo {
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43/40);
+  letter-spacing: 0.3em;
+  color: white;
+}
+
+.header-navigation {
+}
+
+.header-navigation-list {
+}
+
+.header-navigation-item {
+}
+
+.header-navigation-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24/20);
+  letter-spacing: 0.02em;
+  color: #F3C653;
+}   
+
+.header-navigation-tel{
+  font-size: 14px;
+  line-height: calc(17/14);
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+
+
+}
+
+.mobile-phone-icon {
+}
+
+.header-social-link {
+}
+
+.header-social-item {
+}
+
+.header-social-icon {
+}
+
+
+
+
+
+/* ===========================================</HEADER>============================================ */
