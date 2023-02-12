@@ -10,7 +10,8 @@
   --back-color-footer: #0E0C07;
   --back-color-criam: #FFFDEE;
   --back-color-criam-dark: #F0ECD6;
-  --transform: ;
+
+  --transition-default: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 html {
@@ -76,7 +77,7 @@ button, link {
   max-width: 414px;
 }
 /*--button--*//*--button--*/
-.button-blak,
+.button-black,
 .button-transparent,
 .button-big,
 .button-big-pointed {
@@ -86,7 +87,7 @@ button, link {
 
   min-width: 236px;
   height: 48px;
-  padding: 14px 35px;
+  /* padding: 14px 24px; */
   background-color: #000000;
   border: 2px solid var(--back-color-criam);
   border-radius: 25px;
@@ -105,7 +106,7 @@ button, link {
 .button-transparent {
   background-color: var(--color-button);
 }
-.button-blak:hover, .button-blak:focus,
+.button-black:hover, .button-black:focus,
 .button-transparent:hover, .button-transparent:focus {
   background-color: #FFFFFF;
   border: 2px solid var(--color-text-button);
