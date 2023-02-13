@@ -215,9 +215,8 @@ button, link {
 
 .door-slider-list {
   display: flex;
-  /* flex-wrap: nowrap; */
   column-gap: 20px;
-  /* overflow: hidden; */
+  overflow: hidden;
 
   margin-bottom: 16px;
 }
