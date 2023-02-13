@@ -162,16 +162,19 @@ button, link {
   background-repeat: no-repeat;
 }
 
+.door-block-text{ 
+  margin-left: 125px;
+  /* 140-15=125 */
+}
+
 .door-sub-title {
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 40px;
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
-
   color: #FFFFFF;
-  margin-left: 125px;
-  /* 140-15=125 */
+  
   margin-bottom: 12px;
 }
 
@@ -181,10 +184,8 @@ button, link {
   font-size: 20px;
   line-height: calc(24 /20);
   letter-spacing: 0.02em;
-
   color: #FFFFFF;
-  margin-left: 125px;
-  /* 140-15=125 */
+
   margin-bottom: 20px;
 }
 
@@ -194,10 +195,8 @@ button, link {
   font-size: 12px;
   line-height: calc(15 / 12);
   letter-spacing: 0.02em;
-
   color: #BABABA;
-  margin-left: 125px;
-  /* 140-15=125 */
+
   margin-right: 15px;
   margin-bottom: 48px;
 }
@@ -209,7 +208,7 @@ button, link {
 }
 
 
-.door-slider-list {
+.door-slider-list-mobile {
   display: flex;
   flex-wrap: nowrap;
   column-gap: 20px;
@@ -218,8 +217,8 @@ button, link {
   margin-bottom: 16px;
 }
 
-/* .door-slider-list-tablet { display: none; }
-.door-slider-list-desktop { display: none; } */
+.door-slider-list-tablet { display: none; }
+.door-slider-list-desktop { display: none; }
 
 .door-img {
   width: 274px;
@@ -297,13 +296,14 @@ button, link {
 
 @media screen and (min-width: 1024px) {
   .container {
-    min-width: 1024px;
-    padding: 0 47px;
+    min-width: 1024x;
+    
   }
   .button-big-pointed {
     min-width: 592px;
     font-size: 24px;;
   }
+
 
   /* Details of our restaurant (door) */
   .door > .container {
@@ -392,8 +392,7 @@ button, link {
 
 @media screen and (min-width: 1280px) {
   .container {
-    padding: 0 85px;
-    min-width: 1280px;
+    min-width: 1280x;
   }
   .button-big {
     min-width: 434px;
@@ -453,12 +452,5 @@ button, link {
   }
 
   .door-slider-list-tablet { display: none };
-
-}
-
-@media screen and (min-width: 1024px) {
-
-}
-@media screen and (min-width: 1280px) {
 
 }

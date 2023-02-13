@@ -31,67 +31,94 @@
   <!--restaurant-->
     <section>
     </section>
-    <!-- Details of our restaurant (door)-->
-    <section class="section door">
-      <div class="container">
-        <div class="door-block-text">
-          <h3 class="door-sub-title">MIMIHO</h3>
-          <h2 class="door-title">Ресторан</h2>
-          <p class="door-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+   <!-- Details of our restaurant (door)-->
+   <section class="section door">
+    <div class="container">
+      <div class="door-block-text">
+        <h3 class="door-sub-title">MIMIHO</h3>
+        <h2 class="door-title">Ресторан</h2>
+        <p class="door-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+      </div>
+      <div class="door-nav-slider">
+        <div class="door-slider">
+          <ul class="door-slider-list-mobile">
+            <li>
+              <picture>
+                <source 
+                  media="(min-width: 1200px)"
+                  srcset="./images/door/door-slider-01-desktop.jpg 1x, ./images/door/door-slider-01-desktop@2x.jpg 2x">
+                <source 
+                  media="(mіn-width: 1024px)"
+                  srcset="./images/door/door-slider-01-tablet.jpg 1x, ./images/door/door-slider-01-tablet@2x.jpg 2x">
+                <source 
+                  media="(max-width: 1023px)"
+                  srcset="./images/door/door-slider-01-mobile.jpg 1x, ./images/door/door-slider-01-mobile@2x.jpg 2x">
+
+                <img 
+                    class="door-img" 
+                    src="./images/door/door-slider-01-mobile.jpg" 
+                    alt="Slider image-01 for mobile" 
+                    width="274" 
+                    height="270">
+              </picture>
+            </li>
+            
+            <li>
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./images/door/door-slider-02-desktop.jpg 1x, ./images/door/door-slider-02-desktop@2x.jpg 2x">
+                <source media="(mіn-width: 1024px)"
+                  srcset="./images/door/door-slider-02-tablet.jpg 1x, ./images/door/door-slider-02-tablet@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="./images/dooh/dooh-slider-01-mobile.jpg 1x, ./images/dooh/dooh-slider-01-mobile@2x.jpg 2x">
+
+                <img 
+                    class="door-img" 
+                    src="./images/dooh/dooh-slider-01-mobile.jpg" 
+                    alt="Slider image-02 for mobile" 
+                    width="274"
+                    height="270">
+              </picture>
+            </li>
+
+            <li>
+              <picture>
+                <source media="(min-width: 1200px)" 
+                  srcset="./images/door/door-slider-03-desktop.jpg 1x, ./images/door/door-slider-03-desktop@2x.jpg 2x">
+                <source media="(mіn-width: 1024px)" 
+                  srcset="./images/door/door-slider-03-tablet.jpg 1x, ./images/door/door-slider-03-tablet@2x.jpg 2x">
+                <source media="(max-width: 1023px)" 
+                  srcset="./images/door/door-slider-01-mobile.jpg 1x, ./images/door/door-slider-01-mobile@2x.jpg 2x">
+                <img 
+                    class="door-img" 
+                    src="./images/door/door-slider-01-mobile.jpg" 
+                    alt="Slider image-03 for mobile" 
+                    width="274"
+                    height="270">
+              </picture>
+            </li>
+          </ul>
+
+          <button class="door-btn-prev" type="button" >
+            <svg width="32" height="32">
+              <use href="./images/sprite-arrow-slider.svg#icon-arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="door-btn-next" type="button">
+            <svg width="32" height="32">
+              <use href="./images/sprite-arrow-slider.svg#icon-arrow-next"></use>
+            </svg>
+          </button>
         </div>
-        <div class="door-nav-slider">
-          <div class="door-slider">
-            <ul class="door-slider-list">
-              <li>
-                <picture>
-                  <img class="door-img" src="./images/door/door-slider-01-mobile.jpg" alt="Slider image-01 for mobile" width="274" height="270">
-                </picture>
-              </li>
-              
-              <li>
-                <picture>
-                  <img class="door-img" src="./images/dooh/dooh-slider-01-mobile.jpg" alt="Slider image-02 for mobile" width="274" height="270">
-                </picture>
-              </li>  
-              
-              <li>
-                <picture>
-                  <img class="door-img" src="./images/door/door-slider-01-mobile.jpg" alt="Slider image-03 for mobile" width="274" height="270">
-                </picture>
-              </li>
-            </ul>
-
-            <!-- <ul class="door-slider-list-tablet">
-              <li><img class="door-img" src="./images/door/door-slider-01-tablet.jpg" alt="Slider image-01 for tablet" width="270" height="270"></li>
-              <li><img class="door-img" src="./images/door/door-slider-02-tablet.jpg" alt="Slider image-02 for tablet" width="270" height="270"></li>
-              <li><img class="door-img" src="./images/door/door-slider-03-tablet.jpg" alt="Slider image-03 for tablet" width="270" height="270"></li>
-            </ul>
-            <ul class="door-slider-list-desktop">
-              <li><img class="door-img" src="./images/door/door-slider-01-desktop.jpg" alt="Slider image-01 for desktop" width="270" height="270"></li>
-              <li><img class="door-img" src="./images/door/door-slider-02-desktop.jpg" alt="Slider image-02 for desktop" width="270" height="270"></li>
-              <li><img class="door-img" src="./images/door/door-slider-03-desktop.jpg" alt="Slider image-03 for desktop" width="270" height="270"></li>
-            </ul> -->
-
-            <button class="door-btn-prev" type="button" >
-              <svg width="32" height="32">
-                <use href="./images/sprite-arrow-slider.svg#icon-arrow-prev"></use>
-              </svg>
-            </button>
-            <button class="door-btn-next" type="button">
-              <svg width="32" height="32">
-                <use href="./images/sprite-arrow-slider.svg#icon-arrow-next"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="door-btns">
-            <button class="door-btn door-book-table" type="button">Забронювати столик</button>
-            <a class="door-btn door-link"
-              href="./restaurant.html">
-              Переглянути меню</a>
-          </div>
+        <div class="door-btns">
+          <button class="door-btn door-book-table" type="button">Забронювати столик</button>
+          <a class="door-btn door-link"
+            href="./restaurant.html#menu">
+            Переглянути меню</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   <!--hotel-->
     <section>
     </section>
