@@ -224,8 +224,172 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   }
 }
 
-.hero-title {
+/* готель */
 
+.hero-hotel {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  ),
+  url('../image/hotel-hero/hero-hotel-mob-1x.jpg');;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+screen and (min-resolution: 192dpi) and (max-width: 1023px),
+screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/hotel-hero/hero-hotel-mob-2x.jpg');
+
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/hotel-hero/hero-hotel-tab-1x.jpg');
+  }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+screen and (min-resolution: 192dpi) and (min-width: 1024px),
+screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/hotel-hero/hero-hotel-tab-2x.jpg');
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/hotel-hero/hero-hotel-desc-1x.jpg');
+  }
+
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/hotel-hero/hero-hotel-desc-2x.jpg');
+  }
+}
+
+/* ресторан */
+
+.hero-restaurant {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  ),
+  url('../image/restaurant-hero/hero-rest-mob-1x.jpg');;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+screen and (min-resolution: 192dpi) and (max-width: 1023px),
+screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/restaurant-hero/hero-rest-mob-2x.jpg');
+
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/restaurant-hero/hero-rest-tab-1x.jpg');
+  }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+screen and (min-resolution: 192dpi) and (min-width: 1024px),
+screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/restaurant-hero/hero-rest-tab-2x.jpg');
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/restaurant-hero/hero-rest-desc-1x.jpg');
+  }
+
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../image/restaurant-hero/hero-rest-desc-2x.jpg');
+  }
+}
+
+
+
+
+
+
+
+
+.hero-title {
   /* font-family: Montserrat;
 font-style: normal;
 font-weight: 700;
@@ -246,7 +410,7 @@ margin-bottom: 40px;
 }
 
 .hero-sub-title {
-/* font-family: 'Times New Roman'; */
+font-family: 'Times New Roman';
 text-transform: uppercase;
 font-weight: 700;
 font-size: 32px;
@@ -363,8 +527,6 @@ left: 45%; */
   .address {
     top: 395px;
   }
-
-
 }
 
 
