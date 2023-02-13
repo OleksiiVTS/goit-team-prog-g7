@@ -174,11 +174,11 @@ button, link {
 
   display: flex;
   flex-wrap: wrap;
-  row-gap: 8px;
   align-items: center;
 }
 .map-field-restaurant,
 .map-field-hotel {
+  row-gap: 8px;
   margin-bottom: 16px;
 }
 
@@ -310,7 +310,7 @@ button, link {
     margin-bottom: 8px;
   }
   .map-text {
-    margin-bottom: 84px;
+    margin-bottom: 52px;
   }
   .map-field-restaurant,
   .map-field-hotel,
@@ -319,7 +319,7 @@ button, link {
     align-items: normal;
   }
   .map-field-restaurant {
-    margin-bottom: 56px;
+    margin-bottom: 24px;
   }
 
   .map-field-hotel {
@@ -380,9 +380,10 @@ button, link {
     font-size: 20px;
     line-height: calc(24 / 20);
 
-    margin-bottom: 72px;
+    margin-bottom: 40px;
   }
-  .map-field-address {
+
+  .map-block-address {
     margin-bottom: 0;
   }
 
