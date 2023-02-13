@@ -45,3 +45,5 @@ function doorSlider() {
         sliderLine.style.transform = 'translateX(-' + count * width + 'px)';
     }
 }
+
+doorSlider();
