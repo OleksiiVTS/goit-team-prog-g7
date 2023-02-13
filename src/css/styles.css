@@ -141,7 +141,6 @@ button, link {
   background-color: var(--back-color-criam);
 }
 .map-contacts-card {
-  height: 279px;
   margin-bottom: 32px;
 }
 
@@ -181,6 +180,16 @@ button, link {
   margin-bottom: 16px;
 }
 
+.map-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  fill: var(--color-text-link);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
 .map-label-text {
   width: 124px;
 
@@ -193,7 +202,8 @@ button, link {
 }
 
 .map-tels-hotel,
-.map-tel-restaurant {
+.map-tel-restaurant,
+.map-block-address {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -204,87 +214,27 @@ button, link {
 }
 
 .map-tels-hotel,
+.map-tel-restaurant { 
+  padding-right: 8px;
+}
+
+.map-tels-hotel,
+.map-block-address,
 .map-tel-restaurant {
   width: calc(100% - 124px);
-  /* min-height: 40px; */
+  min-width: 144px;
 
   outline: 0.5px solid var(--color-text-button);
   border-radius: 2px;
   background-color: var(--color-button-hover);
-
-  /* padding-left: 38px; */
-  padding-right: 8px;
 }
 
 .map-list-tels-hotel {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  column-gap: 12px;
-}
-
-.map-icon {
-  width: 24px;
-  height: 24px;
-
-  display: inline-block;
-  fill: var(--color-text-link);
-  margin-left: 8px;
-  margin-right: 8px;
-}
-/* .map-label-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(25%);
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
-
-  color: var(--color-text-link);
-
-}
-
-.map-field-label {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
-
-  color: var(--color-text-link);
-}
-
-.map-tel-restaurant {
-  max-width: 144px;
-}
-
-.map-tels-hotel,
-.map-tel-restaurant {
-  display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   column-gap: 12px;
-  row-gap: 3px;
 }
-
-.map-tel-restaurant,
-.map-tels-hotel,
-.map-field-text {
-  margin-left: 124px;
-
-  width: calc(100% - 124px);
-  min-height: 40px;
-
-  border: 0.5px solid var(--color-text-button);
-  border-radius: 2px;
-  background-color: var(--color-button-hover);
-
-  padding-left: 38px;
-} */
 
 .map-link-phone {
   display: inline-flex;
@@ -293,13 +243,10 @@ button, link {
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.21;
+  line-height: calc(17 / 14);
   letter-spacing: 0.02em;
 
   color: #494848;
-  /* padding-top: 12px;
-  padding-bottom: 11px; */
-
 }
 
 .map-link-phone:hover,
@@ -308,35 +255,19 @@ button, link {
 }
 
 
-.map-address {
-  font-family: inherit;
+.map-address-text {
+  height: 76px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.01em;
-  resize: none;
   overflow: hidden;
 
   padding-top: 8px;
   padding-bottom: 7px;
-  padding-left: 42px;
   padding-right: 33px;
-  height: 76px;
 }
-
-/* .map-icon {
-  position: absolute;
-  top: 0;
-  left: 132px;
-
-  transform: translateY(25%);
-  fill: var(--color-text-link);
-} */
-
-.map-address + .map-icon {
-  transform: translateY(80%);
-}
-
 
 .map-google-map {
   max-width: 384px;
@@ -356,7 +287,6 @@ button, link {
   .map-contacts {
     padding-top: 56px;
     padding-bottom: 40px;
-    
   }
   .map-contacts > .container{
     max-width: 1279px;
@@ -368,7 +298,6 @@ button, link {
     align-items: flex-end;
   }
   .map-contacts-card {
-    height: 425px;
     margin-left: 32px;
     margin-bottom: 0;
   }
@@ -381,41 +310,35 @@ button, link {
   .map-text {
     margin-bottom: 84px;
   }
+  .map-field-restaurant,
+  .map-field-hotel,
+  .map-field-address {
+    flex-direction: column;
+    align-items: normal;
+  }
   .map-field-restaurant {
     margin-bottom: 56px;
   }
-  .map-label-text {
-    top: -8px;
-    transform: translateY(-100%);
-  }
-  .map-field-text {
-    margin-left: 0;
-    width: 264px;
-  }
-  .map-tel-restaurant {
-    max-width: 144px;
-  }
+
   .map-field-hotel {
+    width: none;
+    min-width: 264px;
     margin-bottom: 48px;
   }
-  .map-field-address {
+  .map-block-address {
     width: 285px;
+    min-width: 285px;
     margin-bottom: 4px;
   }
-  .map-address {
-    padding-top: 9px;
-    padding-bottom: 7px;
-    padding-left: 44px;
-    padding-right: 8px;
+  .map-address-text {
     height: 56px;
+
+    padding-top: 9px;
+    padding-right: 8px;
+    padding-bottom: 7px;
+    padding-left: 4px;
   }
 
-  .map-icon {
-    left: 8px;   
-  }
-  .map-address + .map-icon {
-    transform: translateY(50%);
-  }
   .map-google-map {
     max-width: 535px;
     width: 535px;
@@ -442,11 +365,11 @@ button, link {
   .map-contacts > .container{
     max-width: 1600px;
   }
+  .map-contacts-card {
+    margin-left: 70px;
+  }
   .map-card {
     gap: 108px;
-  }
-  .map-contacts-card {
-    height: 421px;
   }
   .map-sub-title {
     margin-bottom: 16px;
@@ -466,5 +389,6 @@ button, link {
     width: 634px;
     height: 412px;
     margin-top: 8px;
+    margin-right: 70px;
   }
 }
