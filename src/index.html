@@ -8,44 +8,196 @@
     <!--fouts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!--Нормалізатор стилів-->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"/>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles-wrapper.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body> 
-  <!--header-->
-    <header>
-    </header>
-  <!--main-->
+  <body>
+    <!--header-->
+    <header></header>
+    <!--main-->
     <main>
-    <!--hero-->
-      <section>
+      <!--hero-->
+      <section></section>
+      <!--restaurant-->
+      <section class="section-restaurant">
+        <div class="container">
+          <div class="restaurant-first-box">
+            <div>
+              <h2>Amet minim mollit non</h2>
+              <h3>MIMIHO</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-img/mobile-restaurant/restourant-main-244x322.jpg    1x,
+                    ./images/about-img/mobile-restaurant/restourant-main-244x322@2x.jpg 2x
+                  "
+                  media="(max-width:1023px)"
+                  width="244"
+                />
+
+                <source
+                  srcset="
+                    ./images/about-img/tablet-restaurant/restourant-main-400x524.jpg    1x,
+                    ./images/about-img/tablet-restaurant/restourant-main-400x524@2x.jpg 2x
+                  "
+                  media="(min-width:1024px) and (max-width:1279px)"
+                  width="400"
+                />
+
+                <source
+                  srcset="
+                    ./images/about-img/desktop-restaurant/restourant-main-460x574.jpg    1x,
+                    ./images/about-img/desktop-restaurant/restourant-main-460x574@2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                  width="460"
+                />
+
+                <img
+                  class="restaurant-img-first"
+                  src="./images/about-img/desktop-restaurant/restourant-main-460x574.jpg"
+                  alt="restaurant"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="restaurant-second-box">
+            <div></div>
+            <picture>
+              <source
+                srcset="
+                  ./images/about-img/mobile-restaurant/restourant-hall-200x278.jpg    1x,
+                  ./images/about-img/mobile-restaurant/restourant-hall-200x278@2x.jpg 2x
+                "
+                media="(max-width:1023px)"
+                width="200"
+              />
+
+              <source
+                srcset="
+                  ./images/about-img/tablet-restaurant/restourant-hall-350x500.jpg    1x,
+                  ./images/about-img/tablet-restaurant/restourant-hall-350x500@2x.jpg 2x
+                "
+                media="(min-width:1024px) and (max-width:1279px)"
+                width="350"
+              />
+
+              <source
+                srcset="
+                  ./images/about-img/desktop-restaurant/restourant-hall-460x574.jpg    1x,
+                  ./images/about-img/desktop-restaurant/restourant-hall-460x574@2x.jpg 2x
+                "
+                media="(min-width:1280px)"
+                width="460"
+              />
+
+              <img
+                src="./images/about-img/desktop-restaurant/restourant-hall-460x574.jpg"
+                alt="restaurant"
+              />
+            </picture>
+
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="./images/sliders-img/foto-mobile/1-slider-mobile.jpg"
+                  width="245"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sliders-img/foto-mobile/2-slider-mobile.jpg"
+                  width="245"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sliders-img/foto-mobile/3-slider-mobile.jpg"
+                  width="245"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sliders-img/foto-mobile/4-slider-mobile.jpg"
+                  width="245"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sliders-img/foto-mobile/5-slider-mobile.jpg"
+                  width="245"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-btn-position" role="group">
+              <div class="swiper-button-prev left-btn-swiper">
+                <svg class="svg-arrows">
+                  <use href="./images/arrows.svg#icon-arrow-left"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next right-btn-swiper">
+                <svg class="svg-arrows">
+                  <use href="./images/arrows.svg#icon-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
       </section>
-    <!--restaurant-->
-      <section>
-      </section>
-    <!--hotel-->
-      <section>
-      </section>
-    <!--map-->
-      <section>
-      </section>
+      <!--hotel-->
+      <section></section>
+      <!--map-->
+      <section></section>
     </main>
-  <!--footer-->
+    <!--footer-->
     <footer></footer>
-  <!--modal-windpws-->
+    <!--modal-windpws-->
     <div></div>
-  <!--modal-windpws-->
+    <!--modal-windpws-->
     <div></div>
-  <!--modal-windpws-->
+    <!--modal-windpws-->
     <div></div>
-  <!--js-scrupt-->
+    <!--js-scrupt-->
+    <script type="module" src="./sliders.js"></script>
   </body>
 </html>

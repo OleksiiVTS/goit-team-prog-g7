@@ -1,15 +1,15 @@
 :root {
-  --color-text: #7A7A7A;
-  --color-text-button: #F3C653;
+  --color-text: #7a7a7a;
+  --color-text-button: #f3c653;
 
-  --color-text-link: #C79002;
+  --color-text-link: #c79002;
 
   --color-button: rgba(0, 0, 0, 0.4);
-  --color-button-hover: #FFFFFF;
+  --color-button-hover: #ffffff;
 
-  --back-color-footer: #0E0C07;
-  --back-color-criam: #FFFDEE;
-  --back-color-criam-dark: #F0ECD6;
+  --back-color-footer: #0e0c07;
+  --back-color-criam: #fffdee;
+  --back-color-criam-dark: #f0ecd6;
   --transform: ;
 }
 
@@ -28,16 +28,24 @@ body {
 *::after {
   box-sizing: inherit;
 }
-:active, :hover, :focus {
+:active,
+:hover,
+:focus {
   outline: 0;
   outline-offset: 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
-ul, li, a, p {
+ul,
+li,
+a,
+p {
   text-decoration: none;
   list-style: none;
   margin: 0;
@@ -48,7 +56,8 @@ img {
   max-width: 100%;
   height: auto;
 }
-button, link {
+button,
+link {
   cursor: pointer;
 }
 
@@ -70,12 +79,30 @@ button, link {
   margin: 0 auto;
   background-color: var(--back-color-criam);
 }
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 414px;
+
+/* ----------------------------------------------------------------------------------- */
+/* !!! УВАГА !!! */
+
+@media screen and (min-width: 1280px) {
+  /* КОНТЕНТ ДЛЯ ДЕКСТОПУ */
 }
-/*--button--*//*--button--*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  /* КОНТЕНТ ДЛЯ ПЛАНШЕТІВ (ТАБЛЕТОК) */
+}
+
+@media screen and (max-width: 1024px) {
+  /* КОНТЕНТ ДЛЯ ТЕЛЕФОНІВ */
+}
+/* --------------------------------------------------------------------------------------  */
+
+/* .container {
+  margin: 0 auto;
+  padding: 0 15px;      
+  max-width: 414px;
+} */
+
+/*--button--*/ /*--button--*/
 .button-blak,
 .button-transparent,
 .button-big,
@@ -105,9 +132,11 @@ button, link {
 .button-transparent {
   background-color: var(--color-button);
 }
-.button-blak:hover, .button-blak:focus,
-.button-transparent:hover, .button-transparent:focus {
-  background-color: #FFFFFF;
+.button-blak:hover,
+.button-blak:focus,
+.button-transparent:hover,
+.button-transparent:focus {
+  background-color: #ffffff;
   border: 2px solid var(--color-text-button);
 }
 .button-big,
@@ -120,30 +149,31 @@ button, link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .button-big-pointed {
   border-radius: 2px;
 }
-.button-big:hover, .button-big:focus,
-.button-big-pointed:hover, .button-big-pointed:focus {
+.button-big:hover,
+.button-big:focus,
+.button-big-pointed:hover,
+.button-big-pointed:focus {
   background-color: var(--color-text-button);
   color: #000000;
 }
-/*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*/
+/*---*/ /*---*/ /*---*/ /*---*/ /*---*/ /*---*/ /*---*/ /*---*/ /*---*/ /*---*/ /*---*/
 
-
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .container {
     min-width: 1024px;
     padding: 0 47px;
   }
   .button-big-pointed {
     min-width: 592px;
-    font-size: 24px;;
+    font-size: 24px;
   }
-}
-@media screen and (min-width: 1280px) {
+}                                                      --- ЦЕ ПОГАНЕ!!!! ---
+@media screen and (min-width: 1280px) {        
   .container {
     padding: 0 85px;
     min-width: 1280px;
@@ -151,6 +181,264 @@ button, link {
   .button-big {
     min-width: 434px;
     height: 65px;
-    font-size: 24px;;
+    font-size: 24px;
+  }
+} */
+
+/* !!! section Maks ПОЧАТОК !!!*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 414px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* /////////////////////// */
+
+.section-restaurant {
+  background-color: var(--back-color-criam);
+}
+
+.section-restaurant p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: var(--color-text);
+}
+
+.restaurant-first-box {
+  position: relative;
+}
+
+.restaurant-first-box h2 {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #b4b4b4;
+}
+
+.restaurant-second-box p {
+  color: var(--color-text-link);
+}
+
+.restaurant-second-box {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+}
+
+@media screen and (max-width: 1023px) {
+  .section-restaurant {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .restaurant-first-box h2,
+  .restaurant-first-box h3 {
+    margin-bottom: 12px;
+  }
+
+  .restaurant-first-box h3 {
+    font-size: 40px;
+  }
+
+  .restaurant-first-box p {
+    width: 258px;
+    margin-bottom: 28px;
+  }
+
+  .restaurant-first-box,
+  .restaurant-second-box {
+    margin-bottom: 32px;
+  }
+
+  .restaurant-first-box picture {
+    display: flex;
+    justify-content: right;
+  }
+
+  .restaurant-second-box picture {
+    margin-right: 20px;
+  }
+
+  .restaurant-second-box p {
+    width: 163px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-restaurant {
+    padding-bottom: 32px;
+  }
+
+  .section-restaurant p {
+    line-height: 19.5px;
+  }
+
+  .restaurant-first-box h3 {
+    font-size: 64px;
+  }
+
+  .restaurant-first-box h2 {
+    margin-bottom: 4px;
+  }
+
+  .restaurant-first-box h3 {
+    margin-bottom: 24px;
+  }
+
+  .restaurant-first-box p {
+    font-size: 16px;
+  }
+
+  .restaurant-first-box p {
+    width: 439px;
+    margin-bottom: 142px;
+    margin-right: 26px;
+  }
+
+  .restaurant-first-box {
+    display: flex;
+  }
+
+  .restaurant-first-box picture {
+    position: absolute;
+
+    transform: translateY(-152px);
+  }
+
+  .restaurant-second-box p {
+    width: 312px;
+  }
+
+  .restaurant-second-box picture {
+    margin-right: 48px;
+  }
+
+  .section-restaurant {
+    padding-top: 120px;
+  }
+
+  .section-restaurant h2 {
+    font-size: 32px;
+  }
+
+  .section-restaurant p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant-first-box p {
+    width: 518px;
+    margin-bottom: 162px;
+    margin-right: 37px;
+  }
+}
+
+/* SLIDERS */
+
+.swiper {
+  width: 548px;
+  height: 300px;
+  /* background-color: #b9b9b9; */
+  margin-right: 0;
+
+  user-select: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .swiper {
+    width: 330px;
+    /* transform: translateX(30px); */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper {
+    transform: translateY(-28px);
+  }
+}
+
+.swiper-2 {
+  width: 300px;
+  height: 300px;
+  background-color: #b9b9b9;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+
+  cursor: grab;
+}
+
+.swiper-btn-position {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 98px;
+  height: 32px;
+  z-index: 10;
+}
+
+/* /////////////// */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: '';
+}
+
+.swiper-rtl .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '';
+}
+
+.swiper-rtl .svg-arrows {
+  transform: rotate(180deg);
+}
+
+.svg-arrows {
+  fill: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.svg-arrows:hover {
+  fill: #f3c653;
+}
+
+/* SLIDERS */
+
+/* !!! section Maks КІНЕЦЬ !!!*/
