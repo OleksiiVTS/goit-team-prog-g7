@@ -379,13 +379,19 @@ link {
 @media screen and (max-width: 1023px) {
   .swiper {
     width: 330px;
-    /* transform: translateX(30px); */
+    transform: translateX(15px);
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .swiper {
     transform: translateY(-28px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper {
+    transform: translateY(-102px);
   }
 }
 
