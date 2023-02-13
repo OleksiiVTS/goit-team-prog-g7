@@ -278,11 +278,13 @@ button, link {
 
 @media screen and (min-width: 1024px) {
   .container {
-    min-width: 1024px;
+      min-width: 1024px;
+      padding: 0 47px;
   }
+  
   .button-big-pointed {
     min-width: 592px;
-    font-size: 24px;;
+    font-size: 24px;
   }
 
   /* ======== Map + Contacts ========= */
