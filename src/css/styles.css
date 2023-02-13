@@ -278,12 +278,12 @@ button, link {
 
 @media screen and (min-width: 1024px) {
   .container {
-    padding: 0 85px;
-    min-width: 1280px;
+    min-width: 1024px;
+    padding: 0 47px;
   }
-  .button-big {
-    min-width: 434px;
-    height: 65px;
+  
+  .button-big-pointed {
+    min-width: 592px;
     font-size: 24px;;
   }
 
