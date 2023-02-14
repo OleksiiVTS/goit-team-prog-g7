@@ -168,7 +168,7 @@ button, link {
   letter-spacing: 0.3em;
   color: #FFFFFF;
   
-  margin-bottom: 12px;
+  margin-bottom: calc(100vw * 12 / 414);;
 }
 
 .door-title {
@@ -179,7 +179,7 @@ button, link {
   letter-spacing: 0.02em;
   color: #FFFFFF;
 
-  margin-bottom: 20px;
+  margin-bottom: calc(100vw * 20 / 414);
 }
 
 .door-text {
@@ -190,50 +190,60 @@ button, link {
   letter-spacing: 0.02em;
   color: #BABABA;
 
-  margin-right: 15px;
-  margin-bottom: 48px;
+  margin-right: calc(100vw * 15 / 414);
+  margin-bottom: calc(100vw * 48 / 414);
+}
+
+.door-nav-slider {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  row-gap: calc(100vw * 32 / 414);
 }
 
 .door-slider {
   max-width: 100%;
 
-  margin-bottom: 32px;
-  margin-left: 25px;
+  margin-left: calc(100vw * 25 / 414);
   margin-right: -15px;
+  overflow: hidden;
 }
-
 
 .door-slider-list {
   display: flex;
   column-gap: 20px;
-  overflow: hidden;
 
-  margin-bottom: 16px;
+  margin-bottom: calc(100vw * 16 / 414);
 }
 
 .door-img {
   max-width: calc(100vw * 274 / 414);
+  height: auto;
 }
 
-.door-btns {
-  width: calc(100vw * 236 / 414);
-  
+.door-buttons {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   row-gap: 16px;
-
-  margin: 0 auto;
 }
 
 .door .button-black {
+  max-width: 236px;
   min-width: calc(100vw * 236 / 414);
+  height: calc(100vw * 48 / 414);
   font-size: calc(100vw * 16 / 414);
 }
 
+.door-icon {
+  width: calc(100vw * 32 / 414);
+  height: auto;
+}
 
 .door-btn-prev,
 .door-btn-next {
+
   padding: 0;
   border: none;
   outline: none;
@@ -246,7 +256,7 @@ button, link {
 }
 
 .door-btn-prev {
-  margin-right: 32px;
+  margin-right: calc(100vw * 32 / 414);
 }
 
 .door-btn-prev:hover,
@@ -263,19 +273,41 @@ button, link {
   }
   .door-sub-title {
     font-size: 40px;
+    margin-bottom: 12px;
   }
   .door-title {
     font-size: 20px;
+    margin-bottom: 20px;
   }
   .door-text {
-      font-size: 12px;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-bottom: 48px;
+  }
+  .door-nav-slider {
+    row-gap: 32px;
+  }
+  .door-slider {
+    /* margin-bottom: 32px; */
+    margin-left: 25px;
+  }
+  .door-slider-list {
+    margin-bottom: 16px;
   }
   .door-img {
     max-width: 274px;
+    height: 270px;
   }
   .door .button-black {
     min-width: 236px;
     font-size: 16px;
+    height: 48px;
+  }
+  .door-btn-prev {
+    margin-right: 32px;
+  }
+  .door-icon {
+    width: 32px;
   }
 }
 
@@ -357,28 +389,22 @@ button, link {
     /* width: 662px; */
     margin: 0;
   }
-  .door-slider-list-mobile { display: none; }
-  .door-slider-list-tablet {
-    display: flex;
-    flex-wrap: nowrap;
+
+  .door-slider-list {
     column-gap: 34px;
-    overflow: hidden;
   
     margin-bottom: 24px;
   }
 
   .door-img {
-    width: 100%;
     max-width: 270px;
-    height: auto;
+    height: 270px;
   }
   .door-btns {
-    margin-bottom: 60px; 
+    margin-bottom: 58px; 
     /* 32 + 24 + 2*2 = 60 */
   }
-  .door-btn {
-    width: 236px;
-  }
+
 }
 
 
