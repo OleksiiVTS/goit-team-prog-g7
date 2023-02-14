@@ -213,6 +213,7 @@ button, link {
 .door-slider-list {
   display: flex;
   column-gap: 20px;
+  transition: translate ease 2s;
 
   margin-bottom: calc(100vw * 16 / 414);
 }

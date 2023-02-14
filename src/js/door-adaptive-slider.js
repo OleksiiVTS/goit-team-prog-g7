@@ -10,13 +10,21 @@ function doorSlider() {
 
     function init() {
         console.log('resize');
-        width = document.querySelector('.door-slider').offsetWidth;
-        sliderLine.style.width = width * images.length + 'px';
-        images.forEach( item => {
-            item.style.width = width + 'px';
-            item.style.heaght = 'auto';
+        let lenSprite = document.querySelector('.door-slider').offsetWidth;
+        let totalWidth = 0;
+        let gaps = { 384: 20, 662: 34, 875: 87 };
+        let gap = 20;
+
+        images.forEach(item => { 
+            totalWidth += item.clientWidth;
+            console.log(item.clientWidth);
         })
-        console.log(width);
+        console.log(gap);
+        gap = gap[lenSprite] ? gap[lenSprite] : 20; 
+
+        width = totalWidth / images.length + gap;
+        sliderLine.style.width = totalWidth + gap * (images.length - 1) + 'px';
+
         rollSlider();
     }
 
@@ -42,7 +50,7 @@ function doorSlider() {
     });
 
     function rollSlider() {
-        sliderLine.style.transform = 'translateX(-' + count * width + 'px)';
+        sliderLine.style.transform = 'translate(-' + count * width + 'px)';
     }
 }
 
