@@ -226,36 +226,11 @@ button, link {
   margin: 0 auto;
 }
 
-.door-btn {
-  font-family: inherit;
-  font-weight: 700;
+.door .button-black {
+  min-width: calc(100vw * 236 / 414);
   font-size: calc(100vw * 16 / 414);
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
-
-  height: 48px;
-  color: var(--color-text-button);
-  background-color: #000000;
-
-  border: 2px solid var(--color-button-hover);
-  border-radius: 25px;
-
-  transition: background-color var(--transition), 
-              border-color var(--transition)
-              color var(--transition);  
 }
 
-.door-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.door-btn:hover,
-.door-btn:focus {
-  background-color: white;
-  border-color: var(--color-text-button);
-}
 
 .door-btn-prev,
 .door-btn-next {
@@ -298,10 +273,8 @@ button, link {
   .door-img {
     max-width: 274px;
   }
-  .door-btns {
-    width: 236px;
-  }
-  .door-btn {
+  .door .button-black {
+    min-width: 236px;
     font-size: 16px;
   }
 }
@@ -324,6 +297,7 @@ button, link {
   .door > .container {
     width: 1024px;
     max-width: 1279px;
+    padding: 0 15px;
     /* 47+236+29+662+50 = 1024 */
   }
 
@@ -337,12 +311,16 @@ button, link {
       rgba(0, 0, 0, 0.65)),
       url("../images/door/door-bg-tablet.jpg");
   }
+  .door-block-text {
+    margin-left: 263px;
+    /* 278 - 15 = 263 */
+  }
+
   .door-sub-title {
     font-size: 64px;
     line-height: calc(69 / 64);
     letter-spacing: 0.3em;
-    margin-left: 263px;
-    /* 278-15=263 */
+
     margin-bottom: 16px;
   }
 
@@ -350,8 +328,6 @@ button, link {
     font-size: 24px;
     line-height: calc(29 / 24);
 
-    margin-left: 263px;
-    /* 278-15=263 */
     margin-bottom: 8px;
   }
 
@@ -359,8 +335,6 @@ button, link {
     font-size: 16px;
     line-height: calc(20 / 16);
     
-    margin-left: 263px;
-    /* 278-15=263 */
     margin-right: 121px;
     /* 136-15=121 */
     margin-bottom: 40px;
@@ -380,7 +354,7 @@ button, link {
   }
 
   .door-slider {
-    width: 662px;
+    /* width: 662px; */
     margin: 0;
   }
   .door-slider-list-mobile { display: none; }
@@ -401,6 +375,9 @@ button, link {
   .door-btns {
     margin-bottom: 60px; 
     /* 32 + 24 + 2*2 = 60 */
+  }
+  .door-btn {
+    width: 236px;
   }
 }
 
