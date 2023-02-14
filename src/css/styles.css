@@ -288,7 +288,6 @@ button, link {
     row-gap: 32px;
   }
   .door-slider {
-    /* margin-bottom: 32px; */
     margin-left: 25px;
   }
   .door-slider-list {
@@ -310,8 +309,6 @@ button, link {
     width: 32px;
   }
 }
-
-
 
 @media screen and (min-width: 1024px) {
   .container {
@@ -400,8 +397,8 @@ button, link {
     max-width: 270px;
     height: 270px;
   }
-  .door-btns {
-    margin-bottom: 58px; 
+  .door-buttons {
+    margin-bottom: 60px; 
     /* 32 + 24 + 2*2 = 60 */
   }
 
@@ -424,6 +421,7 @@ button, link {
   .door > .container {
     width: 1280px;
     max-width: 1600px;
+    padding: 0 15px;
     /* 47+236+29+662+50 = 1024 */
   }
 
@@ -436,17 +434,11 @@ button, link {
       rgba(0, 0, 0, 0.65)),
       url("../images/door/door-bg-desktop.jpg");
   }
-  .door-sub-title {
-    margin-left: 323px;
-    /* 338-15=323 */
-  }
-  .door-title {
-    margin-left: 323px;
-    /* 338-15=323 */
+  .door-block-text {
+    margin-left: 263px;
+    /* 278 - 15 = 263 */
   }
   .door-text {
-    margin-left: 323px;
-    /* 338-15=323 */
     margin-right: 317px;
     /* 332-15=317 */
   }
@@ -457,19 +449,14 @@ button, link {
     margin-right: 37px; 
     /* 52-15=37 */
   }
-  .door-slider {
-    width: 875px;
-  }
 
-  .door-slider-list-desktop {
-    display: flex;
-    flex-wrap: nowrap;
+  .door-slider-list {
     column-gap: 87px;
-    overflow: hidden;
   
     margin-bottom: 24px;
   }
-
-  .door-slider-list-tablet { display: none };
+  .door .button-black {
+    background-color: transparent;
+  }
 
 }
