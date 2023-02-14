@@ -341,6 +341,18 @@ button, link {
       rgba(0, 0, 0, 0.65)),
       url("../images/door/door-bg-tablet.jpg");
   }
+  @media (min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi), 
+  (min-resolution: 2dppx) {
+    .door {
+      background-image: linear-gradient(
+        to right, 
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+        url("../images/door/door-bg-tablet@2x.jpg");
+    }
+  }
+
   .door-block-text {
     margin-left: 263px;
     /* 278 - 15 = 263 */
@@ -435,6 +447,19 @@ button, link {
       rgba(0, 0, 0, 0.65)),
       url("../images/door/door-bg-desktop.jpg");
   }
+  
+  @media (min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi), 
+  (min-resolution: 2dppx) {
+    .door {
+      background-image: linear-gradient(
+        to right, 
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+        url("../images/door/door-bg-desktop@2x.jpg");
+    }
+  }
+
   .door-block-text {
     margin-left: 263px;
     /* 278 - 15 = 263 */
