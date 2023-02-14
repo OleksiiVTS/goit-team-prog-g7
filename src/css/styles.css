@@ -131,64 +131,7 @@ button, link {
   background-color: var(--color-text-button);
   color: #000000;
 }
-/*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*/
-
-
-@media screen and (min-width: 1024px) {
-  .container {
-    width: 1024px;
-    padding: 0 47px;
-  }
-  .button-big-pointed {
-    min-width: 592px;
-    font-size: 24px;;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding: 0 85px;
-  }
-  .button-big {
-    min-width: 434px;
-    height: 65px;
-    font-size: 24px;;
-  }
-}
 /* ===========================================<HEADER>============================================ */
-
-
-/* =====================<DISCARD TO MAX WIDTH>===================== */
-
-/* from 0 to 1025 =====> for mobile */
-@media screen and (max-width: 1023px) {
-  .header-mob-number {
-    display: none;
-    
-  }
-
-  .header-social-link{
-    display: none;
-  }
-  
-}
-    
-/* from 1024 to 1280 =====> for tablet */
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-
-  .header-social-link{
-    display: none;
-  }
-    
-}
-
-/* from 1280 to infinity =====> for laptop */
-@media screen and (min-width: 1280px) {
-}
-
-/* =====================</DISCARD TO MAX WIDTH>==================== */
-
 .header {
 padding-top: 16px;
 padding-bottom: 9px;
@@ -251,6 +194,10 @@ padding-bottom: 9px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
+.header-social-link{
+  display: none;
+}
+
 .mobile-phone-icon-first:hover,
 .mobile-phone-icon-first:focus,
 .mobile-phone-icon-second:hover,
@@ -284,10 +231,26 @@ padding-bottom: 9px;
 }
 
 
+/* =====================<DISCARD TO MAX WIDTH>===================== */
+
+/* from 0 to 1025 =====> for mobile */
+@media screen and (max-width: 1023px) {
+  .header-mob-number {
+    display: none;
+  }  
+}
+/* =====================</DISCARD TO MAX WIDTH>==================== */
 /******************==============<TABLET>===============******************* */
- 
 @media screen and (min-width: 1024px) {
- 
+  .container {
+    width: 1024px;
+    padding: 0 47px;
+  }
+  .button-big-pointed {
+    min-width: 592px;
+    font-size: 24px;;
+  }
+
   .header>.container {
     display: flex;
     max-width: 1279px;
@@ -371,16 +334,18 @@ padding-bottom: 9px;
 
 }
 /******************==============</TABLET>===============******************* */
-
-
-
-
-
-
 /******************==============<LAP-TOP>===============******************* */
-
 @media screen and (min-width: 1280px) {
-  
+  .container {
+    width: 1280px;
+    padding: 0 85px;
+  }
+  .button-big {
+    min-width: 434px;
+    height: 65px;
+    font-size: 24px;;
+  }
+
    .header {
     display: flex;
     min-width: 1280px;
