@@ -152,6 +152,9 @@
   
   .swiper {
     position: relative;
+    width: 414px;
+    height: 740px;
+    margin: 0 auto;
   }
   
   @media screen and (min-width: 414px) {
@@ -208,6 +211,10 @@
   }
   
   @media screen and (min-width: 1024px) {
+    .room-2lx-hero > .container {
+      width: 1024px;
+    }
+
     .room-2lx-hero-container {
       top: 0;
       right: 47px;
@@ -272,10 +279,19 @@
       right: 0px;
       transform: initial;
     }
+
+    .swiper {
+      width: 1024px;
+      height: 719px;
+    }
   }
   
   
   @media screen and (min-width: 1280px) {
+    .room-2lx-hero > .container {
+      width: 1280px;
+    }
+
     .room-2lx-hero-container {
       top: 0;
       right: 85px;
@@ -289,6 +305,11 @@
   
     .room-2lx-hero-text{
       margin-bottom: 0;
+    }
+
+    .swiper {
+      width: 1280px;
+      height: 720px;
     }
   }
   
