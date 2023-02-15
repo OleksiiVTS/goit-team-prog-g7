@@ -505,7 +505,7 @@ left: 45%; */
       .address{
         position: absolute;
         margin-bottom: 0;
-        top: 80%;
+        top: 76%;
       }
 
       .icon-map {
@@ -533,128 +533,128 @@ left: 45%; */
   }
 }
 
-/* ROOM */
 
+
+/* ROOM */
 .room-hero_title {
   text-align: start;
-font-family: 'Times New Roman';
-text-transform: uppercase;
-font-weight: 700;
-font-size: 28px;
-line-height: 1.16;
-letter-spacing: 0.05em;
-color: var(--color-button-hover);
-margin-top: 372px;
-margin-bottom: 20px;
-}
-
-.lux {
-  font-size: 18px;
-  
-}
-
-.room-hero_text {
-  text-align: start;
-  max-width: 325px;
+  font-family: 'Times New Roman';
+  text-transform: uppercase;
   font-weight: 700;
-font-size: 12px;
-line-height: 1.25;
-letter-spacing: 0.02em;
-color: var(--color-button-hover);
-margin-bottom: 24px;
-}
-
-
-
-
-.room-container {
-  position: absolute;
-  z-index: 2;
-  padding-top: 64px;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 40px;
-}
-
-.room-address {
- display: flex;
- justify-content: end;
-}
-
-@media screen and (min-width: 1024px) {
-  /* .btn-room {
-    display: flex;
-   justify-content: end;
-   padding-bottom: 62px;
-  } */
-
-
-
-  .room-hero_title {
-    margin-bottom: 24px;
-    margin-top: 368px;
+  font-size: 28px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--color-button-hover);
+  /* margin-top: 372px; */
+  margin-bottom: 20px;
   }
   
-.room-hero_text {
-  margin-bottom: 0px;
-  font-size: 16px;
-  max-width: 400px;
+  .lux {
+     font-size: 18px;
+    }
+    
+    .room-hero_text {
+      text-align: start;
+      max-width: 325px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: var(--color-button-hover);
+      margin-bottom: 24px;
+      }
 
-}
-}
+      .room-container {
+        position: absolute;
+        z-index: 2;
+        padding-top: 64px;
+       width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        /* padding-bottom: 40px; */
+        }
+        
+        .room-address {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 372px;
+          }
 
-@media screen and (min-width: 1280px) {
-  .room-address {
-    display: none;
-  }
+          @media screen and (min-width: 1024px) {
+            /* .btn-room {
+                display: flex;
+             justify-content: end;
+             padding-bottom: 62px;
+            } */
+          
+          
+          /* .room-hero_title {
+                margin-bottom: 24px;
+                margin-top: 368px;
+              } */
+          
+            .room-hero_text {
+            margin-bottom: 0px;
+            font-size: 16px;
+            max-width: 400px;
+            
+            }
+          }
 
-  .room-hero_title {
-    margin: 0;
-  }
+          @media screen and (min-width: 1280px) {
+            .room-address {
+             display: none;
+           }
+            
+           .room-hero_title {
+             margin: 0;
+            }
+            
+            .room-content {
+             display: flex;
+            /* flex-direction: column; */
+           }
+            
+            /* .room-hero {
+            padding-top: 377px;
+            padding-bottom: 48px;
+            margin-left: auto;
+            margin-right: auto;
+            } */
+            
+            .room-hero_title {
+             margin-bottom: 24px;
+            }
+            
+             /* .btn-room {
+                align-self: last baseline;
+                padding-bottom: 0px;
+                margin-bottom: 18px;
+                margin-left: auto;
+              } */
+            
+            }
+            
+            
+            /*swiper*/
+            
+            
+            .room-picture {
+           width: 100%;
+          
+            }
 
-  .room-content {
-    display: flex;
-    /* flex-direction: column; */
-  }
-
-  /* .room-hero {
-    padding-top: 377px;
-    padding-bottom: 48px;
-  } */
-
-  .room-hero_title {
-    margin-bottom: 24px;
-  }
-
-  /* .btn-room {
-    align-self: last baseline;
-    padding-bottom: 0px;
-    margin-bottom: 18px;
-    margin-left: auto;
-  } */
-
-}
-
-
-
-/*swiper*/
-
-
-.room-picture {
-  width: 100%;
-}
-
-.swiper {
-  position: relative;
-}
-
-
-
-
-
-
+           
+            .swiper {
+             position: relative;
+            }
+          
+        .boom-container {
+          padding: 0;
+        }
+          
+      
 
 
 
