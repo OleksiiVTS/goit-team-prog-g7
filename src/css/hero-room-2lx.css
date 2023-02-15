@@ -1,13 +1,18 @@
 /* ROOM - 2-lux */
 .room-2lx-hero {
     position: relative;
-    /* border: 1px solid tomato; */
+    border: 1px solid tomato;
   }
   
   .room-2lx-hero > .container {
     padding: 0;
   }
 
+  .swiper {
+    /* width: 414px;
+    height: 740px; */
+  }
+  
   .room-2lx-hero-container {
     position: absolute;
     top: calc(100vw * 63 / 414);
@@ -150,13 +155,7 @@
     font-size: calc(100vw * 16 / 414);
   }
   
-  .swiper {
-    position: relative;
-    width: 414px;
-    height: 740px;
-    margin: 0 auto;
-  }
-  
+
   @media screen and (min-width: 414px) {
     .room-2lx-hero-container {
       top: 63px;
@@ -213,6 +212,7 @@
   @media screen and (min-width: 1024px) {
     .room-2lx-hero > .container {
       width: 1024px;
+      max-width: 1024px;
     }
 
     .room-2lx-hero-container {
@@ -280,16 +280,17 @@
       transform: initial;
     }
 
-    .swiper {
+    /* .swiper {
       width: 1024px;
       height: 719px;
-    }
+    } */
   }
   
   
   @media screen and (min-width: 1280px) {
     .room-2lx-hero > .container {
       width: 1280px;
+      max-width: 1280px;
     }
 
     .room-2lx-hero-container {
@@ -307,9 +308,9 @@
       margin-bottom: 0;
     }
 
-    .swiper {
+    /* .swiper {
       width: 1280px;
       height: 720px;
-    }
+    } */
   }
   
