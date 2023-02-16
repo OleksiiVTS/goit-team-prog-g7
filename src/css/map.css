@@ -17,7 +17,9 @@
 
     background-color: var(--back-color-criam);
 }
-
+.map-card {
+    outline: 1px solid blue;
+}
 .map-contacts-card {
     margin-bottom: calc(100vw * 32 / 414);
 }
@@ -228,8 +230,9 @@
         padding-bottom: 40px;
     }
 
-    .map-contacts>.container {
+    .map-contacts > .container {
         max-width: 1279px;
+        outline: 1px solid red; 
     }
 
     .map-card {
@@ -310,7 +313,7 @@
     }
 
     .map-contacts-card {
-        margin-left: 70px;
+        margin-left: 0;
     }
 
     .map-card {
@@ -337,6 +340,6 @@
         width: 634px;
         height: 412px;
         margin-top: 8px;
-        margin-right: 70px;
+        margin-right: 0;
     }
 }
