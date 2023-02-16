@@ -61,18 +61,13 @@
     position: absolute;
     top: 0;
     right: 0;
+    bottom: initial;
+    left:initial;
   }
   
   .room-2lx-hero-address {
     display: flex;
     justify-content: end;
-  }
-  
-  .room-2lx-hero-address-bottom {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
   }
   
   .room-2lx-hero-address > .room-2lx-hero-link-map {
@@ -227,11 +222,10 @@
     }
 
     .room-2lx-hero-address-top {
-      display: none;
-    }
-
-    .room-2lx-hero-address-bottom {
-      display: block;
+      top: initial;
+      right: initial;
+      bottom: 0;
+      left: 0;
     }
 
     .room-2lx-hero-address > .room-2lx-hero-link-map {
@@ -299,8 +293,8 @@
       bottom: 48px;
       left: 85px;
     }
-  
-    .room-2lx-hero-address-bottom {
+
+    .room-2lx-hero-address-top {
       display: none;
     }
   
