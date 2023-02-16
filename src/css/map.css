@@ -10,3 +10,264 @@
 .button-big-pointed 
 
 *//*--buttons--*//*--buttons--*/
+
+.map-contacts {
+    padding-top: 36px;
+    padding-bottom: 32px;
+
+    background-color: var(--back-color-criam);
+}
+
+.map-contacts-card {
+    margin-bottom: 32px;
+}
+
+.map-sub-title {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+
+    letter-spacing: 0.3em;
+
+    color: #494848;
+    margin-bottom: 12px;
+}
+
+.map-text {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+
+    color: var(--color-text);
+    margin-bottom: 16px;
+}
+
+.map-field-restaurant,
+.map-field-hotel,
+.map-field-address {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.map-field-restaurant,
+.map-field-hotel {
+    row-gap: 8px;
+    margin-bottom: 16px;
+}
+
+.map-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    fill: var(--color-text-link);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.map-label-text {
+    width: 124px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+
+    color: var(--color-text-link);
+}
+
+.map-tels-hotel,
+.map-tel-restaurant,
+.map-block-address {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.map-tel-restaurant {
+    max-width: 144px;
+}
+
+.map-tels-hotel,
+.map-tel-restaurant {
+    padding-right: 8px;
+}
+
+.map-tels-hotel,
+.map-block-address,
+.map-tel-restaurant {
+    width: calc(100% - 124px);
+    min-width: 144px;
+
+    outline: 0.5px solid var(--color-text-button);
+    border-radius: 2px;
+    background-color: var(--color-button-hover);
+}
+
+.map-list-tels-hotel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.map-link-phone {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.02em;
+
+    color: #494848;
+}
+
+.map-link-phone:hover,
+.map-link-phone:focus {
+    color: var(--color-text-button);
+}
+
+
+.map-address-text {
+    height: 76px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.01em;
+    overflow: hidden;
+
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-right: 33px;
+}
+
+.map-google-map {
+    max-width: 384px;
+    height: 220px;
+}
+
+@media screen and (min-width: 1024px) {
+    /* ======== Map + Contacts ========= */
+    .map-contacts {
+        padding-top: 56px;
+        padding-bottom: 40px;
+    }
+
+    .map-contacts>.container {
+        max-width: 1279px;
+    }
+
+    .map-card {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .map-contacts-card {
+        margin-left: 32px;
+        margin-bottom: 0;
+    }
+
+    .map-sub-title {
+        font-size: 64px;
+        line-height: calc(69 / 64);
+
+        margin-bottom: 8px;
+    }
+
+    .map-text {
+        margin-bottom: 52px;
+    }
+
+    .map-field-restaurant,
+    .map-field-hotel,
+    .map-field-address {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .map-field-restaurant {
+        margin-bottom: 24px;
+    }
+
+    .map-field-hotel {
+        width: none;
+        min-width: 264px;
+        margin-bottom: 48px;
+    }
+
+    .map-block-address {
+        width: 285px;
+        min-width: 285px;
+        margin-bottom: 4px;
+    }
+
+    .map-address-text {
+        height: 56px;
+
+        padding-top: 9px;
+        padding-right: 8px;
+        padding-bottom: 7px;
+        padding-left: 4px;
+    }
+
+    .map-google-map {
+        max-width: 535px;
+        width: 535px;
+        height: 412px;
+        margin-top: 13px;
+        margin-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* ======== Map + Contacts ========= */
+    .map-contacts {
+        padding-bottom: 73px;
+    }
+
+    .map-contacts>.container {
+        max-width: 1600px;
+    }
+
+    .map-contacts-card {
+        margin-left: 70px;
+    }
+
+    .map-card {
+        gap: 108px;
+    }
+
+    .map-sub-title {
+        margin-bottom: 16px;
+    }
+
+    .map-text {
+        font-size: 20px;
+        line-height: calc(24 / 20);
+
+        margin-bottom: 40px;
+    }
+
+    .map-block-address {
+        margin-bottom: 0;
+    }
+
+    .map-google-map {
+        max-width: 634px;
+        width: 634px;
+        height: 412px;
+        margin-top: 8px;
+        margin-right: 70px;
+    }
+}
