@@ -94,7 +94,7 @@
 
   .door-img {
       max-width: calc(100vw * 274 / 414);
-      height: auto;
+      height: calc(100vw * 270 / 414);
   }
 
   .door-buttons {
