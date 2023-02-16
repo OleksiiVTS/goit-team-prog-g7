@@ -8,12 +8,82 @@
                 consequat duis enim velit mollit.</p>
         </div>
 
-        <!-- Slider images -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="./images/door/door-slider-01-desktop.jpg 1x, ./images/door/door-slider-01-desktop@2x.jpg 2x"
+                media="(min-width: 1280px)" />
+              <source srcset="./images/door/door-slider-01-tablet.jpg 1x, ./images/door/door-slider-01-tablet@2x.jpg 2x"
+                media="(min-width: 1024px)" />
+              <source srcset="./images/door/door-slider-01-mobile.jpg 1x, ./images/door/door-slider-01-mobile@2x.jpg 2x"
+                media="(max-width: 1023px)" />
+        
+              <img
+                class="door-img" 
+                src="./images/door/door-slider-01-mobile.jpg"
+                alt="Slider image-01" />
+            </picture>
+          </div>
+        
+        
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="./images/door/door-slider-02-desktop.jpg 1x, ./images/door/door-slider-02-desktop@2x.jpg 2x"
+                media="(min-width: 1280px)" />
+              <source srcset="./images/door/door-slider-02-tablet.jpg 1x, ./images/door/door-slider-02-tablet@2x.jpg 2x"
+                media="(min-width: 1024px)" />
+              <source srcset="./images/door/door-slider-01-mobile.jpg 1x, ./images/door/door-slider-01-mobile@2x.jpg 2x"
+                media="(max-width: 1023px)" />
+        
+              <img 
+                class="door-img" 
+                src="./images/door/door-slider-01-mobile.jpg" 
+                alt="Slider image-02">
+            </picture>
+          </div>
+        
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/door/door-slider-03-desktop.jpg 1x, ./images/door/door-slider-03-desktop@2x.jpg 2x"
+                media="(min-width: 1280px)" />
+              <source srcset="./images/door/door-slider-03-tablet.jpg 1x, ./images/door/door-slider-03-tablet@2x.jpg 2x"
+                media="(min-width: 1024px)" />
+              <source srcset="./images/door/door-slider-01-mobile.jpg 1x, ./images/door/door-slider-01-mobile@2x.jpg 2x"
+                media="(max-width: 1023px)" />
+        
+              <img 
+                class="door-img" 
+                src="./images/door/door-slider-01-mobile.jpg" 
+                alt="Slider image-03">
+            </picture>
+          </div>
+        
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+        </div>
+
+
+
+        <!-- Slider images
         <div class="door-nav-slider">
             <div class="door-slider">
                 <ul class="door-slider-list">
 
-                    <!-- Image 1 -->
+                    Image 1
                     <li>
                         <picture>
                             <source media="(min-width: 1280px)"
@@ -23,12 +93,14 @@
                             <source media="(max-width: 1023px)"
                                 srcset="./images/door/door-slider-01-mobile.jpg 1x, ./images/door/door-slider-01-mobile@2x.jpg 2x">
 
-                            <img class="door-img" src="./images/door/door-slider-01-mobile.jpg"
-                                alt="Slider image-01 for mobile">
+                            <img 
+                              class="door-img" 
+                              src="./images/door/door-slider-01-mobile.jpg"
+                              alt="Slider image-01 for mobile">
                         </picture>
                     </li>
 
-                    <!-- Image 2 -->
+                    Image 2
                     <li>
                         <picture>
                             <source media="(min-width: 1280px)"
@@ -43,7 +115,7 @@
                         </picture>
                     </li>
 
-                    <!-- Image 3 -->
+                    Image 3
                     <li>
                         <picture>
                             <source media="(min-width: 1280px)"
@@ -57,7 +129,7 @@
                         </picture>
                     </li>
 
-                    <!-- Image 4 -->
+                    Image 4
                     <li>
                         <picture>
                             <source media="(min-width: 1280px)"
@@ -70,7 +142,7 @@
                                 alt="Slider image-03 for mobile">
                         </picture>
                     </li>
-                </ul>
+                </ul> -->
 
                 <!-- Navigate slider -->
                 <button class="door-btn-prev" type="button">
