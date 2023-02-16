@@ -5,8 +5,8 @@
 
       margin-left: auto;
       margin-right: auto;
-      padding-top: 24px;
-      padding-bottom: 40px;
+      padding-top: calc(100vw * 24 / 414);
+      padding-bottom: calc(100vw * 40 / 414);
 
       background-color: black;
       background-image: linear-gradient(to right,
@@ -81,14 +81,13 @@
       max-width: 100%;
 
       margin-left: calc(100vw * 25 / 414);
-      margin-right: -15px;
+      margin-right: calc(100vw * (-15) / 414);
       overflow: hidden;
   }
 
   .door-slider-list {
       display: flex;
-      column-gap: 20px;
-      transition: translate ease 2s;
+      column-gap: calc(100vw * 20 / 414);
 
       margin-bottom: calc(100vw * 16 / 414);
   }
@@ -102,7 +101,7 @@
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      row-gap: 16px;
+      row-gap: calc(100vw * 16 / 414);;
   }
 
   .door .button-black {
@@ -143,6 +142,10 @@
   }
 
   @media screen and (min-width: 414px) {
+			.door {	
+      	padding-top: 24px;
+      	padding-bottom: 40px;
+			}
       .door-block-text {
           margin-left: 125px;
           /* 140-15=125 */
@@ -170,9 +173,11 @@
 
       .door-slider {
           margin-left: 25px;
+					margin-right: -15px;
       }
 
       .door-slider-list {
+          column-gap: 20px;
           margin-bottom: 16px;
       }
 
@@ -180,7 +185,9 @@
           max-width: 274px;
           height: 270px;
       }
-
+  		.door-buttons {
+				  row-gap: 16px;
+			}
       .door .button-black {
           min-width: 236px;
           font-size: 16px;
