@@ -10,6 +10,13 @@
 .button-big-pointed 
 
 *//*--buttons--*//*--buttons--*/
+
+.container-roomd {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
 .roomd {
     background-color: #FFFDEE;
     padding-top: 48px;
@@ -63,3 +70,4 @@
     letter-spacing: 0.02em;
     color: #C79002;
 }
+
