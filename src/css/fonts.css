@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    src: local('Film P3'), local('Film-P3'),
+         url("./fonts/FilmP3Bold.woff") format('woff');
+  }
