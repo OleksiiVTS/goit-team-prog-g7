@@ -78,7 +78,7 @@
 
 .door-slider {
 	max-width: 100%;
-
+	width: 100%;
 	margin-left: calc(100vw * 25 / 414);
 	margin-right: calc(100vw * (-15) / 414);
 	overflow: hidden;
