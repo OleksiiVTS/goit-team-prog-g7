@@ -281,6 +281,10 @@ color: var(--color-button-hover);
 margin-bottom: 40px;
 }
 
+.hero-text-desc {
+margin-bottom: 178px;
+}
+
 .hero-sub-title {
 font-family: 'Times New Roman';
 text-transform: uppercase;
@@ -372,6 +376,11 @@ line-height: 1.08;
     margin-bottom: 56px;
     }
 
+
+    .hero-text-desc {
+      margin-bottom: 226px;
+      }
+
     .hero-sub-title {
     
       font-size: 36px;
@@ -398,7 +407,7 @@ line-height: 1.08;
 
       .address{
         position: absolute;
-        margin-bottom: 0;
+        margin-bottom: 64px;
         top: 81.5%;
       }
 
@@ -423,6 +432,10 @@ line-height: 1.08;
     padding: 14px 35px;
   }
 
+  .btn-reserve-table {
+    margin-right: 60px;
+  }
+
   .hero-title {
     margin-bottom: 32px;
   }
@@ -434,4 +447,10 @@ line-height: 1.08;
   .address {
     top: 81.5%;
   }
+
+ .hero-text-desc {
+  margin-bottom: 249px;
+ }
+
+
 }
