@@ -267,9 +267,12 @@
     }
 
     .map-field-hotel {
-        width: none;
+        width: initial;
         min-width: 264px;
         margin-bottom: 48px;
+    }
+    .map-tels-hotel {
+        width: 264px;
     }
 
     .map-block-address {
