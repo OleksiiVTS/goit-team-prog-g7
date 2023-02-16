@@ -1,6 +1,8 @@
 
 /*-Стандартні скидання стилів, visually-hidden, параменти section і container-*/
 @import url('./reset.css');
+/* Підключеня фрифтів */
+@import url('./fonts.css');
 /* все що стосується кнопок, назви кнопок скопіевані вам у кожен css */
 @import url('./buttons.css');
 
