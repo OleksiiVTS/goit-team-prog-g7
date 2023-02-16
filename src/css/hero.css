@@ -10,3 +10,428 @@
 .button-big-pointed 
 
 *//*--buttons--*//*--buttons--*/
+
+
+.hero {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+  padding-bottom: 102px;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.65);
+background-image: linear-gradient(
+  rgba(0, 0, 0, 0.65),
+  rgba(0, 0, 0, 0.65)
+),
+url('../images/homepage-hero/home-hero-mob-1x.jpg');
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+screen and (min-resolution: 192dpi) and (max-width: 1023px),
+screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .hero {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/homepage-hero/home-hero-mob-2x.jpg');
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .hero {
+    padding-bottom: 64px;
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/homepage-hero/home-hero-tab-1x.jpg');
+  }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+screen and (min-resolution: 192dpi) and (min-width: 1024px),
+screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hero {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/homepage-hero/home-hero-tab-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .hero {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/homepage-hero/home-hero-desc-1x.jpg');
+  }
+
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hero {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/homepage-hero/home-hero-desc-2x.jpg');
+  }
+}
+
+/* готель */
+
+.hero-hotel {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  ),
+  url('../images/hotel-hero/hero-hotel-mob-1x.jpg');;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+screen and (min-resolution: 192dpi) and (max-width: 1023px),
+screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/hotel-hero/hero-hotel-mob-2x.jpg');
+
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/hotel-hero/hero-hotel-tab-1x.jpg');
+  }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+screen and (min-resolution: 192dpi) and (min-width: 1024px),
+screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/hotel-hero/hero-hotel-tab-2x.jpg');
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/hotel-hero/hero-hotel-desc-1x.jpg');
+  }
+
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hero-hotel {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/hotel-hero/hero-hotel-desc-2x.jpg');
+  }
+}
+
+/* ресторан */
+
+.hero-restaurant {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  ),
+  url('../images/restaurant-hero/hero-rest-mob-1x.jpg');;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+screen and (min-resolution: 192dpi) and (max-width: 1023px),
+screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/restaurant-hero/hero-rest-mob-2x.jpg');
+
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/restaurant-hero/hero-rest-tab-1x.jpg');
+  }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+screen and (min-resolution: 192dpi) and (min-width: 1024px),
+screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/restaurant-hero/hero-rest-tab-2x.jpg');
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/restaurant-hero/hero-rest-desc-1x.jpg');
+  }
+
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hero-restaurant {
+
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../images/restaurant-hero/hero-rest-desc-2x.jpg');
+  }
+}
+
+
+
+.hero-title {
+font-family: Film P3;
+font-size: 96px; 
+font-weight: 700;
+line-height: 1.07;
+letter-spacing: 0.3em;
+color: var(--color-button-hover);
+margin-bottom: 24px;
+}
+
+.spacing {
+  letter-spacing: 0em;
+}
+
+.hero-text {
+font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: var(--color-button-hover);
+margin-bottom: 40px;
+}
+
+.hero-sub-title {
+font-family: 'Times New Roman';
+text-transform: uppercase;
+font-weight: 700;
+font-size: 32px;
+line-height: 1.16;
+letter-spacing: 0.05em;
+color: var(--color-button-hover);
+margin-bottom: 113px;
+}
+
+.link-map {
+  display: flex;
+  text-align: left;
+  width: 210px;
+  height: 47px;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.01em;
+color: #E5E5E5;
+text-decoration: none;
+padding-top: 8px;
+padding-right: 3px;
+padding-left: 34px;
+padding-bottom: 8px;
+border: 1px solid rgba(243, 198, 83, 0.7);
+border-radius: 2px;
+/* top: 10%;
+left: 45%; */
+}
+
+.address {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 70px;
+}
+
+.btn-reserve-table {
+  margin-bottom: 24px;
+}
+
+.icon-map {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 13px;
+  left: 6px;
+}
+
+@media screen and (max-width: 1023px) {
+  .btn-reserve-table,
+  .btn-reserve-room,
+   .btn-price,
+   .btn-rest-menu {
+    padding: 14px 24px;;
+   }
+
+   .container-hero {
+    max-width: 414px;
+   }
+  
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+  .container-hero {
+    max-width: 1024px;
+  }
+
+  .hero-title {
+    font-size: 128px; 
+line-height: 1.08;
+    margin-bottom: 16px;
+  }
+
+  .hero {
+    padding-top: 88px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 56px;
+    }
+
+    .hero-sub-title {
+    
+      font-size: 36px;
+      line-height: 1.14;
+      margin-bottom: 145px;
+      }
+
+      .hero-btn {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .btn-reserve-table {
+        margin-bottom: 0px;
+        margin-right: 40px;
+      }
+
+      .link-map {
+        width: 285px;
+        height: 56px;
+        font-size: 16px;
+      }
+
+
+      .address{
+        position: absolute;
+        margin-bottom: 0;
+        top: 81.5%;
+      }
+
+      .icon-map {
+        width: 24px;
+        height: 24px;
+      }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+  .container-hero {
+    max-width: 1280px;
+  }
+
+  .hero {
+    padding-top: 64px;
+  }
+
+  .button-transparent {
+    padding: 14px 35px;
+  }
+
+  .hero-title {
+    margin-bottom: 32px;
+  }
+
+  .hero-text {
+    margin-bottom: 64px;
+    }
+
+  .address {
+    top: 81.5%;
+  }
+}
