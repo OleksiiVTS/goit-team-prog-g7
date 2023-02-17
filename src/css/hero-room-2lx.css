@@ -1,5 +1,5 @@
 /* ROOM - 2-lux */
-.room-2lx-hero {
+  .room-2lx-hero {
     position: relative;
     border: 1px solid tomato;
   }
@@ -8,10 +8,17 @@
     padding: 0;
   }
 
-  .swiper {
-    /* width: 414px;
-    height: 740px; */
-  }
+  /* .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  } */
+
+  /* .swiper {
+    width: 414px;
+    height: 740px;
+  } */
   
   .room-2lx-hero-container {
     position: absolute;
@@ -135,6 +142,33 @@
     text-shadow: #000 1px 1px 5px;
   }
   
+  .room-2lx-hero-social-link {
+    position: absolute;
+    bottom: calc(100vw * (-26) / 414);
+    left: 0;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: calc(100vw * 8 / 414);
+    cursor: pointer;
+  }
+
+  .room-2lx-hero-social-icon {
+    width: calc(100vw * 24 / 414);
+    height: calc(100vw * 24 / 414);
+    fill: rgba(243, 198, 83, 0.7);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .room-2lx-hero-social-icon:hover,
+  .room-2lx-hero-social-icon:focus {
+    fill: white;
+  }
+
+
   .room-2lx-hero-btn {
     position: absolute;
     bottom: 0;
@@ -195,6 +229,16 @@
       width: 325px;
       font-size: 12px;
       margin-bottom: 30px;
+    }
+
+    .room-2lx-hero-social-link {
+      bottom: -26px;
+      column-gap: 8px;
+    }
+
+    .room-2lx-hero-social-icon {
+      width: 24px;
+      height: 24px;
     }
 
     .room-2lx-hero-btn > .button-transparent {
@@ -265,13 +309,21 @@
       font-size: 36px;
       line-height: calc(41 / 36);
     }
-  
+
     .room-2lx-hero-btn {
       position: absolute;
       bottom: 40px;
       left: initial;
       right: 0px;
       transform: initial;
+    }
+
+    .room-2lx-hero-social-link {
+      bottom: 14px;
+      left: 325px;
+      /* 40+285=325 */
+      flex-direction: row;
+      column-gap: 20px;
     }
 
     /* .swiper {
@@ -300,6 +352,10 @@
   
     .room-2lx-hero-text{
       margin-bottom: 0;
+    }
+
+    .room-2lx-hero-social-link {
+      display: none;
     }
 
     /* .swiper {
