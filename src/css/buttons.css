@@ -74,6 +74,7 @@
   border-radius: 25px; 
 }
 .button-up.button-up-show {
+  transform: rotateY(90deg);
   opacity: 1;
   visibility: visible;
 }
