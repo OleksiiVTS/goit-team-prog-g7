@@ -61,6 +61,7 @@
               opacity .5s, 
               visibility .5s;
   animation: animatebut 3000ms infinite 1000ms;
+  
   opacity: 0;
   visibility: hidden;
 
@@ -74,7 +75,7 @@
   border-radius: 25px; 
 }
 .button-up.button-up-show {
-  transform: rotateY(90deg);
+  
   opacity: 1;
   visibility: visible;
 }
