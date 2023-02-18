@@ -17,9 +17,9 @@
 
     background-color: var(--back-color-criam);
 }
-.map-card {
-    /* outline: 1px solid blue; */
-}
+/* .map-card {
+    outline: 1px solid blue;
+} */
 .map-contacts-card {
     margin-bottom: calc(100vw * 32 / 414);
 }
