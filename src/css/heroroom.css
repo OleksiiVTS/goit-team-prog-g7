@@ -54,7 +54,7 @@
     position: absolute;
     max-width: 414px;
     /* height: 100%; */
-    background-image: var(--background-gradient), url(./images/bedroom@1mob.jpg);
+    background-image: var(--background-gradient), url(../images/bedroom@1mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -195,7 +195,7 @@
 
   @media screen and (min-width: 1024px) {
     .container-services {
-      background-image: var(--background-gradient), url(./images/bedroom@1tab.jpg);
+      background-image: var(--background-gradient), url(../images/bedroom@1tab.jpg);
       max-width: 1024px;
     }
   
@@ -267,7 +267,7 @@
   @media screen and (min-width: 1280px) {
     .container-services {
       max-width: 1280px;
-      background-image: var(--background-gradient), url(./images/bedroom@1pc.jpg);
+      background-image: var(--background-gradient), url(../images/bedroom@1pc.jpg);
       max-width: 1280px;
     }
   
