@@ -30,6 +30,10 @@
     /* z-index: 2; */
     outline: 1px solid red;
   }
+
+  .room-2lx-hero-social-item {
+    z-index: 2;
+  }
   
   .room-2lx-hero-link-map {
     display: flex;
