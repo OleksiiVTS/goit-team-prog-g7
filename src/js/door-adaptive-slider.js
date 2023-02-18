@@ -7,29 +7,46 @@ function doorSlider() {
 
     let count = 0;
     let width;
+    let arr = {};
 
     function init() {
-        console.log('resize');
+        // console.log('resize');
         let lenSprite = document.querySelector('.door-slider').offsetWidth;
         let totalWidth = 0;
-        let gaps = { 384: 20, 662: 34, 875: 87 };
+        let gaps = { 374: 20, 662: 34, 875: 87 };
+
+        // масив розміру картинок {0:270, 1:162, ....}
+        arr = {};
+
+        // 
+        let aImageSize = {162 : 34, 270 : 34, 274 : 20};
         let gap = 20;
+        gap = gaps[lenSprite] ? gaps[lenSprite] : gap; 
 
-        images.forEach(item => { 
-            totalWidth += item.clientWidth;
-            console.log(item.clientWidth);
-        })
-        console.log(gap);
-        gap = gap[lenSprite] ? gap[lenSprite] : 20; 
+        images.forEach((element, key) => {
 
-        width = totalWidth / images.length + gap;
-        sliderLine.style.width = totalWidth + gap * (images.length - 1) + 'px';
+            // зміна розміру картинки під слайдер 
+            for ( let item in aImageSize ) {
+                if ((element.clientWidth <= item) && (aImageSize.item == gap)) {
+                    element.width = item + 'px';
+                    element.heidht = sliderLine.offsetHeight + 'px';
+                }
+            }
 
+            arr[key] = element.width + gap; // element.clientWidth;
+            
+            totalWidth += arr[key];
+         })
+
+        width = arr[count];
+        sliderLine.style.width = totalWidth + 'px';
+        
         rollSlider();
     }
 
     window.addEventListener('resize', init);
     init();
+
 
     keyNext.addEventListener('click', () => {
         count++;
@@ -50,7 +67,15 @@ function doorSlider() {
     });
 
     function rollSlider() {
-        sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+        let currWidth = 0;
+
+        for (let item in arr) {
+            if (item >= count) break;
+            currWidth += arr[item];
+        }
+
+        sliderLine.style.transform = 'translate(-' + currWidth + 'px)';
+        // sliderLine.style.transform = 'translate(-' + count * width + 'px)';
     }
 }
 
