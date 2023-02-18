@@ -180,6 +180,7 @@
     left: 50%;
     right: initial;
     transform: translateX(-50%);
+    z-index: 2;
   }
   
   .room-2lx-hero-btn > .button-transparent {
@@ -321,6 +322,7 @@
       left: initial;
       right: 0px;
       transform: initial;
+      z-index: 2;
     }
 
     .room-2lx-hero-social-link {
