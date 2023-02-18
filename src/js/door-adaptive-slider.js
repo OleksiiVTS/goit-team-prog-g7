@@ -33,7 +33,7 @@ function doorSlider() {
                 }
             }
 
-            arr[key] = element.width + gap;
+            arr[key] = element.width + gap; // element.clientWidth;
             
             totalWidth += arr[key];
          })
@@ -47,7 +47,7 @@ function doorSlider() {
     window.addEventListener('resize', init);
     init();
 
-    
+
     keyNext.addEventListener('click', () => {
         count++;
         if ( count >= images.length) {
