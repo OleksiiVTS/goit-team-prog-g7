@@ -11,7 +11,7 @@
 
 *//*--buttons--*//*--buttons--*/
 
-.rooms-container {
+  .rooms-container {
     background-color: var(--back-color-criam);
     padding-top: 32px;
     padding-bottom: 32px;
@@ -135,14 +135,167 @@
   }
   @media screen and (min-width: 1024px) {
     .rooms-container {
-        width: 100%;
-        background-color: var(--back-color-criam);
+        position: relative;
+        max-width: 960px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 62px;
+        padding-bottom: 40px;
+        
     }
-    
-  }
+    .rooms-desktop-discription {
+       margin-bottom: 208px;
+    }
+    .rooms__text {
+        margin-bottom: 4px;
+        font-size: 32px;
+        line-height: calc(37 / 32);
+    }
+    .rooms__logo {
+        margin-bottom: 62px;
+        font-size: 64px;
+        line-height: calc(69 / 64);
+    }
+    .rooms__title {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: calc(34 / 30);
+    }
+    .rooms__description {
+        width: 439px;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+    }
+    .rooms__picture {
+        position: absolute;
+        top: 47px;
+        right: 65px;
+        transition: top var(--transition-default);
+    }
+    .rooms__picture:hover,
+    .rooms__picture:focus {
+        top: -32px;
+    }
+    .rooms__img {
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+    .rooms-foto {
+        max-width: 428px;
+        overflow: hidden;
+    }
+    .arrow {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .rooms-button-desktop { 
+        position: absolute;
+        right: 65px;
+        bottom: 127px;
+    }
+    .rooms-container-right {
+        position: relative;
+        max-width: 960px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+    .rooms-desktop-discription-right {
+        margin-left: 26px;
+        margin-bottom: 208px;
+    }
+    .rooms__title-right {
+        margin-right: 67px;
+    }
+    .rooms__picture-right {
+        position: absolute;
+        top: 47px;
+        left: 55px;
+        margin-bottom: 48px;
+        transition: top var(--transition-default);
+    }
+    .rooms__picture-right:hover,
+    .rooms__picture-right:focus {
+        top: -32px;
+    }
+    .rooms-button-desktop-right { 
+        position: absolute;
+        left: 65px;
+        bottom: 127px;
+    }
+
+}
   @media screen and (min-width: 1280px) {
+
     .rooms-container {
-        width: 1280px;
+        position: relative;
+        max-width: 1140px;
+        display: block;
+        flex-wrap: wrap;
+        padding-top: 72px;
     }
-    
-  }
+    .rooms-desktop-discription {
+        margin-bottom: 305px;
+     }
+     .rooms__logo {
+        margin-bottom: 72px;
+    }
+    .rooms__title {
+        margin-bottom: 24px;
+        font-size: 36px;
+        line-height: calc(41 / 36);
+    }
+    .rooms__description {
+        width: 400px;
+    }
+    .rooms__picture {
+        top: 100px;
+        right: 35px;
+    }
+    .rooms-foto {
+        max-width: 548px;
+        overflow: hidden;
+    }
+    .slide__img {
+        width: 254px;
+    }
+    .arrow {
+        margin-top: 40px;
+    }
+    .rooms-button-desktop {
+        right: 40px;
+        bottom: 185px;
+    }
+    .rooms-container-right {
+        position: relative;
+        max-width: 1140px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        padding-top: 72px;
+        table-layout: 40px;
+    }
+    .rooms-desktop-discription-right {
+        margin-bottom: 268px;
+    }
+    .rooms__title-right {
+        margin-right: 22px;
+    }
+    .description-right {
+        margin-right: 75px;
+    }
+    .rooms__picture-right {
+        position: absolute;
+        top: 100px;
+        left: 35px;
+        transition: top var(--transition-default);
+    }
+    .rooms__picture-right:hover,
+    .rooms__picture-right:focus {
+        top: -32px;
+    }
+    .rooms-button-desktop-right { 
+        position: absolute;
+        left: 40px;
+        bottom: 185px;
+    }
+}

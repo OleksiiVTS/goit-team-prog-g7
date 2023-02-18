@@ -25,7 +25,7 @@ const swiper = new Swiper('.rooms-foto', {
     },
     
     // // растояние между слайдами
-    spaceBetween: 16,
+    // spaceBetween: 16,
 
     keyboard: {
         enabled: true,
@@ -38,11 +38,11 @@ const swiper = new Swiper('.rooms-foto', {
     aytoHeight: true,
 
     // количество слайдов на странице
-    slidesPerView: 2,
+    // slidesPerView: 2,
     // Количество пролистиваемих слайдов
     slidesPerGroup: 1,
     // Слайд центр
-    centeredSlides: true, 
+    // centeredSlides: false, 
     // Свободний режим
     freeMode: true,
     // Автопрокрутка
@@ -50,9 +50,9 @@ const swiper = new Swiper('.rooms-foto', {
         // Пауза
         delay: 2000,
         // Закончить на последнем слайде
-        stopOnLastSlide: true,
+        stopOnLastSlide: false,
         // Отключить после ручного переключения
-        disableOnInteraction: false
+        disableOnInteraction: true
     },
     nested: true,
     speed: 1000,
@@ -60,12 +60,18 @@ const swiper = new Swiper('.rooms-foto', {
     breakpoints: {
         414: {
             slidesPerView: 2,
+            spaceBetween: 16,
+            centeredSlides: true,
         },
         1024: {
             slidesPerView: 2,
+            spaceBetween: 40,
+            centeredSlides: false,
         },
         1280: {
             slidesPerView: 2,
+            spaceBetween: 40,
+            centeredSlides: false,
         },
     }
 
