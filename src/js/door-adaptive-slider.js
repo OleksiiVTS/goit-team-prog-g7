@@ -7,24 +7,44 @@ function doorSlider() {
 
     let count = 0;
     let width;
+    let arr = {};
 
     function init() {
-        console.log('resize');
+        // console.log('resize');
         let lenSprite = document.querySelector('.door-slider').offsetWidth;
+        console.log('lenSprite:', lenSprite);
+
         let totalWidth = 0;
-        let gaps = { 384: 20, 662: 34, 875: 87 };
+        let gaps = { 374: 20, 662: 34, 875: 87 };
+        arr = {};
+        let aImageSize = {162 : 34, 270 : 34, 274 : 20};
         let gap = 20;
+        gap = gaps[lenSprite] ? gaps[lenSprite] : gap; 
+        
+        console.log('gap:', gap);
+        images.forEach((element, key) => {
+            // зміна розміру картинки під слайдер 
+            for ( let item in aImageSize ) {
+                if ((element.clientWidth <= item) && (aImageSize.item == gap)) {
+                    element.width = item + 'px';
+                    element.heidht = sliderLine.offsetHeight + 'px';
+                }
 
-        images.forEach(item => { 
-            totalWidth += item.clientWidth;
-            console.log(item.clientWidth);
-        })
-        console.log(gap);
-        gap = gap[lenSprite] ? gap[lenSprite] : 20; 
+                console.log('e.width:', element.width);
+            }
 
-        width = totalWidth / images.length + gap;
-        sliderLine.style.width = totalWidth + gap * (images.length - 1) + 'px';
+            arr[key] = element.width + gap;
+            
+            totalWidth += arr[key];
+         })
 
+        width = arr[count];
+        console.log('arr', arr);
+        console.log('width', width);
+
+        sliderLine.style.width = totalWidth + 'px';
+        console.log('sliderLine-0:', sliderLine.style.width);
+        
         rollSlider();
     }
 
@@ -50,7 +70,18 @@ function doorSlider() {
     });
 
     function rollSlider() {
-        sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+        console.log('sliderLine-1:', sliderLine.style.width, arr[count]);
+
+        let currWidth = 0;
+        for (let item in arr) {
+            if (item >= count) break;
+            currWidth += arr[item];
+        }
+        console.log('currWidth:',  currWidth);
+        sliderLine.style.transform = 'translate(-' + currWidth + 'px)';
+
+        console.log('sliderLine-2:', sliderLine.style.width, arr[count]);
+        // sliderLine.style.transform = 'translate(-' + count * width + 'px)';
     }
 }
 
