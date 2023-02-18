@@ -27,7 +27,7 @@
     bottom: calc(100vw * 40 / 414);
     left: calc(100vw * 15 / 414);
   
-    z-index: 2;
+    /* z-index: 2; */
     outline: 1px solid red;
   }
   
@@ -53,6 +53,7 @@
     border-radius: 2px;
   
     text-shadow: #000 1px 1px 5px;
+    z-index: 2;
   }
   
   .room-2lx-hero-icon-map {
@@ -364,3 +365,10 @@
     } */
   }
   
+
+  span.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    background-color: var(--color-text-button);
+   }

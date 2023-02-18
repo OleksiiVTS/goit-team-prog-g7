@@ -11,9 +11,3 @@
 
 *//*--buttons--*//*--buttons--*/
 
-span.swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
-  font-size: 14px;
-  background-color: var(--color-text-button);
- }
