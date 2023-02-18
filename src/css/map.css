@@ -18,7 +18,7 @@
     background-color: var(--back-color-criam);
 }
 .map-card {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 .map-contacts-card {
     margin-bottom: calc(100vw * 32 / 414);
@@ -232,7 +232,7 @@
 
     .map-contacts > .container {
         max-width: 1279px;
-        outline: 1px solid red; 
+        /* outline: 1px solid red;  */
     }
 
     .map-card {
@@ -308,7 +308,7 @@
         padding-bottom: 73px;
     }
 
-    .map-contacts>.container {
+    .map-contacts > .container {
         max-width: 1600px;
     }
 
