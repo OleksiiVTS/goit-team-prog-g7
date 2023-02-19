@@ -19,7 +19,13 @@ const swiper = new Swiper('.swiper-maks', {
 
   spaceBetween: 40,
 
-  loop: false,
+  loop: true,
+
+  autoplay: {
+    delay: 2000,
+
+    disableOnInteraction: false,
+  },
 
   breakpoints: {
     320: {
