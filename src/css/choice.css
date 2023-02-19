@@ -183,7 +183,7 @@
     .rooms-button-desktop { 
         position: absolute;
         right: 65px;
-        bottom: 127px;
+        bottom: 100px;
     }
     .rooms-container-right {
         position: relative;
@@ -193,7 +193,7 @@
         flex-direction: row-reverse;
     }
     .rooms-desktop-discription-right {
-      
+        margin-top: 62px;      
         margin-left: 26px;
         margin-bottom: 208px;
     }
@@ -202,7 +202,7 @@
     }
     .rooms__picture-right {
         position: absolute;
-        top: 47px;
+        top: 0px;
         left: 55px;
         margin-bottom: 48px;
         transition: top var(--transition-default);
@@ -214,7 +214,7 @@
     .rooms-button-desktop-right { 
         position: absolute;
         left: 65px;
-        bottom: 127px;
+        bottom: 100px;
     }
 
 }
@@ -225,7 +225,7 @@
         max-width: 1140px;
         display: block;
         flex-wrap: wrap;
-        padding-top: 72px;
+        margin-top: 72px;
     }
     .rooms-desktop-discription {
         margin-bottom: 305px;
