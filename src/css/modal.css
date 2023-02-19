@@ -209,6 +209,7 @@
     }
       
       .table-modal-input:focus,
+      .table-persons:focus,
       .room-category:focus {
           border: 1px solid var(--back-color-footer);
       }
