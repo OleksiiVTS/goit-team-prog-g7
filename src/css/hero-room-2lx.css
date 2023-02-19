@@ -147,6 +147,30 @@
     text-shadow: #000 1px 1px 5px;
   }
   
+  .room-arrow-prev,
+  .room-arrow-next {
+    position: absolute;
+    bottom: 268px;
+    left: 85px;
+
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 3;
+  }
+
+  .room-arrow-next {
+    left: initial;
+    right: 85px;
+  }
+
+  .room-arrow-icon {
+    fill: yellow;
+    z-index: 3;
+  }
+
+
   .room-2lx-hero-social-link {
     position: absolute;
     bottom: calc(100vw * (-26) / 414);
