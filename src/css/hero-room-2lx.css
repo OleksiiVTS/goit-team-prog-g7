@@ -153,12 +153,21 @@
     bottom: 268px;
     left: 85px;
 
+/* 268х85 338х47 350х15 */
+
     display: inline-flex;
+    align-items: center;
     width: 40px;
     height: 40px;
     background: rgba(0, 0, 0, 0.65);
-    z-index: 3;
+    z-index: 2;
   }
+
+  /* .room-arrow-prev.swiper-pagination-bullet,
+  .room-arrow-next.swiper-pagination-bullet {
+    border-radius: initial;
+
+  } */
 
   .room-arrow-next {
     left: initial;
@@ -166,8 +175,17 @@
   }
 
   .room-arrow-icon {
-    fill: yellow;
-    z-index: 3;
+    display: block;
+    width: 40px;
+    height: 40px;
+    fill: var(--color-text-button);
+  }
+
+  
+  .room-arrow-prev:hover,
+  .room-arrow-next:hover {
+    fill: var(--color-button-hover);
+    background-color: black;
   }
 
 
