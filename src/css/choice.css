@@ -70,6 +70,10 @@
     justify-content: start;
     margin-bottom: 32px;
   }
+  .rooms-foto {
+    max-width: 414px;
+    overflow: hidden;
+  }
 
   .rooms__img {
     background: #DADADA;
@@ -128,10 +132,6 @@
     align-items: center;
     gap: 16px;
     /* margin-bottom: 32px; */
-  } 
-  @media screen and (max-width: 414px) {
-
-    
   }
   @media screen and (min-width: 1024px) {
     .rooms-container {
@@ -181,7 +181,6 @@
     }
     .rooms-foto {
         max-width: 428px;
-        overflow: hidden;
     }
     .arrow {
         display: inline-block;
@@ -253,7 +252,6 @@
     }
     .rooms-foto {
         max-width: 548px;
-        overflow: hidden;
     }
     .slide__img {
         width: 254px;
