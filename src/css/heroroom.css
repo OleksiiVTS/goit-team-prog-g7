@@ -11,3 +11,305 @@
 
 *//*--buttons--*//*--buttons--*/
 
+  .container-services {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    max-width: 414px;
+  }
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 1024px;
+      padding: 0 47px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .container {
+      width: 1280px;
+      padding: 0 85px;
+    }
+  }
+  /* ---------Mobile-first-styles--------- */
+
+  @media screen and (max-width: 1024px) {
+    .service-img-tab {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .service-img-pc {
+      display: none;
+    }
+  }
+  .container-services {
+    position: absolute;
+    max-width: 414px;
+    /* height: 100%; */
+    background-image: var(--background-gradient), url(../images/bedroom@1mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .label {
+    position: relative;
+  
+    font-family: "Film P3";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    color: var(--color-button-hover);
+    margin-top: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .description {
+    /* margin-right: 125px; */
+    margin-left: 17px;
+  }
+  .hotel {
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 28%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--color-button-hover);
+  }
+  .description-text {
+    text-align: left;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #bababa;
+    max-width: 243px;
+  }
+  .service-img {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    margin-right: 25px;
+    margin-left: -15px;
+    gap: 20px;
+  }
+  
+  .hotel-img:first-child {
+    margin-right: 0;
+  }
+  
+  .button-big-pointed {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    min-width: 236px;
+    height: 48px;
+    /* padding: 14px 24px; */
+    background-color: #000000;
+    border: 2px solid var(--back-color-criam);
+    border-radius: 25px;
+  
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--color-text-button);
+  }
+  .button-big-pointed>a{
+    color: var(--color-text-button);
+  }
+  
+  .button-big:hover,
+  .button-big:focus,
+  .button-big-pointed:hover,
+  .button-big-pointed:focus {
+    background-color: var(--color-text-button);
+    color: #000000;
+  }
+  .slider {
+    display: flex;
+    gap: 32px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    margin-right: 25px;
+    justify-content: right;
+  }
+  .service-btn-mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+    /* margin-left: 74px; */
+  }
+  .service-btn-mob > li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  
+  @media screen and (min-width: 414px) {
+    .container-services {
+      max-width: 414px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .service-btn {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
+    (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
+    screen and(min-resolution: 192dpi) and (max-width: 1024px),
+    screen and(min-resolution: 2dppx) and (max-width: 1024px) {
+    .container-services {
+      background-image: var(--background-gradient),
+        url(../images/bedroom@2mob.jpg);
+    }
+  }
+  /* -----------Tablet-styles--------- */
+
+  @media screen and (min-width: 1024px) {
+    .container-services {
+      background-image: var(--background-gradient), url(../images/bedroom@1tab.jpg);
+      max-width: 1024px;
+    }
+  
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+      (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),
+      screen and(min-resolution: 192dpi) and (min-width: 1024px),
+      screen and(min-resolution: 2dppx) and (min-width: 1024px) {
+      .container-services {
+        background-image: var(--background-gradient),
+          url(../images/bedroom@2tab.jpg);
+      }
+    }
+  
+    .label {
+      font-size: 64px;
+      line-height: 1.078;
+      margin-top: 48px;
+      margin-bottom: 16px;
+      margin-right: 263px;
+      margin-left: 529px;
+    }
+  
+    .description {
+      margin-right: 263px;
+      margin-left: 182px;
+    }
+    .hotel {
+      text-align: right;
+      margin-bottom: 8px;
+      margin-right: 0;
+    }
+    .description-text {
+      max-width: 549px;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 40px;
+    }
+    .service-img {
+      display: none;
+    }
+    .service-img-tab {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 34px;
+      margin-left: 32px;
+    }
+    .service-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+    .service-btn > li:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  
+    .service-btn-mob {
+      display: none;
+    }
+    .slider {
+      margin-top: 24px;
+      margin-bottom: 40px;
+      margin-right: 297px;
+    }
+  }
+
+  /* ------------Desctop-styles--------- */
+  @media screen and (min-width: 1280px) {
+    .container-services {
+      max-width: 1280px;
+      background-image: var(--background-gradient), url(../images/bedroom@1pc.jpg);
+      max-width: 1280px;
+    }
+  
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+      (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
+      screen and(min-resolution: 192dpi) and (min-width: 1280px),
+      screen and(min-resolution: 2dppx) and (min-width: 1280px) {
+      .container-services {
+        background-image: var(--background-gradient),
+          url(../images/bedroom@2pc.jpg);
+      }
+    }
+  
+    .service-img-tab {
+      display: none;
+    }
+    .service-img-pc {
+      display: flex;
+      flex-wrap: nowrap;
+      /* gap: 86px; */
+      margin-left: 37px;
+    }
+    .service-img-pc > li:nth-child(-n + 2) {
+      margin-right: 86px;
+    }
+    .service-btn {
+      margin-left: 33px;
+    }
+  
+    .label {
+      margin-right: 323px;
+      margin-left: 725px;
+    }
+  
+    .description {
+      margin-right: 323px;
+      margin-left: 332px;
+    }
+  
+    .hotel {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  
+    .description-text {
+      max-width: 595px;
+    }
+  
+    .slider {
+      margin-right: 339px;
+    }
+  }
+  
