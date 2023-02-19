@@ -176,6 +176,9 @@
     .rooms-foto {
         max-width: 428px;
     }
+    .arrow-right{
+        margin-bottom: 40px;
+    }
     .arrow {
         display: inline-block;
         margin-bottom: 0;
@@ -216,7 +219,6 @@
         left: 65px;
         bottom: 100px;
     }
-
 }
   @media screen and (min-width: 1280px) {
 
@@ -263,11 +265,10 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row-reverse;
-        padding-top: 72px;
-        table-layout: 40px;
     }
     .rooms-desktop-discription-right {
-        margin-bottom: 268px;
+      margin-top: 72px;
+        margin-bottom: 305px;
     }
     .rooms__title-right {
         margin-right: 22px;
