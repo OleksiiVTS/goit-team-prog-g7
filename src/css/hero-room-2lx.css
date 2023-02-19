@@ -27,8 +27,12 @@
     bottom: calc(100vw * 40 / 414);
     left: calc(100vw * 15 / 414);
   
-    z-index: 2;
+    /* z-index: 2; */
     outline: 1px solid red;
+  }
+
+  .room-2lx-hero-social-item {
+    z-index: 2;
   }
   
   .room-2lx-hero-link-map {
@@ -53,6 +57,7 @@
     border-radius: 2px;
   
     text-shadow: #000 1px 1px 5px;
+    z-index: 2;
   }
   
   .room-2lx-hero-icon-map {
@@ -175,6 +180,7 @@
     left: 50%;
     right: initial;
     transform: translateX(-50%);
+    z-index: 2;
   }
   
   .room-2lx-hero-btn > .button-transparent {
@@ -316,6 +322,7 @@
       left: initial;
       right: 0px;
       transform: initial;
+      z-index: 2;
     }
 
     .room-2lx-hero-social-link {
@@ -364,3 +371,10 @@
     } */
   }
   
+
+  span.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    background-color: var(--color-text-button);
+   }

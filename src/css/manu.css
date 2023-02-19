@@ -12,6 +12,9 @@
 *//*--buttons--*//*--buttons--*/
 
 /* MENU */
+.container.menu {
+  padding: 32px 15px;
+}
   .menu-caption {
     font-family: 'Times New Roman';
     font-style: normal;
@@ -19,6 +22,7 @@
     font-size: 32px;
     line-height: 1.16;
     color: #000000;
+    margin-bottom: 32px;
   }
   
   .caption {
@@ -29,13 +33,18 @@
     line-height: 1.15;
     color: #000000;
     text-align: left;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 16px;
+    margin-top: 16px;
   }
+ .caption.special
+ {
+ margin-top:0px;
+ }
   .menu-height{
    padding: 20px 30px;
   }
   .menu-name {
+    padding-top: 8px;
     min-width: 225px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -44,6 +53,21 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #000000;
+  }
+  .menu-name-basic {
+    padding-top: 8px;
+    min-width: 225px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .menu-name-basic.menu-notop
+  {
+    padding-top: 0px;
   }
   .menu-table {
     width: 100%;
@@ -56,8 +80,7 @@
     color: #000000;
   }
   .menu-ingridient {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top:  4px;
     width: 220px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -67,10 +90,15 @@
     letter-spacing: 0.02em;
     color: #000000;
   }
+  .menu-name.menu-notop
+  {
+    padding-top: 0px;
+  }
+  .menu-name.menu-nobottom {
+    padding-bottom: 0px;
+  }
   .menu-weight {
     min-width: 69px;
-    padding-top: 4px;
-    padding-bottom: 4px;
     text-align: right;
     font-family: 'Montserrat';
     font-style: normal;
@@ -83,8 +111,6 @@
   
   .menu-price {
     min-width: 64px;
-    padding-top: 4px;
-    padding-bottom: 4px;
     text-align: right;
     font-family: 'Montserrat';
     font-style: normal;
@@ -119,8 +145,16 @@
       width: calc((100% - 88px) / 2);
     }
     .menu-caption {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
+    .caption.special
+ {
+ margin-top:0px;
+ }
+ .caption.second
+ {
+ margin-top:0px;
+ }
     .menu-name {
       width: 225px;
     }
@@ -134,15 +168,17 @@
       /* MENU */
       .container.menu {
         min-width: 1280px;
-        padding: 58px 47px 40px 47px;
+        padding: 58px 85px 60px 85px;
     }
       .restaurant-position {
         column-gap: 140px;
       }
+   
+      
       .menu-right {
         width: calc((100% - 140px) / 2);
       }
-    
+   
       .caption {
         font-size: 24px;
         line-height: 1.17;
@@ -152,8 +188,15 @@
         min-width: 260px;
       }
       .menu-name {
-        width: 257px;
+        padding-top: 12px;
+        width: 293px;
         font-size: 16px;
         line-height: 1.25;
       }
+      .menu-name-basic {
+        width: 293px;
+        font-size: 16px;
+        line-height: 1.25;
+      }
+      
     }
