@@ -17,6 +17,8 @@
 @import url('./manu.css');
 @import url('./map.css');
 @import url('./modal.css');
+@import url('./modal-rp.css');
+
 
 /* Details of our restaurant (door) */
 @import url('./door.css');
