@@ -11,16 +11,14 @@
 
 *//*--buttons--*//*--buttons--*/
 
-.container-roomd {
+.roomd {
     margin-right: auto;
     margin-left: auto;
-    padding: 0 15px;
+    padding: 48px 85px;
 }
 
-.roomd {
-    background-color: #FFFDEE;
-    padding-top: 48px;
-    padding-bottom: 48px;
+.roomd-amenities {
+    width: 757px;
 }
 
 .roomd-description {
@@ -33,6 +31,11 @@
 
 .roomd-second {
     display: flex;
+}
+
+.roomd-item {
+    margin-top: 32px;
+    width: 400px;
 }
 
 .roomd-title {
@@ -51,13 +54,28 @@
     color: #000000;
 }
 
+.roomd-list {
+    margin-left: 159px;
+}
+
 .roomd-text {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    margin-top: 16px;
     color: var(--color-text);
+}
+
+.roomd-item-sec {
+    margin-top: 76px;
+    width: 400px;
+}
+
+.roomd-item-thrd {
+    margin-top: 195px;
+    width: 400px;
 }
 
 /* Кнопка й силка */
@@ -69,5 +87,24 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #C79002;
+    fill: #C79002;
+    display: flex;
+    margin-top: 32px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
+.roomd-link:hover,
+.roomd-link:focus {
+    color: #F3C653;
+    fill: #F3C653;
+}
+
+.roomd-icon {
+    margin-left: 16px;
+}
+
+.roomd-btn-link {
+    padding-left: 562px;
+    margin-top: 40px;
+}
