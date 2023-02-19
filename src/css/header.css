@@ -14,7 +14,7 @@
 
 /* ===========================================<HEADER>============================================ *
     
-/* тут виношу в макс відс */
+      /* тут виношу в макс відс */
   /* from 0 to 1025 =====> for mobile */
 @media screen and (max-width: 1023px) {
     .header-mob-number {
@@ -22,53 +22,68 @@
       
     }
   
-    .header-social-link{
+    .wrapper-for-social-icons{
+      display: none;
+    }
+
+    .header-social-link {
       display: none;
     }
   }
 
 
-
-
-  .header {
+   .header {
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 16px;
     padding-bottom: 9px;
+    position: absolute;
+    width: 100%; 
+    z-index: 1000;
+
   }
-  
-  .header-wraper {
+    .header-wraper {
+      display: flex;
+      justify-content: space-between;
+  } 
+   
+
+   .header-logo-wrapper-for-flex {
     display: flex;
-  }
+    justify-content: space-between;
+    align-items: center;
+   }
   
   .header-logo {
+    max-width: 114px;
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: calc(39/36);
-    letter-spacing: 0.3em;
-    color: navy;     
-    /* колір поставив тимчасово, щоб було видно на білому фоні */
-  
+    font-size: 34px;
+    line-height: 1.08em;
+    letter-spacing: 0.23em;
+    color: #FFFFFF; 
     cursor: pointer;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   }
-  
+
+  .last-letter-o {
+    letter-spacing: 0;
+  }
+
+
   .header-logo:hover,
   .header-logo:focus {
-    color: black;
+    color: #F3C653
   }
   
   .header-navigation-list { 
-    position: relative;
     display: flex;
-    gap: 50px;
     padding-top: 12px;
-    margin-left: 52px;
   } 
-  
-  
+
   .header-navigation-link {
     font-weight: 500;
     font-size: 16px;
@@ -77,19 +92,14 @@
     color: var(--color-text-button);
   }   
   
-  
   .mobile-phone-icon-first {
-    position: absolute;
-    transform: translate(-46px, -2px);
+    margin-right: 20px;
     fill: var(--color-text-button);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
-  
   }
   
   .mobile-phone-icon-second {
-    position: absolute;
-    transform: translate(-46px,-2px);
     fill: var(--color-text-button);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -101,25 +111,21 @@
   .mobile-phone-icon-second:focus{
     fill: white;
   }
-  
-  
+
   .restaurant-word {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
-  
   }
   
   .restaurant-word:hover,
   .restaurant-word:focus {
     color: white;
-  
-  
+
   }
   
   .hotel-word {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
-  
   }
   
   .hotel-word:hover,
@@ -137,8 +143,6 @@
           display: none;
         }   
       }
-   
-
 
 
   @media screen and (min-width: 1024px) {
@@ -158,8 +162,8 @@
     .header-logo {
       font-size: 40px;
       line-height: calc(43/40);
-      padding-left: 32px;
       margin-right: 207px;
+      letter-spacing: 0.3em;
   
     }
   
@@ -172,18 +176,26 @@
       margin-left: 0px;
   
     }
+
+    .header-navigation-link {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+
+    
   
     .mobile-phone-icon-first {
       position: absolute;
-      right: 64px;
-      padding: 0;
+      transform: translate(-125px, -2px);
+      margin: 0;
+      
     }
   
     .mobile-phone-icon-second {
       position: absolute;
-      right: 66px;
-      top: 10px;
-  
+      transform: translate(-128px, -2px);
+      margin: 0;
     }
      
     .wraper-icon-mob-tel {
@@ -206,7 +218,7 @@
     line-height: calc(17/14);
     letter-spacing: 0.02em;
     /* тимчасовий колір */
-    color: navy;
+    color: #FFFFFF;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   
@@ -225,6 +237,10 @@
     margin-left: 72px;
     margin-right: 32px;
   }
+
+  .wrapper-for-social-icons{
+    display: flex;
+  }
   
   }
   /******************==============</TABLET>===============******************* */
@@ -241,14 +257,24 @@
      .header {
       display: flex;
       min-width: 1280px;
+   
   
+    }
+
+    .header-wraper .container{
+      
     }
   
   
   .header-logo {
-    padding-left: 70px;
+    padding-left: 0px;
     margin-right: 135px;
   
+  }
+
+  .header-navigation-link {
+    font-size: 20px;
+    line-height: calc(24/20);
   }
   
   .header-social-link{
@@ -257,7 +283,6 @@
     align-items: center;
     gap: 20px;
     margin-left: 140px;
-    padding-right:70px;
     cursor: pointer;
     
   }
