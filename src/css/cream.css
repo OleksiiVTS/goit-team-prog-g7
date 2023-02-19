@@ -155,9 +155,15 @@
     margin-bottom: 32px;
   }
 
-  .restaurant-first-box picture {
-    display: flex;
-    justify-content: right;
+  .restaurant-first-box img {
+    /* display: flex;
+    justify-content: right; */
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .second-cream img {
+    margin-left: 0;
   }
 
   .restaurant-second-box picture {
