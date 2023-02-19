@@ -1,11 +1,14 @@
 
 /*-Стандартні скидання стилів, visually-hidden, параменти section і container-*/
 @import url('./reset.css');
+/* Підключеня фрифтів */
+@import url('./fonts.css');
 /* все що стосується кнопок, назви кнопок скопіевані вам у кожен css */
 @import url('./buttons.css');
 
 @import url('./header.css');
 @import url('./hero.css');
+@import url('./hero-room-2lx.css');
 @import url('./heroroom.css');
 @import url('./heroprise.css');
 @import url('./cream.css');
@@ -14,3 +17,6 @@
 @import url('./manu.css');
 @import url('./map.css');
 @import url('./modal.css');
+
+/* Details of our restaurant (door) */
+@import url('./door.css');
