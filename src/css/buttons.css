@@ -60,25 +60,53 @@
   transition: background-color .3s,
               opacity .5s, 
               visibility .5s;
+  animation: animatebut 3000ms infinite 1000ms;
+  
   opacity: 0;
   visibility: hidden;
 
   background-color: var(--color-button);
   border: 2px solid var(--color-text-button);   
-  width: 40px;   
-  height: 40px;
+  width: 50px;   
+  height: 50px;
   right: 50px;
   bottom: 50px;   
   text-align: center;   
-  border-radius: 5px; 
+  border-radius: 25px; 
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 64px;
+  color: #494848;
 }
 .button-up.button-up-show {
+  
   opacity: 1;
   visibility: visible;
 }
 .button-up:hover, .button-up:focus {
+  
+  animation: step-start ;
   background-color: var(--color-text-button);
 }
+
+@keyframes animatebut {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);;
+  }
+}
+
 
 @media screen and (min-width: 1024px) {
   

@@ -1,3 +1,102 @@
-<div class="container">
+<!-- Details of our restaurant (door)-->
+<div class="section door">
+  <div class="container">
+    <div class="door-row">
+    <!-- Text -->
+    <div class="door-block-text">
+      <h3 class="door-sub-title">MIMIHO</h3>
+      <h2 class="door-title" lang="uk">Ресторан</h2>
+      <p class="door-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+        consequat duis enim velit mollit.</p>
+    </div>
 
+    <!-- Slider images -->
+    <div class="door-nav-slider">
+      <div class="door-slider">
+        <ul class="door-slider-list">
+
+          <!-- Image1 -->
+          <li>
+            <div>
+              <picture>
+                <source srcset="./images/door/door-slider-01-desktop.jpg 1x, ./images/door/door-slider-01-desktop@2x.jpg 2x"
+                  media="(min-width: 1280px)" />
+                <source srcset="./images/door/door-slider-01-tablet.jpg 1x, ./images/door/door-slider-01-tablet@2x.jpg 2x"
+                  media="(min-width: 1024px)" />
+                <source srcset="./images/door/door-slider-01-mobile.jpg 1x, ./images/door/door-slider-01-mobile@2x.jpg 2x"
+                  media="(max-width: 1023px)" />
+              
+                <img
+                  class="door-img" 
+                  src="./images/door/door-slider-01-mobile.jpg"
+                  alt="Slider image-01" />
+              </picture>
+            </div>
+          </li>
+
+          <!-- Image2 -->
+          <li>
+            <div>
+              <picture>
+                  <source srcset="./images/door/door-slider-02-desktop.jpg 1x, ./images/door/door-slider-02-desktop@2x.jpg 2x"
+                    media="(min-width: 1280px)" />
+                  <source srcset="./images/door/door-slider-02-tablet.jpg 1x, ./images/door/door-slider-02-tablet@2x.jpg 2x"
+                    media="(min-width: 1024px)" />
+                  <source srcset="./images/door/door-slider-02-mobile.jpg 1x, ./images/door/door-slider-02-mobile@2x.jpg 2x"
+                    media="(max-width: 1023px)" />
+
+                  <img 
+                    class="door-img" 
+                    src="./images/door/door-slider-02-mobile.jpg" 
+                    alt="Slider image-02">
+              </picture>
+            </div>
+          </li>
+
+          <!-- Image3 -->
+          <li>
+            <div>
+              <picture>
+                <source srcset="./images/door/door-slider-03-desktop.jpg 1x, ./images/door/door-slider-03-desktop@2x.jpg 2x"
+                  media="(min-width: 1280px)" />
+                <source srcset="./images/door/door-slider-03-tablet.jpg 1x, ./images/door/door-slider-03-tablet@2x.jpg 2x"
+                  media="(min-width: 1024px)" />
+                <source srcset="./images/door/door-slider-03-mobile.jpg 1x, ./images/door/door-slider-03-mobile@2x.jpg 2x"
+                  media="(max-width: 1023px)" />
+              
+                <img 
+                  class="door-img" 
+                  src="./images/door/door-slider-03-mobile.jpg" 
+                  alt="Slider image-03">
+              </picture>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Navigate slider -->
+        <button class="door-btn-prev" type="button" >
+          <svg class="door-icon" width="32" height="32">
+            <use href="./images/door/sprite-arrow-slider.svg#icon-arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="door-btn-next" type="button">
+          <svg class="door-icon" width="32" height="32">
+            <use href="./images/door/sprite-arrow-slider.svg#icon-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Buttons -->
+      <div class="door-buttons">
+        <!-- Book Table -->
+        <button class="button-black js-open-modal" data-modal="1" type="button" lang="uk">Забронювати столик</button>
+        <!-- Open menu -->
+        <a class="button-black"
+          href="./restaurant.html#menu" lang="uk">
+          Переглянути меню
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
