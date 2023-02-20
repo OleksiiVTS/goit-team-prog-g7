@@ -21,10 +21,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Календарик -->
-    <link rel="stylesheet" 
-      href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -34,7 +30,9 @@
     </header>
     <!--main-->
     <main>
-        <load ="partials/buttonup.html" />
+      <button id="button-up" class="button-up" onClick="scrollTopTop()">
+        M
+      </button>
       <!--hero-->
       <section>
         <load ="partials/index/index-hero.html" />
@@ -64,18 +62,11 @@
     </footer>
   <!--modal-windows-->
       <load ="partials/modal-windows.html" />
+
       <load ="partials/modal-windows-prise.html" />
-
-      <load ="partials/modal-window-rp.html" />
-
-      
 
   <!-- sript modal -->
   <script src="./js/modal-windows.js"></script>
-
-  <script src="./js/modal-window-rp.js"></script>
-  
-  <script src="./js/modal-res.js"></script>
 
   <!--js-scrupt-->
   <script src="./js/buttonup.js"></script>
@@ -83,10 +74,5 @@
   <!-- another slider -->
     <script type="module" src="./js/door-adaptive-slider.js"></script>
     <script type="module" src="./js/sliders.js"></script>
-
-  <!-- Календарик Metro UI -->
-  <!-- https://metroui.org.ua/intro.html -->
-  <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
-
   </body>
 </html>

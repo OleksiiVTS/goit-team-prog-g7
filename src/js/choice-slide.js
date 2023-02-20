@@ -73,6 +73,10 @@ const swiper = new Swiper('.rooms-foto', {
             spaceBetween: 40,
             centeredSlides: false,
         },
-    },
+    }
+
+
+
+
   });
   

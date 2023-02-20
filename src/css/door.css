@@ -29,12 +29,12 @@
   }
 }
 
-/* .door > .container {
-	outline: 1px solid red
+.door > .container {
+	/* outline: 1px solid red; */
 }
 .door-row {
-	outline: 1px solid blue
-} */
+	/* outline: 1px solid blue; */
+}
 .door-block-text {
 	margin-left: calc(100vw * 125 / 414);
 	/* 140-15=125 */
@@ -93,10 +93,8 @@
 .door-slider-list {
 	display: flex;
   column-gap: calc(100vw * 20 / 414);
-			
-	margin-bottom: calc(100vw * 16 / 414);
 
-	transition: transform ease-in 250ms;
+	margin-bottom: calc(100vw * 16 / 414);
 }
 
 .door-img {

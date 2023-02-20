@@ -13,7 +13,6 @@
 
 
 .hero {
-  min-width: 414px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -324,7 +323,6 @@ left: 45%; */
   display: flex;
   justify-content: end;
   margin-bottom: 70px;
-  
 }
 
 .btn-reserve-table {
@@ -348,12 +346,8 @@ left: 45%; */
    }
 
    .container-hero {
-    min-width: 414px;
+    max-width: 414px;
    }
-
-   /* .address {
-    margin-top: 3px;
-   } */
   
 }
 
@@ -370,7 +364,6 @@ left: 45%; */
     font-size: 128px; 
 line-height: 1.08;
     margin-bottom: 16px;
-    margin-top: 58px;
   }
 
   .hero {
@@ -415,7 +408,7 @@ line-height: 1.08;
       .address{
         position: absolute;
         margin-bottom: 64px;
-        top: 83%;
+        top: 81.5%;
       }
 
       .icon-map {
@@ -445,7 +438,6 @@ line-height: 1.08;
 
   .hero-title {
     margin-bottom: 32px;
-    margin-top: 64px;
   }
 
   .hero-text {
@@ -453,7 +445,7 @@ line-height: 1.08;
     }
 
   .address {
-    top: 83%;
+    top: 81.5%;
   }
 
  .hero-text-desc {
