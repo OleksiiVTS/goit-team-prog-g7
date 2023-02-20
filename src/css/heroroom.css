@@ -46,6 +46,10 @@
     padding-bottom: 40px;
     padding-top: 24px;
     max-width: 414px;
+<<<<<<< Updated upstream
+=======
+    /* height: 100%; */
+>>>>>>> Stashed changes
     background-image: var(--background-gradient), url('../images/bedroom@1mob.jpg');
     background-repeat: no-repeat;
     background-size: cover;
