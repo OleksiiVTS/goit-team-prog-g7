@@ -47,12 +47,16 @@
       /*-----------MODAL-TABLE---------------*/
   
   
-  .table-modal {
+.modal-table {
+  /* !!!! */
           position: absolute;
           top: 50%;
-          left: 50%;
-          width: 416px;
+          left: 50%; 
+          width: 414px;
           min-height: 668px;
+
+          /* !!!! */
+          margin: 0 auto;
           padding: 60px 15px;
           
           background: var(--back-color-criam);
@@ -66,7 +70,7 @@
       
     .modal.is-hidden .table-modal {
        transform: translate(-50%, -50%) scale(0) rotate(0);
-    }
+    } 
       
       .modal-close-btn {
           position: absolute;
@@ -93,13 +97,14 @@
           fill: var(--color-button-hover);
           background-color: var(--back-color-footer);
       }
-      
-      .is-hidden {
+
+      /* !!!! */
+      /* .is-hidden {
           opacity: 0;
           visibility: hidden;
           pointer-events: none;
       }
-      
+       */
       /*-----------------Modal Form Table-----------------------*/
       
       .modal-form {
@@ -121,6 +126,47 @@
       letter-spacing: 0.05em;
       color: #000000;
       }
+
+      /* !!!! */
+      /* ====== Стили календаря ======*/
+      /* current day */
+      .calendar-content .today {
+        background-color: var(--color-text-link);
+      }
+      /* selected day */
+      .calendar-content .day.selected::after {
+        border-top: 20px solid var(--color-text-button)
+      }
+      /* selected day border */
+      .calendar-content .day.selected {
+        -webkit-box-shadow: inset 0 0 0 1px var(--color-text-button) !important;
+        box-shadow: inset 0 0 0 1px var(--color-text-button) !important;
+      }
+      /* field input */
+      .input input {
+        height: auto;
+        padding: 0;
+        color: var(--color-text);
+        background-color: transparent;
+      }
+      /* button */
+      .button {
+        padding: 0;
+      }
+      /* span-icon-calendar */
+      .default-icon-calendar {
+        position: absolute;
+        top: 75%;
+        right: 8px;
+        transform: translateY(-50%);
+        display: inline-block;
+      }
+      /* icon-calendar */
+      [class*=default-icon] {
+        width: 24px;
+        height: 24px;
+      }
+      /* ================================= */
       
       .room-rates-modal-text  {
         width: 100%;
@@ -207,12 +253,19 @@
       -moz-appearance: none;
       -webkit-appearance: none;
     }
-      
-      .table-modal-input:focus,
+
+    /* !!!! */
+      /* .table-modal-input:focus,
+      .table-persons:focus,
       .room-category:focus {
           border: 1px solid var(--back-color-footer);
-      }
-  
+      } */
+    .table-modal-input:focus,
+    .room-category:focus {
+      border: 1px solid var(--back-color-footer);
+    }
+
+
     .button-big-pointed {
     position: absoulte;
     bottom: 0;
@@ -221,11 +274,11 @@
   
     }
   
-  
-      .table-persons {
-          position: relative;
-          display: inline-block;
-          }
+    /* !!!! */
+    /* .table-persons {
+        position: relative;
+        display: inline-block;
+    } */
   
   /*-----------MODAL-ROOM---------------*/
   
@@ -258,13 +311,15 @@
         padding: 0 47px;
       }
   
-    .table-modal {
+    /* !!!! */
+    .modal-table {
       width: 712px;
       min-height: 522px;
       padding: 60px;
     }
   
-    .table-form  {
+    /* !!!! */
+    .modal-table-form  {
       display: flex;
       justify-content: space-between;
     }
@@ -274,14 +329,24 @@
       gap: 15px;
     }
   
+    /* !!!! */
+    /* .table-persons, */
     .table-modal-input, 
-    .table-persons,
     .room-rates-category,
     .room-category {
       width: 288px;
       height: 64px;
     }
-  
+
+    /* !!!! */
+    .table-persons {
+      height: 64px;
+    }
+    /* !!!! */
+    .default-icon-calendar {
+      top: 100%;
+    }
+
     .room-modal {
       width: 712px;
       min-height: 638px;

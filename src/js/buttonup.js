@@ -8,7 +8,10 @@ window.addEventListener('scroll',function(){
         top:0,
       })
     }
-
+window.addEventListener('scroll',function(){
+    var scroll = document.querySelector('.arrow-up');
+    scroll.classList.toggle("button-up-show", window.scrollY>300)
+  })
 
     
   // (() => {

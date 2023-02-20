@@ -57,6 +57,7 @@
 .button-up {
   display: inline-block;
   position: fixed;
+  z-index: 3;
   transition: background-color .3s,
               opacity .5s, 
               visibility .5s;
@@ -64,7 +65,7 @@
   
   opacity: 0;
   visibility: hidden;
-
+  z-index: 1000;
   background-color: var(--color-button);
   border: 2px solid var(--color-text-button);   
   width: 50px;   
@@ -82,15 +83,60 @@
   font-size: 64px;
   color: #494848;
 }
-.button-up.button-up-show {
+
+.button-up:hover, 
+.button-up:focus {
+  animation: animatebut step-start;
+  background-color: var(--color-text-button);
+}
+.arrow-up {
+  opacity: 0;
+  visibility: hidden;
+}
+.arrow-up span {
+  position: fixed;
+  z-index: 3;
   
+  display: block;
+  width: 15px;
+  height: 15px;
+  right: 60px;
+  bottom: 70px;
+  border-left: 3px solid var(--color-button);
+  border-top: 3px solid var(--color-text-button);
+  text-shadow: 1px 1px 2px #494848;
+ 
+  margin: -2px;
+  animation: arrow-up 3000ms infinite;
+}
+
+.arrow-up span:nth-child(2){
+  animation-delay: -0.1s;
+  right: 70px;
+  bottom: 90px;
+}
+.arrow-up span:nth-child(3){
+  animation-delay: -0.2s;
+  right: 80px;
+  bottom: 75px;
+}
+.button-up.button-up-show,
+.arrow-up.button-up-show {
   opacity: 1;
   visibility: visible;
 }
-.button-up:hover, .button-up:focus {
-  
-  animation: step-start ;
-  background-color: var(--color-text-button);
+@keyframes arrow-up {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(10px,10px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-10px,-10px);
+  }
 }
 
 @keyframes animatebut {
