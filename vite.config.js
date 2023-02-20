@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import injectHTML from 'vite-plugin-html-inject';
+import FullReload from 'vite-plugin-full-inject';
 
 export default defineConfig({
   root: 'src',
@@ -17,5 +18,5 @@ export default defineConfig({
     },
     outDir: '../dist',
   },
-  plugins: [injectHTML()],
+  plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
 });
