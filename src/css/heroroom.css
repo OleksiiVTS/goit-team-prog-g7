@@ -46,7 +46,7 @@
     padding-bottom: 40px;
     padding-top: 24px;
     max-width: 414px;
-    background-image: var(--background-gradient), url(../images/bedroom@1mob.jpg);
+    background-image: var(--background-gradient), url('../images/bedroom@1mob.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -106,7 +106,7 @@
     margin-right: 0;
   }
   
-   .button-transparent {
+   /* .button-transparent {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,7 +128,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: var(--color-text-button);
-  } 
+  }  */
   .button-transparent{
     padding:0 0;
   } 
@@ -138,13 +138,13 @@
   }
 
   
-  .button-big:hover,
+  /* .button-big:hover,
   .button-big:focus,
   .button-transparent:hover,
   .button-transparent:focus {
     background-color: var(--color-text-button);
     color: #000000;
-  }
+  } */
   .slider {
     display: flex;
     gap: 32px;
@@ -191,7 +191,7 @@
 
   @media screen and (min-width: 1024px) {
     .container-services {
-      background-image: var(--background-gradient), url(../images/bedroom@1tab.jpg);
+      background-image: var(--background-gradient), url('../images/bedroom@1tab.jpg');
       max-width: 1024px;
     }
   
@@ -201,7 +201,7 @@
       screen and(min-resolution: 2dppx) and (min-width: 1024px) {
       .container-services {
         background-image: var(--background-gradient),
-          url(../images/bedroom@2tab.jpg);
+          url('../images/bedroom@2tab.jpg');
       }
     }
   
@@ -263,7 +263,7 @@
   @media screen and (min-width: 1280px) {
     .container-services {
       max-width: 1280px;
-      background-image: var(--background-gradient), url(../images/bedroom@1pc.jpg);
+      background-image: var(--background-gradient), url('../images/bedroom@1pc.jpg');
     
     }
   
@@ -273,7 +273,7 @@
       screen and(min-resolution: 2dppx) and (min-width: 1280px) {
       .container-services {
         background-image: var(--background-gradient),
-          url(../images/bedroom@2pc.jpg);
+          url('../images/bedroom@2pc.jpg');
       }
     }
   
