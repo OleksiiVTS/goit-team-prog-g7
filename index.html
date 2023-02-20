@@ -27,7 +27,7 @@
 
     
     <script type="module" crossorigin src="/goit-team-prog-g7/assets/main-5d026301.js"></script>
-    <link rel="stylesheet" href="/goit-team-prog-g7/assets/styles-34c57f68.css">
+    <link rel="stylesheet" href="/goit-team-prog-g7/assets/styles-5d0d5d6b.css">
   </head>
   <body>
     <!--header-->
@@ -1100,18 +1100,12 @@
       <div class="container">
   <!--Modal TABLE--> 
   <div class="modal" data-modal="1">
-		
-		<!-- !!!! -->
 		<div class="modal-table">
-
-  		<button 
-  		    type="button" 
-  		    class="modal-close-btn js-modal-close" 
-  		    data-modal-close>
-  		    <svg class="modal-close-btn-icon" width="18" height="18">
-  		        <use href="/goit-team-prog-g7/assets/icons-2af6e4a6.svg#icon-btn_svg"></use>
-  		    </svg>
-  		</button>
+<button type="button" class="modal-close-btn js-modal-close" data-modal-close>
+				<svg class="modal-close-btn-icon" width="18" height="18">
+				  <use href="/goit-team-prog-g7/assets/icons-2af6e4a6.svg#icon-btn_svg"></use>
+				</svg>
+			  </button>
 
   		<p class="table-modal-text" lang="uk">ЗАБРОНЮВAТИ СТОЛИК</p>
 
@@ -1270,11 +1264,20 @@
                 <use href="/goit-team-prog-g7/assets/icons-2af6e4a6.svg#icon-click"></use>
 							</svg>
         			
-							<select id="table-form-day" name="day" class="table-modal-input" > 
+							<!---<select id="table-form-day" name="day" class="table-modal-input" > 
             			<option value="today" selected="" lang="uk">Сьогодні</option>
             			<option value="tomorrow" lang="uk">Завтра</option> 
             			<option value="second_tomorrow" lang="uk">Післязавтра</option>
-        			</select>      
+        			</select> ---->     
+
+					<input 
+									class="table-modal-input modal-calendar" 
+									type="text" 
+									data-role="calendarpicker" 
+									data-locale="uk-UA"
+									data-format="DD.MM.YYYY" 
+									clearButton="true">
+
     					<span class="table-input-desc" lang="uk">Дата виїзду</span>
         		</span>
     			</label>
