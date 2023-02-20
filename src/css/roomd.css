@@ -11,100 +11,278 @@
 
 *//*--buttons--*//*--buttons--*/
 
-.roomd {
-    margin-right: auto;
-    margin-left: auto;
-    padding: 48px 85px;
+
+
+/* Mobile */
+
+
+@media screen and (max-width: 1023px) {
+    .roomd {
+        padding: 32px 15px;
+    }
+    
+    .roomd-amenities-text {
+        width: 384px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        margin-top: 16px;
+        color: var(--color-text);
+    }
+    
+    .roomd-item {
+        margin-top: 32px;
+    }
+    
+    .roomd-title {
+        width: 384px;
+        font-family: 'Times New Roman';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.15;
+        color: #000000;
+    }
+    
+    .roomd-subtitle {
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        color: #000000;
+    }
+    
+    .roomd-text {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        margin-top: 16px;
+        color: var(--color-text);
+        width: 384px;
+    }
+    
+    /* Кнопка й силка */
+    
+    .roomd-link {
+        width: 384px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 0.8;
+        letter-spacing: 0.02em;
+        margin-top: 20px;
+        padding-right: 16px;
+        padding-left: 16px;
+        color: #C79002;
+        fill: #C79002;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    }
+    
+    .roomd-link:hover,
+    .roomd-link:focus {
+        color: #F3C653;
+        fill: #F3C653;
+    }
+    
+    .roomd-btn-link {
+        width: 384px;
+        margin-top: 32px;
+    }
 }
 
-.roomd-amenities {
-    width: 757px;
+
+
+
+
+
+/* Tablet */
+
+
+
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .roomd {
+        padding: 50px 47px 40px;
+    }
+    
+    .roomd-amenities-text {
+        width: 757px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: var(--color-text);
+        margin-top: 16px;
+    }
+    
+    .roomd-item {
+        margin-top: 32px;
+    }
+    
+    .roomd-title {
+        font-family: 'Times New Roman';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.15;
+        color: #000000;
+    }
+    
+    .roomd-subtitle {
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        color: #000000;
+    }
+    
+    .roomd-text {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        margin-top: 16px;
+        color: var(--color-text);
+        width: 400px;
+    }
+    
+    .roomd-text-flex {
+        display: flex;
+        gap: 80px;
+    }
+
+    /* Кнопка й силка */
+    
+    .roomd-link {
+        width: 434px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        margin-top: 32px;
+        color: #C79002;
+        fill: #C79002;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    }
+    
+    .roomd-link:hover,
+    .roomd-link:focus {
+        color: #F3C653;
+        fill: #F3C653;
+    }
+    
+    .roomd-btn-link {
+        margin-top: 40px;
+        padding-left: 543px;
+    }
 }
 
-.roomd-description {
-    display: flex;
-}
 
-.roomd-first {
-    display: flex;
-}
 
-.roomd-second {
-    display: flex;
-}
+/* Desktop */
 
-.roomd-item {
-    margin-top: 32px;
-    width: 400px;
-}
 
-.roomd-title {
-    font-family: 'Times New Roman';
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.15;
-    color: #000000;
-}
 
-.roomd-subtitle {
-    font-family: 'Times New Roman';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    color: #000000;
-}
 
-.roomd-list {
-    margin-left: 159px;
-}
+@media screen and (min-width: 1280px) {
+    .roomd {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 48px 85px;
+    }
+    
+    .roomd-amenities-text {
+        width: 757px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #7A7A7A;
+        margin-top: 16px;
+    }
+    
+    .roomd-description {
+        display: flex;
+    }
+    
+    .roomd-item {
+        margin-top: 32px;
+    }
+    
+    .roomd-title {
+        font-family: 'Times New Roman';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.15;
+        color: #000000;
+    }
+    
+    .roomd-subtitle {
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        color: #000000;
+    }
+    
+    .roomd-text {
+        width: 400px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        margin-top: 16px;
+        color: var(--color-text);
+    }
+    
+    .roomd-text-flex {
+        display: flex;
+        gap: 159px;
+    }
 
-.roomd-text {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    margin-top: 16px;
-    color: var(--color-text);
-}
-
-.roomd-item-sec {
-    margin-top: 76px;
-    width: 400px;
-}
-
-.roomd-item-thrd {
-    margin-top: 195px;
-    width: 400px;
-}
-
-/* Кнопка й силка */
-
-.roomd-link {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #C79002;
-    fill: #C79002;
-    display: flex;
-    margin-top: 32px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
-}
-
-.roomd-link:hover,
-.roomd-link:focus {
-    color: #F3C653;
-    fill: #F3C653;
-}
-
-.roomd-icon {
-    margin-left: 16px;
-}
-
-.roomd-btn-link {
-    padding-left: 562px;
-    margin-top: 40px;
+    /* Кнопка й силка */
+    
+    .roomd-link {
+        width: 434px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #C79002;
+        fill: #C79002;
+        display: flex;
+        gap: 16px;
+        margin-top: 32px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    }
+    
+    .roomd-link:hover,
+    .roomd-link:focus {
+        color: #F3C653;
+        fill: #F3C653;
+    }
+    
+    .roomd-btn-link {
+        padding-left: 562px;
+        margin-top: 40px;
+    }
 }
