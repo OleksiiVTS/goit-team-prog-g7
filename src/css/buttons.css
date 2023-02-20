@@ -57,6 +57,7 @@
 .button-up {
   display: inline-block;
   position: fixed;
+  z-index: 3;
   transition: background-color .3s,
               opacity .5s, 
               visibility .5s;
