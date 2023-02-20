@@ -1,18 +1,12 @@
 <div class="container">
   <!--Modal TABLE--> 
   <div class="modal" data-modal="1">
-		
-		<!-- !!!! -->
 		<div class="modal-table">
-
-  		<button 
-  		    type="button" 
-  		    class="modal-close-btn js-modal-close" 
-  		    data-modal-close>
-  		    <svg class="modal-close-btn-icon" width="18" height="18">
-  		        <use href="/images/icons.svg#icon-btn_svg"></use>
-  		    </svg>
-  		</button>
+<button type="button" class="modal-close-btn js-modal-close" data-modal-close>
+				<svg class="modal-close-btn-icon" width="18" height="18">
+				  <use href="/images/icons.svg#icon-btn_svg"></use>
+				</svg>
+			  </button>
 
   		<p class="table-modal-text" lang="uk">ЗАБРОНЮВAТИ СТОЛИК</p>
 
@@ -171,11 +165,20 @@
                 <use href="./images/icons.svg#icon-click"></use>
 							</svg>
         			
-							<select id="table-form-day" name="day" class="table-modal-input" > 
+							<!---<select id="table-form-day" name="day" class="table-modal-input" > 
             			<option value="today" selected="" lang="uk">Сьогодні</option>
             			<option value="tomorrow" lang="uk">Завтра</option> 
             			<option value="second_tomorrow" lang="uk">Післязавтра</option>
-        			</select>      
+        			</select> ---->     
+
+					<input 
+									class="table-modal-input modal-calendar" 
+									type="text" 
+									data-role="calendarpicker" 
+									data-locale="uk-UA"
+									data-format="DD.MM.YYYY" 
+									clearButton="true">
+
     					<span class="table-input-desc" lang="uk">Дата виїзду</span>
         		</span>
     			</label>
