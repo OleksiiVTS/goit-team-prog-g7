@@ -136,8 +136,6 @@
       margin-top: 62px;
       margin-bottom: 40px;
     }
-
-  }
   .rooms-desktop-discription {
       margin-right: 60px;
       margin-bottom: 208px;
@@ -216,6 +214,7 @@
       left: 47px;
       bottom: 116px;
   }
+}
 
 @media screen and (min-width: 1280px) {
   .rooms-container {
