@@ -25,15 +25,16 @@ function doorSlider() {
 
         images.forEach((element, key) => {
 
-            // зміна розміру картинки під слайдер 
-            for ( let item in aImageSize ) {
-                if ((element.clientWidth <= item) && (aImageSize.item == gap)) {
-                    element.width = item + 'px';
-                    element.heidht = sliderLine.offsetHeight + 'px';
-                }
-            }
+            // зміна розміру картинки під слайдер
+            // for ( let item in aImageSize ) {
+            //     if ((element.clientWidth <= item) && (aImageSize.item == gap)) {
+            //         element.width = item + 'px';
+            //         element.heidht = sliderLine.offsetHeight + 'px';
+            //     }
+            // }
 
-            arr[key] = element.width + gap; // element.clientWidth;
+            // arr[key] = element.width + gap;
+            arr[key] = element.clientWidth + gap;
             
             totalWidth += arr[key];
          })
