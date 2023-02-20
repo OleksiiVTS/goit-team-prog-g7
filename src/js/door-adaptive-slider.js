@@ -47,10 +47,12 @@ function doorSlider() {
     window.addEventListener('resize', init);
     init();
 
+    // setInterval(() => { keyNext.click() }, 3000);
+
 
     keyNext.addEventListener('click', () => {
         count++;
-        if ( count >= images.length) {
+        if (count >= images.length) {
             count = 0;
         }
     
