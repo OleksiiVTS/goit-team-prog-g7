@@ -8,49 +8,55 @@
     <!--fouts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!--Нормалізатор стилів-->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body> 
-  <!--header-->
+  <body>
+    <!--header-->
     <header>
       <load ="partials/header.html" />
     </header>
-  <!--main-->
+    <!--main-->
     <main>
-      <button id="button-up" class="button-up" onClick="scrollTopTop()">M</button>
-    <!--hero-->
+      <button id="button-up" class="button-up" onClick="scrollTopTop()">
+        M
+      </button>
+      <!--hero-->
       <section>
         <load ="partials/index/index-hero.html" />
       </section>
-    <!--restaurant-->
-      <section>
+      <!--restaurant-->
+      <section class="section-3-cream">
         <load ="partials/index/index-restaurant-desc.html" />
       </section>
       <section>
         <load ="partials/index/index-restaurant.html" />
       </section>
-    <!--hotel-->
-      <section>
+      <!--hotel-->
+      <section class="section-3-cream second-cream">
         <load ="partials/index/index-hotel-desc.html" />
       </section>
       <section>
         <load ="partials/index/index-hotel.html" />
       </section>
-    <!--map-->
+      <!--map-->
       <section>
         <load ="partials/index/index-map.html" />
       </section>
     </main>
-  <!--footer-->
+    <!--footer-->
     <footer>
       <load ="partials/footer.html" />
     </footer>
@@ -60,13 +66,13 @@
       <load ="partials/modal-windows-prise.html" />
 
   <!-- sript modal -->
-  <script src="./js/modal_windows.js"></script>
+  <script src="./js/modal-windows.js"></script>
 
   <!--js-scrupt-->
   <script src="./js/buttonup.js"></script>
 
   <!-- another slider -->
-  <script src="./js/door-adaptive-slider.js"></script>
-
+    <script type="module" src="./js/door-adaptive-slider.js"></script>
+    <script type="module" src="./js/sliders.js"></script>
   </body>
 </html>

@@ -1,12 +1,360 @@
-/* приховати код *//*
+/* приховати код */ /*
 
 .visually-hidden 
 
-*//*--buttons--*//*--buttons--*//*
+*/ /*--buttons--*/ /*--buttons--*/ /*
 
 .button-black
 .button-transparent
 .button-big
 .button-big-pointed 
 
-*//*--buttons--*//*--buttons--*/
+*/ /*--buttons--*/ /*--buttons--*/
+
+/* !!! section Maks ПОЧАТОК !!! --------------------------------------------------- */
+
+@import url(./reset.css);
+@import url(./styles-wrapper.css);
+
+@media screen and (max-width: 1024px) {
+  .container-maks {
+    width: 414px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container-maks {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-maks {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* /////////////////////// */
+
+.section-3-cream {
+  padding-top: 120px;
+}
+
+.section-3-cream .restaurant-first-box picture,
+.section-3-cream .restaurant-second-box picture {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-maks .swiper-slide picture {
+  box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+.restaurant-first-box p,
+.restaurant-second-box p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: var(--color-text);
+}
+
+.restaurant-first-box {
+  position: relative;
+}
+/*  */
+.second-cream .restaurant-first-box {
+  justify-content: space-between;
+}
+
+.second-cream .restaurant-first-box p {
+  margin-right: 0;
+}
+
+.second-cream .restaurant-first-box h2,
+.second-cream .restaurant-first-box h3 {
+  text-align: right;
+}
+
+.second-cream .restaurant-second-box {
+  flex-direction: row-reverse;
+}
+
+.second-cream .swiper-maks {
+  margin-left: 0;
+}
+
+.second-cream .swiper-btn-position {
+  left: 0;
+  right: auto;
+}
+/*  */
+.restaurant-first-box h2 {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #b4b4b4;
+}
+
+.restaurant-first-box h3 {
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 69px;
+  letter-spacing: 0.3em;
+}
+
+.restaurant-second-box p {
+  color: var(--color-text-link);
+}
+
+.restaurant-second-box {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+}
+
+@media screen and (max-width: 1023px) {
+  .section-3-cream {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .restaurant-first-box h2,
+  .restaurant-first-box h3 {
+    margin-bottom: 12px;
+  }
+
+  .restaurant-first-box h3 {
+    font-size: 40px;
+  }
+
+  .restaurant-first-box p {
+    width: 258px;
+    margin-bottom: 28px;
+  }
+
+  .restaurant-first-box,
+  .restaurant-second-box {
+    margin-bottom: 32px;
+  }
+
+  .restaurant-first-box img {
+    /* display: flex;
+    justify-content: right; */
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .second-cream img {
+    margin-left: 0;
+  }
+
+  .restaurant-second-box picture {
+    margin-right: 20px;
+  }
+
+  .restaurant-second-box p {
+    width: 163px;
+    font-size: 12px;
+  }
+
+  .second-cream .restaurant-first-box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .second-cream .restaurant-first-box picture {
+    justify-content: left;
+  }
+
+  .second-cream .restaurant-first-box p {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .second-cream .restaurant-second-box p {
+    margin-right: 21px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-3-cream {
+    /* padding-bottom: 32px; */
+  }
+
+  .section-3-cream p {
+    line-height: 19.5px;
+  }
+
+  .restaurant-first-box h3 {
+    font-size: 64px;
+  }
+
+  .restaurant-first-box h2 {
+    margin-bottom: 4px;
+  }
+
+  .restaurant-first-box h3 {
+    margin-bottom: 24px;
+  }
+
+  .restaurant-first-box p {
+    font-size: 16px;
+  }
+
+  .restaurant-first-box p {
+    width: 439px;
+    margin-bottom: 142px;
+    margin-right: 26px;
+  }
+
+  .restaurant-first-box {
+    display: flex;
+  }
+
+  .restaurant-first-box picture {
+    position: absolute;
+
+    transform: translateY(-152px);
+  }
+
+  .restaurant-second-box p {
+    width: 312px;
+  }
+
+  .restaurant-second-box picture {
+    margin-right: 48px;
+  }
+
+  .section-3-cream {
+    /* padding-top: 120px; */
+  }
+
+  .section-3-cream h2 {
+    font-size: 32px;
+  }
+
+  .section-3-cream p {
+    font-size: 16px;
+  }
+
+  .second-cream .restaurant-second-box p {
+    margin-right: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant-first-box p {
+    width: 518px;
+    margin-bottom: 162px;
+    margin-right: 37px;
+  }
+
+  .second-cream .restaurant-second-box p {
+    margin-right: 45px;
+  }
+}
+
+/* SLIDERS */
+
+.swiper-maks {
+  width: 548px;
+  height: 300px;
+  /* background-color: #b9b9b9; */
+  margin-left: auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .swiper-maks {
+    width: 330px;
+    transform: translateX(15px);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .swiper-maks {
+    transform: translateY(-28px);
+    width: 428px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-maks {
+    transform: translateY(-102px);
+  }
+}
+
+/* .swiper-2 {
+  width: 300px;
+  height: 300px;
+  background-color: #b9b9b9;
+} */
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+
+  cursor: grab;
+}
+
+.swiper-btn-position {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 98px;
+  height: 32px;
+  z-index: 10;
+}
+
+/* /////////////// */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: '';
+}
+
+.swiper-rtl .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '';
+}
+
+.swiper-rtl .svg-arrows {
+  transform: rotate(180deg);
+}
+
+.svg-arrows {
+  fill: #000000;
+  width: 32px;
+  height: 32px;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-arrows:hover {
+  fill: #f3c653;
+}
+
+/* SLIDERS */
+
+/* !!! section Maks КІНЕЦЬ !!! -------------------------------------------------------------*/
