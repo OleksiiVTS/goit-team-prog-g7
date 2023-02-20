@@ -16,19 +16,13 @@
     
       /* тут виношу в макс відс */
   /* from 0 to 1025 =====> for mobile */
+
 @media screen and (max-width: 1023px) {
     .header-mob-number {
       display: none;
       
     }
   
-    .wrapper-for-social-icons{
-      display: none;
-    }
-
-    .header-social-link {
-      display: none;
-    }
     .footer-soc-item-word {
       display: none;
     }
@@ -42,8 +36,7 @@
     padding-top: 16px;
     padding-bottom: 9px;
     position: absolute;
-    width: 100%; 
-    z-index: 1000;
+    z-index: 7;
 
   }
     .header-wraper {
@@ -54,18 +47,18 @@
 
    .header-logo-wrapper-for-flex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
    }
   
   .header-logo {
+    margin-right: 52px;
     max-width: 114px;
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
-    font-size: 34px;
-    line-height: 1.08em;
-    letter-spacing: 0.23em;
+    font-size: 36px;
+    line-height: calc(39/36);
+    letter-spacing: 0.3em;
     color: #FFFFFF; 
     cursor: pointer;
     transition-duration: 250ms;
@@ -116,6 +109,7 @@
   }
 
   .restaurant-word {
+    margin-right: 6px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   }
@@ -127,6 +121,7 @@
   }
   
   .hotel-word {
+    margin-right: 6px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   }
@@ -135,6 +130,26 @@
   .hotel-word:focus {
     color: white;
   }
+  
+
+  .header-social-link {
+    position: absolute;
+    transform: translate(0, 640px);
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-social-icon {
+    fill: rgba(243, 198, 83, 0.7);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ; 
+  }
+
+  .header-social-icon:hover,
+  .header-social-icon:focus {
+    fill: white;
+  }
+
   
   
   /******************==============<TABLET>===============******************* */
@@ -184,9 +199,6 @@
       font-size: 20px;
       line-height: 24px;
     }
-
-
-    
   
     .mobile-phone-icon-first {
       position: absolute;
@@ -211,9 +223,7 @@
       border-radius: 2px;
       min-width: 144px;
       min-height: 40px;
-   
-  
-  }
+    }
   
   
     .header-mob-number {
@@ -223,7 +233,7 @@
     /* тимчасовий колір */
     color: #FFFFFF;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
   }
   
