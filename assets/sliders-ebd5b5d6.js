@@ -1,0 +1,1 @@
+import e from"https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";new e(".swiper-maks",{direction:"horizontal",pagination:{el:".swiper-pagination"},navigation:{nextEl:".right-btn-swiper",prevEl:".left-btn-swiper"},spaceBetween:40,loop:!1,autoplay:{delay:2e3,disableOnInteraction:!1},breakpoints:{320:{slidesPerView:1.4},1024:{slidesPerView:2}}});

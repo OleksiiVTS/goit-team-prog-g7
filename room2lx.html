@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room</title>
+    <!--fouts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Нормалізатор стилів-->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+    <!-- слайдер -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css" 
+          rel="stylesheet">
+    
+    
+
+    <link rel="stylesheet" href="/goit-team-prog-g7/assets/styles-0a676fd7.css">
+  </head>
+  <body>
+  <!--header-->
+    <header>
+      
+
+
+<div class="header">
+  <div class="header-wrapper container">
+    <!-- логотип хедеру в контейнері -->
+    <div class="header-logo-wrapper-for-flex">
+      <div class="header-logo-wrapper">
+        <a class="header-logo" href="./index.html">MIMIH<span class="last-letter-o">O</span> </a>
+      </div>
+      <!-- навігація -->
+      <nav class="header-navigation">
+        <ul class="header-navigation-list">
+           <!-- ресторан -->
+          <li class="header-navigation-item">
+            <a href="./restaurant.html" class="header-navigation-link" lang="uk" > <span class="restaurant-word">Ресторан</span></a>
+          </li>
+          <!-- номер ресторану і свг-картинка -->
+          <li class="header-navigation-item">
+            <div class="wraper-icon-mob-tel" >
+              <a href="tel:0955559533" class=""> <span class="header-mob-number">095 555 95 33</span> 
+                  <svg class="mobile-phone-icon-first"  width="24" height="24">
+                    <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-phone"></use>
+                  </svg>
+              </a>
+            </div>
+          </li>
+          <!-- готель  -->
+          <li class="header-navigation-item">
+            <a href="./hotel.html" class="header-navigation-link" lang="uk"> <span class="hotel-word" >Готель</span></a>
+          </li>
+           <!-- номер готелю і свг-картинка -->
+          <li class="header-navigation-item">
+            <div class="wraper-icon-mob-tel" >
+              <a href="tel:0668491089" class="header-navigation-tel"> <span class="header-mob-number">066 849 10 89</span> 
+                <svg class="mobile-phone-icon-second" width="24" height="24">
+                  <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-phone"></use>
+                </svg>
+               </a>
+            </div>
+           </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- іконки для соціальних мереж -->
+    <div class="wrapper-for-social-icons">
+      <ul class="header-social-link">
+        <li class="header-social-item">
+          <!-- інстаграм -->
+          <a href="https://www.instagram.com/" target="_blank" >
+              <svg class="header-social-icon"  width="24" height="24">
+                <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-instagram"></use>
+              </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <!-- фейсбук -->
+          <a href="https://www.facebook.com/" target="_blank" >
+              <svg class="header-social-icon"  width="24" height="24">
+                <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-facebook"></use>
+              </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <!-- телеграм -->
+          <a href="https://web.telegram.org/k/" target="_blank" >
+            <svg class="header-social-icon"  width="24" height="24">
+              <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-telegram"></use>
+            </svg>
+          </a>
+         </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+  
+    </header>
+  <!--main-->
+    <main>
+      <button id="button-up" class="button-up" onClick="scrollTopTop()">
+    M
+  </button>
+  <div class="arrow-up">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!--hero-->
+    <section>
+        <!--Room-hero--->
+	<div class="section room-2lx-hero">
+		<div class="container">
+
+			<!-- Слайдер -->
+			<div class="swiper">
+
+				<!-- Content page -->
+				<div class="room-2lx-hero-container">
+					
+					<!-- Address in top-right for < 1023px -->
+					<div class="room-2lx-hero-address-top">
+						<!-- Address -->
+						<address class="room-2lx-hero-address">
+							<a class="room-2lx-hero-link-map" href="https://goo.gl/maps/Grp7XXtRsGtsApyo6" rel="noreferrer nofollow noopener" lang="uk">
+								<svg class="room-2lx-hero-icon-map">
+									<use href="/goit-team-prog-g7/assets/icons-dc786474.svg#icon-map"></use>
+								</svg> 
+								Україна, м. Полтава, <br> вул. Маршала Бірюзова, 15
+							</a>
+						</address>
+					</div>
+
+					<div class="room-2lx-hero-content">
+
+						<!-- Text -->
+						<div class="room-2lx-hero-text-content">
+							<h1 class="room-2lx-hero-title" lang="uk" >двомісний номер <span class="room-2lx-hero-lux">люкс</span></h1>
+							<p class="room-2lx-hero-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+						</div>
+
+					
+					</div>
+
+					<!-- Button -->
+					<div class="room-2lx-hero-btn js-open-modal" data-modal="3">
+						<button class="button-transparent" type="button" lang="uk">Переглянути ціни</button>
+					</div>
+
+					<!-- Navigate slider -->
+	  	    <button class="room-arrow-prev" type="button">
+    	      <svg class="room-arrow-icon" width="40" height="40">
+    	        <use href="/goit-team-prog-g7/assets/icons-dc786474.svg#icon-arrow-prev"></use>
+    	      </svg>
+ 	  	    </button>
+					 <!-- swiper-pagination-bullet -->
+    	    <button class="room-arrow-next" type="button">
+    	      <svg class="room-arrow-icon" width="40" height="40">
+    	        <use href="/goit-team-prog-g7/assets/icons-dc786474.svg#icon-arrow-next"></use>
+ 	  	      </svg>
+ 	  	    </button>
+
+					<!-- Social icons/links -->
+					<ul class="room-2lx-hero-social-link">
+						<li class="room-2lx-hero-social-item">
+							<a href="https://www.instagram.com/" rel="noopener noreferrer">
+								<svg class="room-2lx-hero-social-icon" width="24" height="24">
+									<use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="room-2lx-hero-social-item">
+							<a href="https://www.facebook.com/" rel="noopener noreferrer">
+								<svg class="room-2lx-hero-social-icon" width="24" height="24">
+									<use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="room-2lx-hero-social-item">
+							<a href="https://web.telegram.org/k/" rel="noopener noreferrer">
+								<svg class="room-2lx-hero-social-icon" width="24" height="24">
+									<use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-telegram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<picture>
+							<source srcset="/goit-team-prog-g7/assets/hero-room1-desc-1x-a46323ea.jpg 1x, /goit-team-prog-g7/assets/hero-room1-desc-2x-b880ef42.jpg 2x" media="(min-width: 1280px)"/>
+							<source srcset="/goit-team-prog-g7/assets/hero-room1-tab-1x-dec9ae3e.jpg 1x, /goit-team-prog-g7/assets/hero-room1-tab-2x-4e7b8c4f.jpg 2x" media="(min-width: 1024px)"/>
+							<source srcset="/goit-team-prog-g7/assets/hero-room1-mob-1x-b8c746f1.jpg 1x, /goit-team-prog-g7/assets/hero-room1-mob-2x-b9350a79.jpg 2x" media="(max-width: 1023px)"/>
+
+						 <img class="room-2lx-hero-picture" src="/goit-team-prog-g7/assets/hero-room1-mob-1x-b8c746f1.jpg" loading="lazy" alt="room-picture">
+						</picture>
+					</div>
+
+
+					<div class="swiper-slide">
+						<picture>
+							<source srcset="/goit-team-prog-g7/assets/hero-room2-desc-1x-fececb98.jpg 1x, /goit-team-prog-g7/assets/hero-room2-desc-2x-14529cac.jpg 2x" media="(min-width: 1280px)"/>
+							<source srcset="/goit-team-prog-g7/assets/hero-room2-tab-1x-27340a21.jpg 1x, /goit-team-prog-g7/assets/hero-room2-tab-2x-65738a7e.jpg 2x" media="(min-width: 1024px)"/>
+							<source srcset="/goit-team-prog-g7/assets/hero-room2-mob-1x-1c9cfd6d.jpg 1x, /goit-team-prog-g7/assets/hero-room2-mob-2x-6a5eeafe.jpg 2x" media="(max-width: 1023px)"/>
+
+						 <img class="room-2lx-hero-picture" src="/goit-team-prog-g7/assets/hero-room2-mob-1x-1c9cfd6d.jpg" loading="lazy" alt="room-picture">
+						</picture>
+					</div>
+
+					<div class="swiper-slide">
+						<picture>
+							<source srcset="/goit-team-prog-g7/assets/hero-room3-desc-1x-8e4ae66f.jpg 1x, /goit-team-prog-g7/assets/hero-room3-desc-2x-4f970844.jpg 2x" media="(min-width: 1280px)"/>
+							<source srcset="/goit-team-prog-g7/assets/hero-room3-tab-1x-df6b5129.jpg 1x, /goit-team-prog-g7/assets/hero-room3-tab-2x-57c288d3.jpg 2x" media="(min-width: 1024px)"/>
+							<source srcset="/goit-team-prog-g7/assets/hero-room3-mob-1x-47643424.jpg 1x, /goit-team-prog-g7/assets/hero-room3-mob-2x-5d761bbc.jpg 2x" media="(max-width: 1023px)"/>
+
+						 <img class="room-2lx-hero-picture" src="/goit-team-prog-g7/assets/hero-room3-mob-1x-47643424.jpg" loading="lazy" alt="room-picture">
+						</picture>
+					</div>
+
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<!-- <div class="swiper-button-prev swiper-pagination-bullet"></div>
+				<div class="swiper-button-next swiper-pagination-bullet"></div> -->
+
+
+
+
+				<!-- If we need scrollbar -->
+				<!-- <div class="swiper-scrollbar"></div> -->
+
+			</div>
+		</div>
+	</div>
+    </section>
+  <!--description-->
+    <section>
+      
+
+<div class="roomd">
+    <div class="roomd-amenities">
+        <h2 lang="uk" class="roomd-title">ЗРУЧНОСТІ У НОМЕРІ</h2>
+        <p class="roomd-amenities-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    </div>
+    <div class="roomd-description">
+        <div class="roomd-first">
+            <ul>
+                <li class="roomd-item">
+                    <h3 lang="uk" class="roomd-subtitle">ЗАГАЛЬНІ</h3>
+                    <div class="roomd-text-flex">
+                        <p class="roomd-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <p class="roomd-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>  
+                    </div>  
+                </li>
+                <li class="roomd-item">
+                    <h3 lang="uk" class="roomd-subtitle">ВАННА КІМНАТА</h3>
+                    <div class="roomd-text-flex">
+                        <p class="roomd-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <p class="roomd-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>    
+                </li>
+                <li class="roomd-item">
+                    <h3 lang="uk" class="roomd-subtitle">СПАЛЬНЯ</h3>
+                    <p class="roomd-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                </li>
+                <li class="roomd-item"> 
+                    <h3 lang="uk" class="roomd-subtitle">КУХНЯ</h3>
+                    <div class="roomd-text-flex">
+                        <p class="roomd-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <p class="roomd-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    </div>
+                </li>
+                <li class="roomd-item">
+                    <h3 lang="uk" class="roomd-subtitle">МЕДІА</h3>
+                    <p class="roomd-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                        Velit officia consequat duis enim velit mollit.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="roomd-btn-link">
+        <button class="button-big js-open-modal" lang="uk" data-modal="2">ОФОРМИТИ БРОНЮВАННЯ</button>
+        <a href="./hotel.html" lang="uk" class="roomd-link">Повернутися до перегляду номерів
+            <svg width="24px" height="24px" class="roomd-icon">
+                <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-next"></use>
+            </svg>
+        </a>
+    </div>
+    <script src="../js/modal-windows.js"></script>
+</div>
+
+    </section>
+    </main>
+  <!--footer-->
+    <footer>
+      
+
+
+
+
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-wrapper container">
+
+            <div class="logo-and-link-wrapper">
+                <div class="footer-logo-wrapper">
+                    <a class="footer-logo" href="./index.html">MIMIH<span class="last-letter-spacing">O</span></a>
+                </div>
+              
+                    <div class="footer-link-wrapper">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="./index.html"  class="footer-word-link" lang="uk">Головна</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="./restaurant.html" class="footer-word-link" lang="uk">Ресторан</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="./hotel.html" class="footer-word-link" lang="uk">Готель</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            
+                    <div class="footer-icon-wrapper">
+                    <ul class="footer-soc-icon-list">
+                        <li class="footer-soc-icon-item">
+                            <a href="https://www.instagram.com/" target="_blank" class="footer-soc-item-word" >Instagram</a>
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="../images/icons.svg#icon-instagram" ></use>
+                            </svg>
+                        </li>
+                        <li class="footer-soc-icon-item">
+                            <a href="https://www.facebook.com/"  target="_blank" class="footer-soc-item-word" >Facebook</a>
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="../images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="footer-soc-icon-item">
+                            <a href="https://web.telegram.org/k/"  target="_blank" class="footer-soc-item-word" >Telegram</a>
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="../images/icons.svg#icon-telegram" ></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+  <!--modal-windows-->
+    <div class="container">
+
+  <!--Modal TABLE-->
+
+  <div class="modal" data-modal="1">
+		<div class="table-modal">
+  		<button 
+			  type="button" 
+			  class="modal-close-btn js-modal-close" 
+			  data-modal-close>
+			  <svg class="modal-close-btn-icon" width="18" height="18">
+				  <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-btn_svg"></use>
+			  </svg>
+  		</button>
+		
+			<p class="table-modal-text" lang="uk">ЗАБРОНЮВAТИ СТОЛИК</p>
+
+ 			<form class="table-modal-form">
+  	  	<div class="table-form">
+  	  		<div class="table-block">
+  	  			<label class="modal-form-field">
+  	      		<span class="modal-form-input-wrapper">
+  	  					<input type="text" name="user_name" placeholder="Ваше ім'я" class="table-modal-input" required pattern="^[a-zA-Za]+$" minlength="2" />
+  	      			<span class="table-input-desc" lang="uk">На кого забронювати столик?</span>
+  	      		</span>
+  	  			</label>
+
+  	  			<label class="modal-form-field">
+  	       		<span class="modal-form-input-wrapper">
+  	  					<input type="tel" name="user_phone" placeholder="+38 (___) ___-__-__" class="table-modal-input" required pattern="([+][0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2})" title="+380XXXXXXXXX"  />
+  	  					<span class="table-input-desc" lang="uk">Номер телефону</span>
+  	      		</span>
+  	   			</label>  
+  	  		</div>
+
+  	   		<div class="table-block">
+  	      	<label class="modal-form-field">   
+  	        	<span class="modal-form-input-wrapper">
+  	            <svg class="click-icon" width="19.95" height="11.48">
+  	            	<use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-click"></use>
+  	            </svg> 
+  						  <select id="table-form-persons" name="persons" class="table-persons" >
+  						      <option value="1">1</option>
+  						      <option value="2" selected>2</option>
+  						      <option value="3">3</option>
+  						      <option value="4">4</option>
+  						      <option value="5">5</option>
+  						      <option value="6">6</option>
+  						      <option value="7">7</option>
+  						      <option value="8">8</option>
+  						      <option value="9">9</option>
+  						      <option value="10">10</option>
+  						  </select>
+  						  <span class="table-input-desc" lang="uk">Столик на яку кількість осіб?</span>
+  						</span> 
+  				  </label>
+  	  			<label class="modal-form-field">   
+  	  				<span class="modal-form-input-wrapper">
+  	  			    <svg class="click-icon" width="19.95" height="11.48">
+  	  			    	<use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-click"></use>
+  	  			    </svg>
+  	  					<select  name="day" class="table-modal-input" > 
+  	  			    		<option value="today" selected lang="uk">Сьогодні</option>
+  	  			    		<option value="tomorrow" lang="uk">Завтра</option> 
+  	  			    		<option value="second_tomorrow">Післязавтра</option>
+  	  					</select>
+  	  					<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
+  	  				</span>
+  	  			</label>
+  	  		</div> 
+				</div>
+
+  	  	<button type="submit" class="button-big-pointed" lang="uk">ОФОРМИТИ БРОНЮВАННЯ</button>
+ 			</form>
+		</div>
+	</div>
+
+
+  <!--Modal ROOM--->
+
+  <div class="modal" data-modal="2">
+    <div class="room-modal">
+    	<button type="button" class="modal-close-btn js-modal-close" data-modal-close>
+        <svg class="modal-close-btn-icon" width="18" height="18">
+            <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-btn_svg"></use></svg>
+     </button>
+
+     <p class="room-modal-text" lang="uk">ЗАБРОНЮВАТИ НОМЕР</p>
+     
+		 <form class="table-modal-form">
+ 
+        <div class="room-block">
+        	<label class="modal-form-field">
+            <span class="modal-form-input-wrapper">
+        			<input type="text" name="user_name" placeholder="Ваше ім'я" class="table-modal-input" required pattern="^[a-zA-Za]+$" minlength="2" />
+            	<span class="table-input-desc" lang="uk">На кого забронювати столик?</span>
+            </span>
+        	</label>
+
+        	<label class="modal-form-field">
+            <span class="modal-form-input-wrapper">
+            	<input type="tel" name="user_phone" placeholder="+38 (___) ___-__-__" class="table-modal-input" required pattern="([+][0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2})" title="+380XXXXXXXXX"  />
+        			<span class="table-input-desc" lang="uk">Номер телефону</span>
+            </span>
+         	</label>  
+        </div>
+
+        <div class="room-block">
+         	<label class="modal-form-field">
+            <span class="modal-form-input-wrapper">
+              <svg class="click-icon" width="19.95" height="11.48">
+                  <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-click"></use>
+							</svg>
+          		<select id="room-form-persons" name="persons" class="room-category" >
+              	<option value="1" lang="uk">Двомісний номер</option>
+              	<option value="2" lang="uk" selected>Двомісний люкс</option>
+              	<option value="3">Трьомісний номер</option>
+            	</select>   
+            	<span class="table-input-desc" lang="uk">Категорія номеру</span>
+          	</span> 
+        	</label>	
+				</div>
+
+        <div class="room-block">   
+        	<label class="modal-form-field">
+            <span class="modal-form-input-wrapper">
+                <svg class="click-icon" width="19.95" height="11.48">
+                    <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-click"></use>
+								</svg>
+            	<select name="day" class="table-modal-input" > 
+                <option value="today" selected="" lang="uk">Сьогодні</option>
+                <option value="tomorrow">Завтра</option> 
+                <option value="second_tomorrow" lang="uk">Післязавтра</option>
+            	</select>     
+        			<span class="table-input-desc" lang="uk">Дата заїзду</span>
+            </span>
+        	</label>
+        
+        	<label class="modal-form-field">
+            <span class="modal-form-input-wrapper">
+                <svg class="click-icon" width="19.95" height="11.48">
+                    <use href="/goit-team-prog-g7/assets/icons-98baf7de.svg#icon-click"></use>
+								</svg>
+           		<select id="table-form-day" name="day" class="table-modal-input" > 
+                <option value="today" selected="" lang="uk">Сьогодні</option>
+                <option value="tomorrow" lang="uk">Завтра</option> 
+                <option value="second_tomorrow" lang="uk">Післязавтра</option>
+            	</select>      
+        			<span class="table-input-desc" lang="uk">Дата виїзду</span>
+            </span>
+       	 	</label>
+    		</div> 
+        <button type="submit" class="button-big-pointed" lang="uk">ОФОРМИТИ БРОНЮВАННЯ</button>
+     </form>
+    </div>
+  </div>
+
+  <!-- Підложка під модальним вікном -->
+  <div class="overlay js-overlay-modal"></div>
+
+</div>
+
+    <div class="container">
+
+</div>
+
+    
+    <!--js-scrupt-->
+    <script src="./js/buttonup.js"></script>
+    
+    <!-- sript modal -->
+    <script src="./js/modal-windows.js"></script>
+
+    <!-- Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.js"></script>
+    <script src="./js/room-hero-wrap.js"></script>
+
+  </body>
+</html>
