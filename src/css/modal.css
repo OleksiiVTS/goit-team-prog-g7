@@ -195,6 +195,7 @@
       right: 8.47%;
       top: 31.25%;
       bottom: 20.89%;
+      pointer-events: none;
   }
 
     .room-rates-category {
