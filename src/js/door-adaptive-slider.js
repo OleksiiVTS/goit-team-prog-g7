@@ -1,17 +1,23 @@
-
-function doorSlider() {
-    let images = document.querySelectorAll('.door-img');
-    let sliderLine = document.querySelector('.door-slider-list');
-    let keyNext = document.querySelector('.door-btn-next');
-    let keyPrev = document.querySelector('.door-btn-prev');
+// sliderObj = {
+//     selectorSlider    : '.door-slider',
+//     selectorImage     : '.door-img',
+//     selectorSliderLine: '.door-slider-list',
+//     selectorKeyNext   : '.door-btn-next',
+//     selectorKeyPrev   : '.door-btn-prev'
+// }
+function doorSlider(obj) {
+    let images = document.querySelectorAll(obj.selectorImage);
+    let sliderLine = document.querySelector(obj.selectorSliderLine);
+    let keyNext = document.querySelector(obj.selectorKeyNext);
+    let keyPrev = document.querySelector(obj.selectorKeyPrev);
 
     let count = 0;
     let width;
     let arr = {};
 
-    function init() {
+    function init(selectorSlider) {
         // console.log('resize');
-        let lenSprite = document.querySelector('.door-slider').offsetWidth;
+        let lenSprite = document.querySelector(selectorSlider).offsetWidth;
         let totalWidth = 0;
         let gaps = { 374: 20, 662: 34, 875: 87 };
 
@@ -45,11 +51,10 @@ function doorSlider() {
         rollSlider();
     }
 
-    window.addEventListener('resize', init);
-    init();
+    window.addEventListener('resize', init(obj.selectorSlider));
+    init(obj.selectorSlider);
 
     // setInterval(() => { keyNext.click() }, 3000);
-
 
     keyNext.addEventListener('click', () => {
         count++;
@@ -81,5 +86,23 @@ function doorSlider() {
         // sliderLine.style.transform = 'translate(-' + count * width + 'px)';
     }
 }
+    
+let sliderObj = {
+    selectorSlider:     '.door-slider',
+    selectorImage:      '.door-img',
+    selectorSliderLine: '.door-slider-list',
+    selectorKeyNext:    '.door-btn-next',
+    selectorKeyPrev:    '.door-btn-prev'
+}
+doorSlider(sliderObj);
 
-doorSlider();
+let sliderObj2 = {
+    selectorSlider:     '.service-slider',
+    selectorImage:      '.service-img + img',
+    selectorSliderLine: '.service-img',
+    selectorKeyNext:    '.icon-right',
+    selectorKeyPrev:    '.icon-left'
+}
+doorSlider(sliderObj2);
+
+// doorSlider();
