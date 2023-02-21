@@ -20,14 +20,14 @@
   	  		<div class="table-block">
   	  			<label class="modal-form-field">
   	      		<span class="modal-form-input-wrapper">
-  	  					<input type="text" name="user_name" placeholder="Ваше ім'я" class="table-modal-input" required pattern="^[a-zA-Za]+$" minlength="2" />
+  	  					<input type="text" name="user_name" placeholder="Ваше ім'я" class="table-modal-input" required pattern="^[a-zA-Za-яА-Я]+$" minlength="2" />
   	      			<span class="table-input-desc" lang="uk">На кого забронювати столик?</span>
   	      		</span>
   	  			</label>
 
   	  			<label class="modal-form-field">
   	       		<span class="modal-form-input-wrapper">
-  	  					<input type="tel" name="user_phone" placeholder="+38 (___) ___-__-__" class="table-modal-input" required pattern="([+][0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2})" title="+380XXXXXXXXX"  />
+  	  					<input type="tel" name="user_phone" placeholder="+38 (___) ___-__-__" class="table-modal-input" required pattern="^[+][0-9]{12}" title="Номер повинен бути в форматі '+380XXXXXXXXX'"  />
   	  					<span class="table-input-desc" lang="uk">Номер телефону</span>
   	      		</span>
   	   			</label>  
@@ -36,20 +36,21 @@
   	   		<div class="table-block">
   	      	<label class="modal-form-field">   
   	        	<span class="modal-form-input-wrapper">
-  	            <svg class="click-icon" width="19.95" height="11.48">
-  	            	<use href="./images/icons.svg#icon-click"></use>
-  	            </svg> 
+					<svg class="click-icon" width="19.95" height="11.48">
+						<use href="./images/icons.svg#icon-click"></use>
+					</svg>
   						  <select id="table-form-persons" name="persons" class="table-persons" >
-  						      <option value="1">1</option>
-  						      <option value="2" selected>2</option>
-  						      <option value="3">3</option>
-  						      <option value="4">4</option>
-  						      <option value="5">5</option>
-  						      <option value="6">6</option>
-  						      <option value="7">7</option>
-  						      <option value="8">8</option>
-  						      <option value="9">9</option>
-  						      <option value="10">10</option>
+  						      <option value="1" lang="uk">Кількість персон</option>
+							  <option value="2">1</option>
+  						      <option value="3">2</option>
+  						      <option value="4">3</option>
+  						      <option value="5">4</option>
+  						      <option value="6">5</option>
+  						      <option value="7">6</option>
+  						      <option value="8">7</option>
+  						      <option value="9">8</option>
+  						      <option value="10">9</option>
+  						      <option value="11">10</option>
   						  </select>
   						  <span class="table-input-desc" lang="uk">Столик на яку кількість осіб?</span>
   						</span> 
@@ -59,8 +60,9 @@
   	  			    <svg class="click-icon" width="19.95" height="11.48">
   	  			    	<use href="./images/icons.svg#icon-click"></use>
   	  			    </svg>
-  	  					<select  name="day" class="table-modal-input" > 
-  	  			    		<option value="today" selected lang="uk">Сьогодні</option>
+  	  					<select name="day" class="table-modal-input" > 
+							<option value="today" lang="uk">Оберіть день</option>
+  	  			    		<option value="today" lang="uk">Сьогодні</option>
   	  			    		<option value="tomorrow" lang="uk">Завтра</option> 
   	  			    		<option value="second_tomorrow">Післязавтра</option>
   	  					</select>
@@ -99,7 +101,7 @@
 
         	<label class="modal-form-field">
             <span class="modal-form-input-wrapper">
-            	<input type="tel" name="user_phone" placeholder="+38 (___) ___-__-__" class="table-modal-input" required pattern="([+][0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2})" title="+380XXXXXXXXX"  />
+            	<input type="tel" name="user_phone" placeholder="+38 (___) ___-__-__" class="table-modal-input" required pattern="^[+][0-9]{12}" title="Номер повинен бути в форматі '+380XXXXXXXXX'"  />
         			<span class="table-input-desc" lang="uk">Номер телефону</span>
             </span>
          	</label>  
@@ -127,11 +129,12 @@
                 <svg class="click-icon" width="19.95" height="11.48">
                     <use href="./images/icons.svg#icon-click"></use>
 								</svg>
-            	<select name="day" class="table-modal-input" > 
-                <option value="today" selected="" lang="uk">Сьогодні</option>
-                <option value="tomorrow">Завтра</option> 
-                <option value="second_tomorrow" lang="uk">Післязавтра</option>
-            	</select>     
+					<select name="day" class="table-modal-input" > 
+						<option value="today" lang="uk">Оберіть день</option>
+						<option value="today" lang="uk">Сьогодні</option>
+						<option value="tomorrow" lang="uk">Завтра</option> 
+						<option value="second_tomorrow">Післязавтра</option>
+					</select>   
         			<span class="table-input-desc" lang="uk">Дата заїзду</span>
             </span>
         	</label>
@@ -141,11 +144,12 @@
                 <svg class="click-icon" width="19.95" height="11.48">
                     <use href="./images/icons.svg#icon-click"></use>
 								</svg>
-           		<select id="table-form-day" name="day" class="table-modal-input" > 
-                <option value="today" selected="" lang="uk">Сьогодні</option>
-                <option value="tomorrow" lang="uk">Завтра</option> 
-                <option value="second_tomorrow" lang="uk">Післязавтра</option>
-            	</select>      
+					<select name="day" class="table-modal-input" > 
+						<option value="today" lang="uk">Оберіть день</option>
+						<option value="today" lang="uk">Сьогодні</option>
+						<option value="tomorrow" lang="uk">Завтра</option> 
+						<option value="second_tomorrow">Післязавтра</option>
+					</select> 
         			<span class="table-input-desc" lang="uk">Дата виїзду</span>
             </span>
        	 	</label>
