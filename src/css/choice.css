@@ -12,11 +12,13 @@
 *//*--buttons--*//*--buttons--*/
 
 .rooms-container {
+  min-width: 414px;
   background-color: var(--back-color-criam);
   margin-top: 32px;
   margin-bottom: 32px;
 }
 .rooms-container-right {
+  min-width: 414px;
   background-color: var(--back-color-criam-dark);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -119,6 +121,13 @@
   align-items: center;
   width: 32px;
   height: 32px;
+}
+.icon-arrow {
+  fill:#000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-arrow:hover {
+  fill: #f3c653;
 }
 .rooms-button {
   display: flex;
