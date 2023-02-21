@@ -94,7 +94,7 @@
       
       .modal-close-btn:hover,
       .modal-close-btn:focus {
-          fill: var(--color-button-hover);
+          fill: #FFFFFF;
           background-color: var(--back-color-footer);
       }
 
@@ -255,11 +255,12 @@
     }
 
     /* !!!! */
-      /* .table-modal-input:focus,
+      .table-modal-input:focus,
       .table-persons:focus,
       .room-category:focus {
           border: 1px solid var(--back-color-footer);
-      } */
+      } 
+
     .table-modal-input:focus,
     .room-category:focus {
       border: 1px solid var(--back-color-footer);
