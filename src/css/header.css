@@ -254,6 +254,25 @@
   .wrapper-for-social-icons{
     display: flex;
   }
+
+  .header-social-link {
+    position: absolute;
+    transform: translate(-932px, 610px);
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-social-icon {
+    fill: rgba(243, 198, 83, 0.7);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ; 
+  }
+
+  .header-social-icon:hover,
+  .header-social-icon:focus {
+    fill: white;
+  }
+
   
   }
   /******************==============</TABLET>===============******************* */
@@ -290,7 +309,11 @@
     line-height: calc(24/20);
   }
   
-  .header-social-link{
+  
+
+  .header-social-link {
+    position: absolute;
+    transform: translate(0px, 9px);
     display: flex;
     justify-content: center;
     align-items: center;
