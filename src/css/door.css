@@ -55,7 +55,8 @@
 	letter-spacing: 0.3em;
 	color: #FFFFFF;
 
-	margin-bottom: calc(100vw * 12 / 414);
+	/* margin-bottom: calc(100vw * 12 / 414); */
+	margin-bottom: 12px;
 }
 
 .door-title {
@@ -67,7 +68,8 @@
   letter-spacing: 0.02em;
   color: #FFFFFF;
 
-  margin-bottom: calc(100vw * 20 / 414);
+  /* margin-bottom: calc(100vw * 20 / 414); */
+	margin-bottom: 20px;
 }
 
 .door-text {
@@ -80,7 +82,8 @@
   color: #BABABA;
 
   /* margin-right: calc(100vw * 15 / 414); */
-  margin-bottom: calc(100vw * 48 / 414);
+  /* margin-bottom: calc(100vw * 48 / 414); */
+	margin-bottom: 48px;
 }
 
 .door-nav-slider {
@@ -88,7 +91,8 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  row-gap: calc(100vw * 32 / 414);
+  /* row-gap: calc(100vw * 32 / 414); */
+	row-gap: 32px;
 }
 
 .door-slider {
@@ -106,7 +110,8 @@
 	display: flex;
   /* column-gap: calc(100vw * 20 / 414); */
 	column-gap: 20px;			
-	margin-bottom: calc(100vw * 16 / 414);
+	/* margin-bottom: calc(100vw * 16 / 414); */
+	margin-bottom: 16px;
 
 	transition: transform ease-in 250ms;
 }
@@ -124,7 +129,8 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-  row-gap: calc(100vw * 16 / 414);;
+  /* row-gap: calc(100vw * 16 / 414); */
+	row-gap: 16px;
 }
 
 .door .button-black {
