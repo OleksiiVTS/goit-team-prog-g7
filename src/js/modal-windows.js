@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
          /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
-         var modalId = this.getAttribute('data-modal'),
-             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+         let modalId = this.getAttribute('data-modal');
+         let modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
 
 
          /* После того как нашли нужное модальное окно, добавим классы
