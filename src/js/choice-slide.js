@@ -19,10 +19,10 @@ const swiper = new Swiper('.rooms-foto', {
     },
   
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      draggable: false
-    },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    //   draggable: false
+    // },
     
     // // растояние между слайдами
     // spaceBetween: 16,
