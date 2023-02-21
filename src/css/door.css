@@ -364,4 +364,8 @@
 	.door .button-black {
 		background-color: transparent;
 	}
+	.door .button-black:hover,
+	.door .button-black:focus {
+		background-color: #FFFFFF;
+	}
 }
