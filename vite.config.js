@@ -8,9 +8,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
-        nested: resolve(__dirname, 'src/restaurant.html'),
-        nested: resolve(__dirname, 'src/hotel.html'),
-        nested: resolve(__dirname, 'src/room2lx.html'),
+        restaurant: resolve(__dirname, 'src/restaurant.html'),
+        hotel: resolve(__dirname, 'src/hotel.html'),
+        room: resolve(__dirname, 'src/room2lx.html'),
         nested: resolve(__dirname, 'src/room2.html'),
         nested: resolve(__dirname, 'src/room3.html'),
       },
