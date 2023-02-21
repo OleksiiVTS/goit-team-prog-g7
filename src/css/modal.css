@@ -88,10 +88,10 @@
         
     }
     
-    .modal-close-btn:hover,
-    .modal-close-btn:focus {
-        fill: var(--color-button-hover);
-        background-color: var(--back-color-footer);
+    .modal-close-btn:hover {
+        fill: var(--color-text-link);
+        background-color: #dedfe8;
+        border-radius: 50%;
     }
     
 
@@ -189,6 +189,20 @@
         -webkit-appearance: none;
     }
 
+   /* .table-modal-input:not(:placeholder-shown):valid { 
+      border: 1px solid rgb(255, 255, 93);
+      }
+
+    .table-modal-input:not(:placeholder-shown):novalid {
+        border: 1px solid rgb(12, 255, 93);
+        }*/
+
+  
+
+    /*.table-modal-input::placeholder {
+      color: red;
+    }*/
+
     .click-icon {
       fill: var(--color-text-link);
       position: absolute;
@@ -210,6 +224,7 @@
     
   
     .table-modal-input:focus,
+    .table-persons:focus,
     .room-category:focus {
         border: 1px solid var(--back-color-footer);
     }
@@ -221,10 +236,10 @@
   padding: 20px 28px;
   }
 
-    .table-persons {
+   /* .table-persons {
         position: relative;
         display: inline-block;
-        }
+        }*/
 
 /*-----------MODAL-ROOM---------------*/
 
