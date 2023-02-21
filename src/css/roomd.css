@@ -110,8 +110,14 @@
 
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    
+    .container {
+        max-width: 1279px;
+    }
+
     .roomd {
-        padding: 50px 47px 40px;
+        margin-top: 50px;
+        margin-bottom: 40px;
     }
     
     .roomd-amenities-text {
@@ -188,7 +194,7 @@
     
     .roomd-btn-link {
         margin-top: 40px;
-        padding-left: 543px;
+        padding-left: 496px;
     }
 }
 
@@ -200,10 +206,14 @@
 
 
 @media screen and (min-width: 1280px) {
+
+    .container {
+        max-width: 1279px
+    }
+
     .roomd {
-        margin-right: auto;
-        margin-left: auto;
-        padding: 48px 85px;
+        margin-top: 48px;
+        margin-bottom: 48px;
     }
     
     .roomd-amenities-text {
