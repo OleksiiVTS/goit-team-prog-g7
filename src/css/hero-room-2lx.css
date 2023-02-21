@@ -3,9 +3,9 @@
     position: relative;
   }
   
-  .header-social-link {
+  /* .header-social-link {
     display: none;
-  }
+  } */
 
   .room-2lx-hero > .container {
     padding: 0;
@@ -319,9 +319,9 @@
   }
   
   @media screen and (min-width: 1024px) {
-    .header-social-link {
+    /* .header-social-link {
         display: none;
-    }
+    } */
 
     .room-2lx-hero > .container {
       width: 1024px;
