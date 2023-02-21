@@ -12,49 +12,33 @@
 *//*--buttons--*//*--buttons--*/
 
 .overlay {
-    opacity: 0;
-    visibility: hidden;
-    
-    position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 20;
+  transition: .3s all;
+}
+
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 20;
-    transition: .3s all;
   }
-  
-  
-  .modal {
-    opacity: 0;
-    visibility: hidden;
-  
-    position: fixed;
-      z-index: 100;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  
-  .modal.active,
-  .overlay.active {
-     opacity: 1;
-     visibility: visible;
-  }
-  
-      /*-----------MODAL-TABLE---------------*/
-  
-  
-.modal-table {
-  /* !!!! */
-          position: absolute;
-          top: 50%;
-          left: 50%; 
-          width: 414px;
-          min-height: 668px;
 
+<<<<<<< Updated upstream
           /* !!!! */
           margin: 0 auto;
           padding: 60px 15px;
@@ -94,286 +78,291 @@
       
       .modal-close-btn:hover,
       .modal-close-btn:focus {
-          fill: var(--color-button-hover);
+          fill: #FFFFFF;
           background-color: var(--back-color-footer);
       }
+=======
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+>>>>>>> Stashed changes
 
-      /* !!!! */
-      /* .is-hidden {
-          opacity: 0;
-          visibility: hidden;
-          pointer-events: none;
-      }
-       */
-      /*-----------------Modal Form Table-----------------------*/
-      
-      .modal-form {
-          display: flex;
-          flex-direction: column;
-      }
-      
-      .table-modal-text,
-      .room-modal-text,
-      .room-rates-modal-text  {
+    /*-----------MODAL-TABLE---------------*/
+
+
+.table-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 416px;
+        min-height: 668px;
+        padding: 60px 15px;
+        
+        background: var(--back-color-criam);
+        border-radius: 2px;
+
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+        transform: translate(-50%, -50%) scale(1) rotate(0);
+        transition: transform 250ms linear;
+    }
+    
+  .modal.is-hidden .table-modal {
+     transform: translate(-50%, -50%) scale(0) rotate(0);
+  }
+    
+    .modal-close-btn {
+        position: absolute;
+        top: 18.57px;
+        right: 19.43px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: var(--back-color-footer);
+        background-color: var(--back-color-criam);
+        border: 1.5px solid transparent;
+        padding: 0;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+    }
+    
+    .modal-close-btn-icon {
+        color: #D9D9D9;;
+        
+    }
+    
+    .modal-close-btn:hover,
+    .modal-close-btn:focus {
+        fill: var(--color-button-hover);
+        background-color: var(--back-color-footer);
+    }
+    
+
+    .is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    
+    /*-----------------Modal Form Table-----------------------*/
+    
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .table-modal-text,
+    .room-modal-text,
+    .room-rates-modal-text  {
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    }
+    
+    .room-rates-modal-text  {
       width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
-      font-family: 'Times New Roman';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: 0.05em;
-      color: #000000;
+      padding: 0 82px;
+
       }
 
-      /* !!!! */
-      /* ====== Стили календаря ======*/
-      /* current day */
-      .calendar-content .today {
-        background-color: var(--color-text-link);
-      }
-      /* selected day */
-      .calendar-content .day.selected::after {
-        border-top: 20px solid var(--color-text-button)
-      }
-      /* selected day border */
-      .calendar-content .day.selected {
-        -webkit-box-shadow: inset 0 0 0 1px var(--color-text-button) !important;
-        box-shadow: inset 0 0 0 1px var(--color-text-button) !important;
-      }
-      /* field input */
-      .input input {
-        height: auto;
-        padding: 0;
-        color: var(--color-text);
-        background-color: transparent;
-      }
-      /* button */
-      .button {
-        padding: 0;
-      }
-      /* span-icon-calendar */
-      .default-icon-calendar {
-        position: absolute;
-        top: 75%;
-        right: 8px;
-        transform: translateY(-50%);
-        display: inline-block;
-      }
-      /* icon-calendar */
-      [class*=default-icon] {
-        width: 24px;
-        height: 24px;
-      }
-      /* ================================= */
-      
-      .room-rates-modal-text  {
+    .modal-form-field {
+        display: block;
+
+    }
+    
+    .table-input-desc {
+        display: block;
+        margin-left: 12px;
+        margin-bottom: 20px;
+
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+
+        letter-spacing: 0.02em;
+
+        color: var(--color-text-link);
+
+    }
+    
+    .modal-form-input-wrapper {
+        display: block;
+        position: relative;
+    }
+    
+    .table-modal-input, 
+    .table-persons,
+    .room-rates-category,
+    .room-category,
+    .room-rates-days,
+    .room-rates-input {
+        outline: none;
         width: 100%;
-        padding: 0 82px;
-  
-        }
-  
-      .modal-form-field {
-          display: block;
-  
-      }
-      
-      .table-input-desc {
-          display: block;
-          margin-left: 12px;
-          margin-bottom: 20px;
-  
-      
-          font-family: 'Montserrat';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 17px;
-  
-          letter-spacing: 0.02em;
-  
-          color: var(--color-text-link);
-  
-      }
-      
-      .modal-form-input-wrapper {
-          display: block;
-          position: relative;
-      }
-      
-  
-  
-      .table-modal-input, 
-      .table-persons,
-      .room-rates-category,
-      .room-category,
-      .room-rates-days,
-      .room-rates-input {
-          outline: none;
-          width: 100%;
-          height: 56px;
-          margin-bottom: 8px;
-  
-          font-family: 'Times New Roman';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 23px;
-          letter-spacing: 0.05em;
-  
-          color: #808080;
-          background: var(--back-color-criam);
-  
-          border: 1px solid var(--color-text-link);
-  
-          padding-left: 12px;
-  
-          transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-         appearance: none;
-          -moz-appearance: none;
-          -webkit-appearance: none;
-      }
-  
-      .click-icon {
-        fill: var(--color-text-link);
-        position: absolute;
-        right: 8.47%;
-        top: 31.25%;
-        bottom: 20.89%;
-    }
-  
-      .room-rates-category {
-          border: 1px solid transparent;
-      }
-  
-      .select {
-      appearance: none;
-      -moz-appearance: none;
-      -webkit-appearance: none;
+        height: 56px;
+        margin-bottom: 8px;
+
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.05em;
+
+        color: #808080;
+        background: var(--back-color-criam);
+
+        border: 1px solid var(--color-text-link);
+
+        padding-left: 12px;
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+       appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
     }
 
+<<<<<<< Updated upstream
     /* !!!! */
-      /* .table-modal-input:focus,
+      .table-modal-input:focus,
       .table-persons:focus,
       .room-category:focus {
           border: 1px solid var(--back-color-footer);
-      } */
+      } 
+
+=======
+    .click-icon {
+      fill: var(--color-text-link);
+      position: absolute;
+      right: 8.47%;
+      top: 31.25%;
+      bottom: 20.89%;
+  }
+
+    .room-rates-category {
+        border: 1px solid transparent;
+    }
+
+    .select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+    
+  
+>>>>>>> Stashed changes
     .table-modal-input:focus,
     .room-category:focus {
-      border: 1px solid var(--back-color-footer);
+        border: 1px solid var(--back-color-footer);
     }
 
+  .button-big-pointed {
+  position: absoulte;
+  bottom: 0;
+  margin-top: 30px;
+  padding: 20px 28px;
+  }
 
-    .button-big-pointed {
-    position: absoulte;
-    bottom: 0;
-    margin-top: 30px;
-    padding: 20px 28px;
-  
-    }
-  
-    /* !!!! */
-    /* .table-persons {
+    .table-persons {
         position: relative;
         display: inline-block;
-    } */
-  
-  /*-----------MODAL-ROOM---------------*/
-  
+        }
+
+/*-----------MODAL-ROOM---------------*/
+
+.room-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 416px;
+    min-height: 780px;
+    padding: 60px 15px 60px 15px;
+    
+    background: var(--back-color-criam);
+    border-radius: 2px;
+
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    transition: transform 250ms linear;
+}
+
+.modal.is-hidden .room-modal {
+  transform: translate(-50%, -50%) scale(0) rotate(0);
+}
+
+
+  /*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*/
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 1024px;
+      padding: 0 47px;
+    }
+
+  .table-modal {
+    width: 712px;
+    min-height: 522px;
+    padding: 60px;
+  }
+
+  .table-form  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table-block {
+    display: inline-block;
+    gap: 15px;
+  }
+
+  .table-modal-input, 
+  .table-persons,
+  .room-rates-category,
+  .room-category {
+    width: 288px;
+    height: 64px;
+  }
+
   .room-modal {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 416px;
-      min-height: 780px;
-      padding: 60px 15px 60px 15px;
-      
-      background: var(--back-color-criam);
-      border-radius: 2px;
-  
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  
-      transform: translate(-50%, -50%) scale(1) rotate(0);
-      transition: transform 250ms linear;
+    width: 712px;
+    min-height: 638px;
+    padding: 60px;
   }
-  
-  .modal.is-hidden .room-modal {
-    transform: translate(-50%, -50%) scale(0) rotate(0);
+  .room-block  {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
   }
-  
-  
-    /*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*//*---*/
-    @media screen and (min-width: 1024px) {
-      .container {
-        width: 1024px;
-        padding: 0 47px;
-      }
-  
-    /* !!!! */
-    .modal-table {
-      width: 712px;
-      min-height: 522px;
-      padding: 60px;
-    }
-  
-    /* !!!! */
-    .modal-table-form  {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .table-block {
-      display: inline-block;
-      gap: 15px;
-    }
-  
-    /* !!!! */
-    /* .table-persons, */
-    .table-modal-input, 
-    .room-rates-category,
-    .room-category {
-      width: 288px;
-      height: 64px;
-    }
 
-    /* !!!! */
-    .table-persons {
-      height: 64px;
+    .button-big-pointed {
+      min-width: 592px;
+      font-size: 24px;;
     }
-    /* !!!! */
-    .default-icon-calendar {
-      top: 100%;
-    }
+  }
 
-    .room-modal {
-      width: 712px;
-      min-height: 638px;
-      padding: 60px;
+  @media screen and (min-width: 1280px) {
+    .container {
+      width: 1280px;
+      padding: 0 85px;
     }
-    .room-block  {
-      display: flex;
-      justify-content: flex-end;
-      gap: 15px;
+    .button-big {
+      min-width: 434px;
+      height: 65px;
+      font-size: 24px;;
     }
   
-  
-      .button-big-pointed {
-        min-width: 592px;
-        font-size: 24px;;
-      }
-    }
-    @media screen and (min-width: 1280px) {
-      .container {
-        width: 1280px;
-        padding: 0 85px;
-      }
-      .button-big {
-        min-width: 434px;
-        height: 65px;
-        font-size: 24px;;
-      }
     }
 
   
