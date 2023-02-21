@@ -86,7 +86,8 @@ function doorSlider(obj) {
         // sliderLine.style.transform = 'translate(-' + count * width + 'px)';
     }
 }
-    
+ 
+// slider для D-o-o-r
 let sliderObj = {
     selectorSlider:     '.door-slider',
     selectorImage:      '.door-img',
@@ -96,13 +97,15 @@ let sliderObj = {
 }
 doorSlider(sliderObj);
 
+// Для 2го слайдеру. 
+// Розкоментувати та прописати свої селектори (класи)
+/* 
 let sliderObj2 = {
-    selectorSlider:     '.service-slider',
-    selectorImage:      '.service-img + img',
-    selectorSliderLine: '.service-img',
-    selectorKeyNext:    '.icon-right',
-    selectorKeyPrev:    '.icon-left'
+    selectorSlider:     '.service-slider',       // div слайдера
+    selectorImage:      '.service-img + img',    // всі картинки одного класу
+    selectorSliderLine: '.service-img',          // div чи ul які огортають всі картинки
+    selectorKeyNext:    '.icon-right',           // кнопка, картинка з стрілкою ->
+    selectorKeyPrev:    '.icon-left'             // кнопка, картинка з стрілкою <-
 }
 doorSlider(sliderObj2);
-
-// doorSlider();
+*/
