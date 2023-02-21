@@ -22,7 +22,7 @@
     }
     
     .roomd-amenities-text {
-        width: 384px;
+        max-width: 384px;
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 16px;
@@ -37,7 +37,7 @@
     }
     
     .roomd-title {
-        width: 384px;
+        max-width: 384px;
         font-family: 'Times New Roman';
         font-weight: 400;
         font-size: 32px;
@@ -61,13 +61,13 @@
         letter-spacing: 0.02em;
         margin-top: 16px;
         color: var(--color-text);
-        width: 384px;
+        max-width: 384px;
     }
     
     /* Кнопка й силка */
     
     .roomd-link {
-        width: 384px;
+        max-width: 384px;
         font-family: 'Montserrat';
         font-weight: 500;
         font-size: 16px;
@@ -92,7 +92,7 @@
     }
     
     .roomd-btn-link {
-        width: 384px;
+        max-width: 384px;
         margin-top: 32px;
     }
 }
