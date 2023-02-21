@@ -10,8 +10,8 @@ export default defineConfig({
         main: resolve(__dirname, 'src/index.html'),
         restaurant: resolve(__dirname, 'src/restaurant.html'),
         hotel: resolve(__dirname, 'src/hotel.html'),
-        room: resolve(__dirname, 'src/room2lx.html'),
-        nested: resolve(__dirname, 'src/room2.html')
+        room2lx: resolve(__dirname, 'src/room2lx.html'),
+        room2: resolve(__dirname, 'src/room2.html')
       },
     },
     outDir: '../dist',
