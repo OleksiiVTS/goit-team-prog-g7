@@ -351,6 +351,7 @@
     padding-top: 40px;
     padding-bottom: 40px;  
     background-color:#0E0C07;
+    min-width: 414px;
   }
 
   
@@ -363,7 +364,7 @@
 
   .logo-and-link-wrapper {
     display: flex;
-    /* justify-content: space-between; */
+   
 
   }
 
