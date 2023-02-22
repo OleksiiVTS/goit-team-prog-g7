@@ -79,56 +79,36 @@ $( function() {
     });
 });
 
-// book-nomer-from
-// $( function() {
-//     $( "#date-book-nomer-from" ).datepicker( $.datepicker.regional[ "uk" ] );
-//     $( "#locale" ).on( "change", function() {
-//       $( "#date-book-nomer-from" ).datepicker( "option",
-//         $.datepicker.regional[ $( this ).val() ] );
-//     });
-// });
-
-// book-nomer-to
-// $( function() {
-//     $( "#date-book-nomer-to" ).datepicker( $.datepicker.regional[ "uk" ] );
-//     $( "#locale" ).on( "change", function() {
-//       $( "#date-book-nomer-to" ).datepicker( "option",
-//         $.datepicker.regional[ $( this ).val() ] );
-//     });
-// });
-  
-
-  $( function() {
-    let dateFormat = "dd.mm.yy",
-      from = $( "#date-book-nomer-from" )
-        .datepicker({
-          defaultDate: "+1w",
-          changeMonth: false,
-          numberOfMonths: 1
-        })
-        .on( "change", function() {
-          to.datepicker( "option", "minDate", getDate( this ) );
-        }),
-      to = $( "#date-book-nomer-to" ).datepicker({
+// book-nomer
+$( function() {
+  let dateFormat = "dd.mm.yy",
+    from = $( "#date-book-nomer-from" )
+      .datepicker({
         defaultDate: "+1w",
         changeMonth: false,
         numberOfMonths: 1
       })
       .on( "change", function() {
-        from.datepicker( "option", "maxDate", getDate( this ) );
-      });
- 
-    function getDate( element ) {
-      var date;
-      try {
-        date = $.datepicker.parseDate( dateFormat, element.value );
-      } catch( error ) {
-        date = null;
-      }
- 
-      return date;
+        to.datepicker( "option", "minDate", getDate( this ) );
+      }),
+    to = $( "#date-book-nomer-to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: false,
+      numberOfMonths: 1
+    })
+    .on( "change", function() {
+      from.datepicker( "option", "maxDate", getDate( this ) );
+    });
+  function getDate( element ) {
+    var date;
+    try {
+      date = $.datepicker.parseDate( dateFormat, element.value );
+    } catch( error ) {
+      date = null;
     }
-  } );
+    return date;
+  }
+} );
 
 
 /* Ukraine initialisation for the jQuery UI date picker plugin. */
