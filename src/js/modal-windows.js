@@ -69,7 +69,13 @@ document.addEventListener('DOMContentLoaded', function() {
 }); // end ready
 
 
-
+$( function() {
+    $( "#datepicker" ).datepicker( $.datepicker.regional[ "uk" ] );
+    $( "#locale" ).on( "change", function() {
+      $( "#datepicker" ).datepicker( "option",
+        $.datepicker.regional[ $( this ).val() ] );
+    });
+  } );
 
 /* French initialisation for the jQuery UI date picker plugin. */
 /* Written by Keith Wood (kbwood{at}iinet.com.au),
