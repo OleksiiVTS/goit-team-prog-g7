@@ -466,6 +466,10 @@ line-height: 1.08;
  }
 }
 
+.hero-title-hotel {
+  margin-bottom: 32px;
+}
+
 /** анімація */
 
 /* .loader{
