@@ -24,7 +24,7 @@
 //   },
 // });
 
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.swiper1', {
   // Optional parameters
   direction: 'horizontal',
   //   direction: 'vertical',
@@ -49,32 +49,28 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
   scrollbar: {
     // el: '.swiper-scrollbar',
-    
   },
   simulateTouch: true,
-    grabCursor: true,
-    slideToClickedSlide: true,
-    
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
+  grabCursor: true,
+  slideToClickedSlide: true,
 
-   autoplay: {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+  autoplay: {
     delay: 3000,
+  },
 
-   },
+  speed: 800,
 
-   speed: 800,
+  effect: 'cube',
 
-   effect: 'cube',
-
-   cubeEffect: {
+  cubeEffect: {
     slideShadows: true,
     shadow: true,
     shadowOfFset: 20,
-    shadowScale: 0.94
-   },
-
+    shadowScale: 0.94,
+  },
 });
-
