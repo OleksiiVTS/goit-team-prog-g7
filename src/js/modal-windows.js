@@ -112,19 +112,19 @@ $( function() {
 
 
 /* Ukraine initialisation for the jQuery UI date picker plugin. */
-$( function( factory ) {
-	"use strict";
+(function (factory) {
+   "use strict";
 
-	if ( typeof define === "function" && define.amd ) {
+   if (typeof define === "function" && define.amd) {
 
-		// AMD. Register as an anonymous module.
-		define( [ "../widgets/datepicker" ], factory );
-	} else {
+      // AMD. Register as an anonymous module.
+      define(["../widgets/datepicker"], factory);
+   } else {
 
-		// Browser globals
-		factory( jQuery.datepicker );
-	}
-} )( function( datepicker ) {
+      // Browser globals
+      factory(jQuery.datepicker);
+   }
+})(function (datepicker) {
 "use strict";
 
 datepicker.regional.uk = {
