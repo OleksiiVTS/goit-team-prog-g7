@@ -67,3 +67,88 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 }); // end ready
+
+// https://jqueryui.com/datepicker/#default
+
+// book-table
+$( function() {
+    $( "#date-book-table" ).datepicker( $.datepicker.regional[ "uk" ] );
+    $( "#locale" ).on( "change", function() {
+      $( "#date-book-table" ).datepicker( "option",
+        $.datepicker.regional[ $( this ).val() ] );
+    });
+});
+
+// book-nomer
+$( function() {
+  let dateFormat = "dd.mm.yy",
+    from = $( "#date-book-nomer-from" )
+      .datepicker({
+        defaultDate: "+1w",
+        changeMonth: false,
+        numberOfMonths: 1
+      })
+      .on( "change", function() {
+        to.datepicker( "option", "minDate", getDate( this ) );
+      }),
+    to = $( "#date-book-nomer-to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: false,
+      numberOfMonths: 1
+    })
+    .on( "change", function() {
+      from.datepicker( "option", "maxDate", getDate( this ) );
+    });
+  function getDate( element ) {
+    var date;
+    try {
+      date = $.datepicker.parseDate( dateFormat, element.value );
+    } catch( error ) {
+      date = null;
+    }
+    return date;
+  }
+} );
+
+
+/* Ukraine initialisation for the jQuery UI date picker plugin. */
+( function( factory ) {
+	"use strict";
+
+	if ( typeof define === "function" && define.amd ) {
+
+		// AMD. Register as an anonymous module.
+		define( [ "../widgets/datepicker" ], factory );
+	} else {
+
+		// Browser globals
+		factory( jQuery.datepicker );
+	}
+} )( function( datepicker ) {
+"use strict";
+
+datepicker.regional.uk = {
+	closeText: "Закрити",
+	prevText: "Минулий",
+	nextText: "Наступний",
+	currentText: "Сьогодня",
+	monthNames: [ "січень", "лютий", "березень", "квітень", "травень", "червень",
+		"липень", "серпень", "вересень", "жовтень", "листопад", "грудень" ],
+	monthNamesShort: [ "січ.", "лют.", "бер.", "квіт.", "трав.", "черв.",
+		"лип.", "серп.", "вер.", "жовт.", "лист.", "груд." ],
+	dayNames: [ "неділя", "понеділок", "вівторок", "середа", "четверг", "п'ятниця", "субота" ],
+	dayNamesShort: [ "нд.", "пн.", "вт.", "ср.", "чт.", "пт.", "сб."  ],
+	dayNamesMin: [ "Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
+	weekHeader: "Тиждень",
+	dateFormat: "dd.mm.yy",
+	firstDay: 1,
+	isRTL: false,
+	showMonthAfterYear: false,
+      yearSuffix: ""
+   };
+   
+datepicker.setDefaults( datepicker.regional.uk );
+
+return datepicker.regional.uk;
+
+} );
