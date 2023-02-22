@@ -21,10 +21,16 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- jquery for calendar -->
+    <link 
+      rel="stylesheet" 
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+      
     
-    <script type="module" crossorigin src="/goit-team-prog-g7/assets/main-e662f684.js"></script>
+    <script type="module" crossorigin src="/goit-team-prog-g7/assets/main-4d585ff4.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-team-prog-g7/assets/buttonup-362421b2.js">
-    <link rel="modulepreload" crossorigin href="/goit-team-prog-g7/assets/modal-windows-fb8f25e9.js">
+    <link rel="modulepreload" crossorigin href="/goit-team-prog-g7/assets/modal-windows-37b9c303.js">
     <link rel="modulepreload" crossorigin href="/goit-team-prog-g7/assets/modal-res-80b9f781.js">
     <link rel="modulepreload" crossorigin href="/goit-team-prog-g7/assets/sliders-ebd5b5d6.js">
     <link rel="stylesheet" href="/goit-team-prog-g7/assets/buttonup-b69aa76a.css">
@@ -1204,18 +1210,26 @@
   						  <span class="table-input-desc" lang="uk">Столик на яку кількість осіб?</span>
   						</span> 
   				  </label>
+
   	  			<label class="modal-form-field">   
   	  				<span class="modal-form-input-wrapper">
-  	  			    <svg class="click-icon" width="19.95" height="11.48">
-  	  			    	<use href="/goit-team-prog-g7/assets/icons-3d060f7a.svg#icon-click"></use>
+  	  			    <!-- <svg class="click-icon" width="19.95" height="11.48">
+  	  			    	<use href="./images/icons.svg#icon-click"></use>
   	  			    </svg>
   	  					<select name="day" class="table-modal-select" > 
 							<option value="today" lang="uk">Оберіть день</option>
   	  			    		<option value="today" lang="uk">Сьогодні</option>
   	  			    		<option value="tomorrow" lang="uk">Завтра</option> 
   	  			    		<option value="second_tomorrow">Післязавтра</option>
-  	  					</select>
-  	  					<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
+  	  					</select> -->
+
+								<input 
+										class="table-modal-input" 
+										type="text" 
+										id="date-book-table" 
+										placeholder="Виберіть дату">
+  
+								<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
   	  				</span>
   	  			</label>
   	  		</div> 
@@ -1272,33 +1286,47 @@
         	</label>	
 				</div>
 
+				<!-- book-nomer-from -->
         <div class="room-block">   
         	<label class="modal-form-field">
             <span class="modal-form-input-wrapper">
-                <svg class="click-icon" width="19.95" height="11.48">
-                    <use href="/goit-team-prog-g7/assets/icons-3d060f7a.svg#icon-click"></use>
+                <!-- <svg class="click-icon" width="19.95" height="11.48">
+                    <use href="./images/icons.svg#icon-click"></use>
 								</svg>
 					<select name="day" class="table-modal-select" > 
 						<option value="today" lang="uk">Оберіть день</option>
 						<option value="today" lang="uk">Сьогодні</option>
 						<option value="tomorrow" lang="uk">Завтра</option> 
 						<option value="second_tomorrow">Післязавтра</option>
-					</select>   
+					</select>    -->
+							<input 
+									class="table-modal-input" 
+									type="text" 
+									id="date-book-nomer-from" 
+									placeholder="Виберіть дату">
+
         			<span class="table-input-desc" lang="uk">Дата заїзду</span>
             </span>
         	</label>
         
+					<!-- book-nomer-to -->
         	<label class="modal-form-field">
             <span class="modal-form-input-wrapper">
-                <svg class="click-icon" width="19.95" height="11.48">
-                    <use href="/goit-team-prog-g7/assets/icons-3d060f7a.svg#icon-click"></use>
+                <!-- <svg class="click-icon" width="19.95" height="11.48">
+                    <use href="./images/icons.svg#icon-click"></use>
 								</svg>
 					<select name="day" class="table-modal-select" > 
 						<option value="today" lang="uk">Оберіть день</option>
 						<option value="today" lang="uk">Сьогодні</option>
 						<option value="tomorrow" lang="uk">Завтра</option> 
 						<option value="second_tomorrow">Післязавтра</option>
-					</select> 
+					</select>  -->
+								<input 
+										class="table-modal-input" 
+										type="text" 
+										id="date-book-nomer-to" 
+										placeholder="Виберіть дату">
+
         			<span class="table-input-desc" lang="uk">Дата виїзду</span>
             </span>
        	 	</label>
@@ -1399,6 +1427,10 @@
   <!-- another slider -->
     
     
+
+  <!-- jquery + bootstrap for calendar   -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
   </body>
 </html>
