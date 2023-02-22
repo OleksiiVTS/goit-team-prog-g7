@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 $( function() {
-    $( "#datepicker" ).datepicker( $.datepicker.regional[ "uk" ] );
+    $( "#date-book-table" ).datepicker( $.datepicker.regional[ "uk" ] );
     $( "#locale" ).on( "change", function() {
-      $( "#datepicker" ).datepicker( "option",
+      $( "#date-book-table" ).datepicker( "option",
         $.datepicker.regional[ $( this ).val() ] );
     });
   } );
