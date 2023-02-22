@@ -112,7 +112,7 @@ $( function() {
 
 
 /* Ukraine initialisation for the jQuery UI date picker plugin. */
-( function( factory ) {
+$( function( factory ) {
 	"use strict";
 
 	if ( typeof define === "function" && define.amd ) {
