@@ -5,7 +5,8 @@
 //     selectorKeyNext   : '.door-btn-next',
 //     selectorKeyPrev   : '.door-btn-prev'
 // }
-function doorSlider(obj) {
+$(
+    function doorSlider(obj) {
     let images = document.querySelectorAll(obj.selectorImage);
     let sliderLine = document.querySelector(obj.selectorSliderLine);
     let keyNext = document.querySelector(obj.selectorKeyNext);
@@ -85,7 +86,7 @@ function doorSlider(obj) {
         sliderLine.style.transform = 'translate(-' + currWidth + 'px)';
         // sliderLine.style.transform = 'translate(-' + count * width + 'px)';
     }
-}
+});
  
 // slider для D-o-o-r
 let sliderObj = {
