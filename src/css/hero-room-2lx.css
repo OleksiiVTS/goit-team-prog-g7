@@ -3,6 +3,10 @@
     position: relative;
   }
   
+  /* .header-social-link {
+      display: none;
+  } */
+  
   .room-2lx-hero > .container {
     min-width: 414px;
     padding: 0;
