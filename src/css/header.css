@@ -26,6 +26,10 @@
     .footer-soc-item-word {
       display: none;
     }
+
+    .wrapper-for-social-icons-room {
+      display: none;
+    } 
   }
 
 
@@ -159,7 +163,13 @@
   
         .header-social-link{
           display: none;
-        }   
+        } 
+        
+        .wrapper-for-social-icons-room {
+          display: none;
+        } 
+
+
       }
 
 
@@ -613,3 +623,37 @@
 
 
 /* ===========================================</LAP-TOP>============================================ */
+
+
+
+
+/* ===========================================</ICONS-ROOM>============================================ */
+
+.header-social-link-room {
+  position: absolute;
+  transform: translate(0px, 9px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-left: 140px;
+  cursor: pointer;
+  
+}
+
+.header-social-icon-room{
+  fill: rgba(243, 198, 83, 0.7);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.header-social-icon-room:hover,
+.header-social-icon-room:focus {
+  fill: white;
+
+}
+
+
+/* ===========================================</ICONS-ROOM>============================================ */
+
+
