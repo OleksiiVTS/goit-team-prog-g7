@@ -411,6 +411,11 @@ line-height: 1.08;
         font-size: 16px;
       }
 
+      .link-map:hover,
+      .link-map:focus {
+        color: var(--color-text-link);
+      }
+
 
       .address{
         position: absolute;
