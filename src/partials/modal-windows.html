@@ -1,3 +1,9 @@
+<script>
+	$(function () {
+		$("#datepicker").datepicker();
+	});
+</script>
+
 <div class="container">
 
   <!--Modal TABLE-->
@@ -55,17 +61,25 @@
   						  <span class="table-input-desc" lang="uk">Столик на яку кількість осіб?</span>
   						</span> 
   				  </label>
+
   	  			<label class="modal-form-field">   
   	  				<span class="modal-form-input-wrapper">
-  	  			    <svg class="click-icon" width="19.95" height="11.48">
+  	  			    <!-- <svg class="click-icon" width="19.95" height="11.48">
   	  			    	<use href="./images/icons.svg#icon-click"></use>
-  	  			    </svg>
-  	  					<select name="day" class="table-modal-select" > 
-							<option value="today" lang="uk">Оберіть день</option>
+  	  			    </svg> -->
+  	  					<!-- <select name="day" class="table-modal-select" > 
+										<option value="today" lang="uk">Оберіть день</option>
   	  			    		<option value="today" lang="uk">Сьогодні</option>
   	  			    		<option value="tomorrow" lang="uk">Завтра</option> 
   	  			    		<option value="second_tomorrow">Післязавтра</option>
-  	  					</select>
+  	  					</select> -->
+									
+								<input 
+									class="table-modal-input"
+									type="text" 
+									id="datepicker"
+									locale="uk"
+									placeholder="Виберіть дату">
   	  					<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
   	  				</span>
   	  			</label>
@@ -76,6 +90,7 @@
  			</form>
 		</div>
 	</div>
+
 
 
   <!--Modal ROOM--->
@@ -163,3 +178,4 @@
   <div class="overlay js-overlay-modal"></div>
 
 </div>
+
