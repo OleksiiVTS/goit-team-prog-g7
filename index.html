@@ -1360,7 +1360,7 @@
       <label class="modal-rb-label">Категорія номеру</label>
       <div class="modal-rb-flex">
         <div>
-          <input type="number" name="argument" id="inpt1" class="modal-rb-imput" placeholder="0">
+          <input required type="number" name="argument" id="inpt1" class="modal-rb-imput" placeholder="0">
           <label class="modal-rb-label">Кількість ночей</label>
         </div>
         <div>
@@ -1378,7 +1378,7 @@
     const inputResult = document.getElementById("res1");
 
     input.addEventListener("keyup", function () {
-        inputResult.value = input.value * 1000;
+        inputResult.value = +input.value * 1000;
     })
 </script>
       
@@ -1396,7 +1396,7 @@
         <label class="modal-rb-label">Категорія номеру</label>
         <div class="modal-rb-flex">
             <div>
-                <input type="number" name="argument" id="inpt2" class="modal-rb-imput" placeholder="0">
+                <input required type="number" name="argument" id="inpt2" class="modal-rb-imput" placeholder="0">
                 <label class="modal-rb-label">Кількість ночей</label>
             </div>
             <div>
@@ -1414,7 +1414,7 @@
     const inputResult2 = document.getElementById("res2");
 
     input2.addEventListener("keyup", function () {
-        inputResult2.value = input2.value * 1200;
+        inputResult2.value = +input2.value * 1200;
     })
 </script>
 
