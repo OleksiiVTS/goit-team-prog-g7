@@ -162,7 +162,8 @@
     .room-rates-category,
     .room-category,
     .room-rates-days,
-    .room-rates-input {
+    .room-rates-input,
+    .table-modal-select {
         outline: none;
         width: 100%;
         height: 56px;
@@ -189,19 +190,26 @@
         -webkit-appearance: none;
     }
 
-   /* .table-modal-input:not(:placeholder-shown):valid { 
-      border: 1px solid rgb(255, 255, 93);
+    /*.table-modal-input
+    {
+      color: #3e3d3d;
+       
+    }*/
+
+     .table-modal-input:invalid:not(:placeholder-shown){ 
+      border: 2px solid red;
       }
 
-    .table-modal-input:not(:placeholder-shown):novalid {
-        border: 1px solid rgb(12, 255, 93);
-        }*/
+    .table-modal-input:valid:not(:placeholder-shown){
+        border: 2px solid green;
+        }
 
   
 
-    /*.table-modal-input::placeholder {
-      color: red;
-    }*/
+    .table-modal-input::placeholder {
+      color: #808080;
+       
+    }
 
     .click-icon {
       fill: var(--color-text-link);
@@ -291,7 +299,8 @@
   .table-modal-input, 
   .table-persons,
   .room-rates-category,
-  .room-category {
+  .room-category,
+  .table-modal-select {
     width: 288px;
     height: 64px;
   }
