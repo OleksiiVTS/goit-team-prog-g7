@@ -12,7 +12,7 @@
     padding: 0;
   }
 
-  .swiper {
+  .swiper1 {
     min-width: 414px;
     /* height: 740px; */
   }
@@ -489,7 +489,7 @@
       display: none;
     }
 
-    /* .swiper {
+    /* .swiper1 {
       width: 1280px;
       height: 720px;
     } */
