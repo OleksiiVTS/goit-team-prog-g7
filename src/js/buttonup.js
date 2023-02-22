@@ -8,7 +8,7 @@ function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
+const scrollToTopBtn=document.qwerySelector("#scrollToTopBtn");
 // Додаємо обробник події на кнопку для підняття вгору
 scrollToTopBtn.addEventListener("click", scrollToTop);
     
