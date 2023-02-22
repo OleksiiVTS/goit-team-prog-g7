@@ -12,8 +12,11 @@
 *//*--buttons--*//*--buttons--*/
 
 .map-contacts {
-    padding-top: calc(100vw * 36 / 414);
-    padding-bottom: calc(100vw * 32 / 414);
+    min-width: 414px;
+    /* padding-top: calc(100vw * 36 / 414);
+    padding-bottom: calc(100vw * 32 / 414); */
+    padding-top: 36px;
+    padding-bottom: 32px;
 
     background-color: var(--back-color-criam);
 }
@@ -21,30 +24,35 @@
     outline: 1px solid blue;
 } */
 .map-contacts-card {
-    margin-bottom: calc(100vw * 32 / 414);
+    /* margin-bottom: calc(100vw * 32 / 414); */
+    margin-bottom: 32px;
 }
 
 .map-sub-title {
     font-family: 'Film P3';
     font-weight: 700;
-    font-size: calc(100vw * 40 / 414);
+    /* font-size: calc(100vw * 40 / 414); */
+    font-size: 40px;
     line-height: calc(43 / 40);
 
     letter-spacing: 0.3em;
 
     color: #494848;
-    margin-bottom: calc(100vw * 12 / 414);
+    /* margin-bottom: calc(100vw * 12 / 414); */
+    margin-bottom: 12px;
 }
 
 .map-text {
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: calc(100vw * 16 / 414);
+    /* font-size: calc(100vw * 16 / 414); */
+    font-size: 16px;
     line-height: calc(20 / 16);
     letter-spacing: 0.02em;
 
     color: var(--color-text);
-    margin-bottom: calc(100vw * 16 / 414);
+    /* margin-bottom: calc(100vw * 16 / 414); */
+    margin-bottom: 16px;
 }
 
 .map-field-restaurant,
@@ -59,29 +67,35 @@
 
 .map-field-restaurant,
 .map-field-hotel {
-    row-gap: calc(100vw * 8 / 414);
-    margin-bottom: calc(100vw * 16 / 414);
+    /* row-gap: calc(100vw * 8 / 414);
+    margin-bottom: calc(100vw * 16 / 414); */
+    row-gap: 8px;
+    margin-bottom: 16px;
 }
 
 .map-icon {
     display: inline-block;
-    width: calc(100vw * 24 / 414);;
-    height: calc(100vw * 24 / 414);
-
+    /* width: calc(100vw * 24 / 414);
+    height: calc(100vw * 24 / 414); */
+    width: 24px;
+    height: 24px;
     fill: var(--color-text-link);
 }
 
 .map-icon-text {
 	display: inline-block;
-	margin-left: calc(100vw * 8 / 414);
-	margin-right: calc(100vw * 8 / 414);
+    /* margin-left: calc(100vw * 8 / 414);
+    margin-right: calc(100vw * 8 / 414); */
+	margin-left: 8px;
+	margin-right: 8px;
 }
 
 .map-label-text {
-    width: calc(100vw * 124 / 414);
-
+    /* width: calc(100vw * 124 / 414); */
+    width: 124px;
     font-weight: 500;
-    font-size: calc(100vw * 20 / 414);
+    /* font-size: calc(100vw * 20 / 414); */
+    font-size: 20px;
     line-height: calc(24 / 20);
     letter-spacing: 0.02em;
 
@@ -97,7 +111,8 @@
 }
 
 .map-tel-restaurant {
-    max-width: calc(100vw * 144 / 414);
+    /* max-width: calc(100vw * 144 / 414); */
+    max-width: 144px;
 }
 
 .map-tels-hotel,
@@ -108,32 +123,43 @@
 .map-tels-hotel,
 .map-block-address,
 .map-tel-restaurant {
-    width: calc(100% - (100vw * 124 / 414));
-    min-width: calc(100vw * 144 / 414);
+    /* width: calc(100% - (100vw * 124 / 414));
+    min-width: calc(100vw * 144 / 414); */
+    /* width: 124px; */
+    min-width: 144px;
 
     outline: 0.5px solid var(--color-text-button);
     border-radius: 2px;
     background-color: var(--color-button-hover);
+}
+.map-block-address {
+    margin-left: 124px;
 }
 
 .map-list-tels-hotel {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: calc(100vw * 12 / 414);
+    /* column-gap: calc(100vw * 12 / 414); */
+    column-gap: 12px;
 }
 
 .map-link-phone {
     display: inline-flex;
     align-items: center;
-    height: calc(100vw * 40 / 414);
+    /* height: calc(100vw * 40 / 414); */
+    height: 40px;
 
     font-weight: 400;
-    font-size: calc(100vw * 14 / 414);
+    /* font-size: calc(100vw * 14 / 414); */
+    font-size: 14px;
     line-height: calc(17 / 14);
     letter-spacing: 0.02em;
 
     color: #494848;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .map-link-phone:hover,
@@ -141,19 +167,29 @@
     color: var(--color-text-button);
 }
 
-
 .map-address-text {
-    min-height: calc(100vw * 76 / 414);
+    display: inline-flex;
+    align-items: center;
+
+    /* min-height: calc(100vw * 76 / 414); */
+    min-height: 76px;
 
     font-weight: 400;
-    font-size: calc(100vw * 16 / 414);
+    /* font-size: calc(100vw * 16 / 414); */
+    font-size: 16px;
     line-height: calc(20 / 16);
     letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-text);
+
     overflow: hidden;
 
-    padding-top: calc(100vw * 8 / 414);
+    /* padding-top: calc(100vw * 8 / 414);
     padding-bottom: calc(100vw * 7 / 414);
-    padding-right: calc(100vw * 33 / 414);
+    padding-right: calc(100vw * 33 / 414); */
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-right: 33px;
 }
 
 .map-google-map {
@@ -231,7 +267,8 @@
     }
 
     .map-contacts > .container {
-        max-width: 1279px;
+        min-width: 1024px;
+        /* max-width: 1279px; */
         /* outline: 1px solid red;  */
     }
 
@@ -282,6 +319,7 @@
         width: 285px;
         min-width: 285px;
         margin-bottom: 4px;
+        margin-left: 0;
     }
 
     .map-address-text {
@@ -309,7 +347,8 @@
     }
 
     .map-contacts > .container {
-        max-width: 1600px;
+        min-width: 1280px;
+        /* max-width: 1600px; */
     }
 
     .map-contacts-card {
