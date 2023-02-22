@@ -4,7 +4,7 @@
   <div class="modal" data-modal="3">
     <button type="button" class="modal-rp-close js-modal-close">
       <svg class="" width="18" height="18">
-        <use href="../images/icons.svg#icon-btn_svg"></use>
+        <use href="./images/icons.svg#icon-btn_svg"></use>
       </svg>
     </button>
     <p class="modal-rb-header">ЦІНИ НА НОМЕР</p>
@@ -13,11 +13,11 @@
       <label class="modal-rb-label">Категорія номеру</label>
       <div class="modal-rb-flex">
         <div>
-          <input name="argument" id="inpt" class="modal-rb-imput" placeholder="1">
+          <input name="argument" id="inpt1" class="modal-rb-imput" placeholder=" ">
           <label class="modal-rb-label">Кількість ночей</label>
         </div>
         <div>
-          <input id="res" name="result" class="modal-rb-imput" placeholder="1000">
+          <input id="res1" name="result" class="modal-rb-imput" placeholder="1000">
           <label class="modal-rb-label">грн</label>
         </div>
       </div>
@@ -26,3 +26,11 @@
   </div>
 
 </div>
+<script>
+    const input2 = document.getElementById("inpt1");
+    const inputResult2 = document.getElementById("res1");
+
+    input2.addEventListener("keyup", function () {
+        inputResult2.value = input2.value * 1200;
+    })
+</script>
