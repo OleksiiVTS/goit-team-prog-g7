@@ -14,13 +14,13 @@
   background-color: var(--back-color-criam-dark);
 }
 .rooms-container {
-  min-width: 414px;
+  /* min-width: 414px; */
   background-color: var(--back-color-criam);
   margin-top: 32px;
   margin-bottom: 32px;
 }
 .rooms-container-right {
-  min-width: 414px;
+  /* min-width: 414px; */
   padding-top: 32px;
 }
 .rooms__text {
