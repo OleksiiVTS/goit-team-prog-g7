@@ -263,8 +263,8 @@ margin-left: auto;
     /* min-width: 1280px; */
     background-image: var(--background-gradient),
       url('../images/about-hotel/dooh-bg-desktop.jpg');
-
-  
+  }
+}
 
   @media screen and (min-width: 414px) {
     /* .container-services {
@@ -342,7 +342,5 @@ margin-left: auto;
     background-color: #ffffff;
   }
 
-  /* .service-btn{
-      max-width: 236px;
-    } */
+ 
 }
