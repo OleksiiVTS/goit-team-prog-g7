@@ -20,6 +20,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
   font-family: 'Film P3', sans-serif;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--back-color-criam);
+  overflow-x: hidden;
 }
 
 
