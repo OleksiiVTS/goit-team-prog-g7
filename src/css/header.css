@@ -52,10 +52,12 @@
    .header-logo-wrapper-for-flex {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
    }
   
   .header-logo {
-    margin-right: 52px;
+    /* margin-right: 52px; */
     max-width: 114px;
     font-family: 'Film P3';
     font-style: normal;
@@ -78,7 +80,12 @@
   .header-logo:focus {
     color: #F3C653
   }
-  
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+  }
   .header-navigation-list { 
     display: flex;
     padding-top: 12px;
@@ -93,7 +100,7 @@
   }   
   
   .mobile-phone-icon-first {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     fill: var(--color-text-button);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -113,7 +120,7 @@
   }
 
   .restaurant-word {
-    margin-right: 6px;
+    /* margin-right: 6px; */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   }
@@ -125,7 +132,7 @@
   }
   
   .hotel-word {
-    margin-right: 6px;
+    /* margin-right: 6px; */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   }
@@ -303,7 +310,9 @@
   
     }
 
-  
+    .header-logo-wrapper-for-flex {
+      width: calc(100% - 252px);
+    }
   .header-logo {
     padding-left: 0px;
     margin-right: 135px;
@@ -359,7 +368,7 @@
     padding-top: 40px;
     padding-bottom: 40px;  
     background-color:#0E0C07;
-    min-width: 414px;
+    width: 100%;
   }
 
   
@@ -372,14 +381,14 @@
 
   .logo-and-link-wrapper {
     display: flex;
-   
+   justify-content: space-between;
 
   }
 
 
 
   .footer-logo {
-    margin-right: 85px;
+    /* margin-right: 85px; */
     display: flex;
     align-items: flex-end;
     max-width: 127px;
@@ -456,10 +465,9 @@
 
 
   /* ===========================================<TABLET>============================================ */
-
   @media screen and (min-width: 1024px){
 
-    .footer-wrapper.container {
+    .footer-wrapper {
         max-width: 1279px; 
         background-color: #0E0C07;
         padding-right: 47px;
@@ -482,6 +490,7 @@
 
     .logo-and-link-wrapper{
       display: flex;
+      justify-content: normal;
       gap: 163px;
     }
 
