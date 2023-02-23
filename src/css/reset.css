@@ -30,7 +30,6 @@ body {
 }
 
 
-
 *,
 *::before,
 *::after {
@@ -83,20 +82,25 @@ button, link {
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
-  max-width: 414px;
+  width: 100%;
 }
 
+@media screen and (min-width: 414px) {
+  .container {
+    width:414px
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .container {
-    width: 1024px;
+    max-width: 1024px;
     padding: 0 47px;
   }
   
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
+    max-width: 1280px;
     padding: 0 85px;
   }
 }

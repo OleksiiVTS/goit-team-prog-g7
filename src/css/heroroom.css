@@ -18,11 +18,11 @@
   }
 
   @media screen and (max-width: 1023px) {
-    /* .hotel-details-max{
-      width: 414px;
-      margin-right: auto;
-      margin-left: auto;
-    } */
+    .hotel-details-max{
+      max-width: 414px;
+    margin-right: auto;
+margin-left: auto;
+    }
   }
 
   /* .hotel-details-max{
@@ -157,9 +157,17 @@
   
 
   @media screen and (min-width: 414px) {
+    /* .container-services {
+      max-width: 414px;
+ 
+    } */
+    .door-nav-slider {
+      row-gap: 32px;
+    }
+    .door-slider-max {
+      max-width: 374px;
+ 
 
-    .hotel-slider-max {
-      width: 374px;
     }
   
   .service-img-list{
