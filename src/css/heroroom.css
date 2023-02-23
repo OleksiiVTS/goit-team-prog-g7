@@ -20,7 +20,7 @@
 
   @media screen and (max-width: 1023px) {
     .hotel-details-max{
-      width: 414px;
+      max-width: 414px;
     margin-right: auto;
 margin-left: auto;
     }
@@ -162,7 +162,7 @@ margin-left: auto;
       row-gap: 32px;
     }
     .door-slider-max {
-      width: 374px;
+      max-width: 374px;
  
     }
   
