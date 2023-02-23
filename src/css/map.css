@@ -262,6 +262,7 @@
 @media screen and (min-width: 1024px) {
     /* ======== Map + Contacts ========= */
     .map-contacts {
+        max-width: 1024px;
         padding-top: 56px;
         padding-bottom: 40px;
     }
@@ -343,6 +344,7 @@
 @media screen and (min-width: 1280px) {
     /* ======== Map + Contacts ========= */
     .map-contacts {
+        max-width: 1280px;
         padding-bottom: 73px;
     }
 
