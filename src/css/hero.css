@@ -13,7 +13,7 @@
 
 
 .hero {
-  min-width: 414px;
+  /* min-width: 414px; */
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -261,12 +261,18 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px) {
 
 .hero-title {
 font-family: Film P3;
-font-size: 96px; 
+font-size: 86px; 
 font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.3em;
 color: var(--color-button-hover);
 margin-bottom: 24px;
+}
+
+@media screen and (min-width: 340px) {
+  .hero-title {
+    font-size: 96px;
+  }
 }
 
 .spacing {
@@ -347,9 +353,9 @@ left: 45%; */
     padding: 14px 24px;;
    }
 
-   .container-hero {
+   /* .container-hero {
     min-width: 414px;
-   }
+   } */
 
    /* .address {
     margin-top: 3px;
