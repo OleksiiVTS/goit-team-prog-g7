@@ -6,60 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant</title>
     <!--fouts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!--Нормалізатор стилів-->
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
-          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- jquery for calendar -->
-    <link 
-      rel="stylesheet" 
-      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">            
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-  <!--header-->
+    <!--header-->
     <header>
       <load ="partials/header.html" />
     </header>
-  <!--main-->
+    <!--main-->
     <main>
       <load ="partials/buttonup.html" />
-  <!--hero-->
-    <section>
-      <load ="partials/restaurant/restaurant-hero.html" />
-    </section>
-  <!--description-->
-    <section class="section-3-cream">
-      <load ="partials/restaurant/restaurant-description.html" />
-    </section>
-  <!--menu-->
-    <section>
-      <load ="partials/restaurant/restaurant-menu.html" />
-    </section>
+      <!--hero-->
+      <section>
+        <load ="partials/restaurant/restaurant-hero.html" />
+      </section>
+      <!--description-->
+      <section class="section-3-cream">
+        <load ="partials/restaurant/restaurant-description.html" />
+      </section>
+      <!--menu-->
+      <section
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <load ="partials/restaurant/restaurant-menu.html" />
+      </section>
     </main>
-  <!--footer-->
+    <!--footer-->
     <footer>
       <load ="partials/footer.html" />
     </footer>
-<!--modal-windows-->
-  <load ="partials/modal-windows.html" />
+    <!--modal-windows-->
+    <load ="partials/modal-windows.html" />
 
-  <!-- jquery + bootstrap for calendar   -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- jquery + bootstrap for calendar   -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-  <!-- sript modal -->
-  <script type="module" src="./js/modal-windows.js"></script>
+    <!-- sript modal -->
+    <script type="module" src="./js/modal-windows.js"></script>
 
-<!--js-scrupt-->
-  <script type="module" src="./js/buttonup.js"></script>
-  <script type="module" src="./js/sliders.js"></script>
+    <!--js-scrupt-->
+    <script type="module" src="./js/buttonup.js"></script>
+    <script type="module" src="./js/sliders.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
