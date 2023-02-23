@@ -234,14 +234,12 @@
       line-height: 1.25;
       margin-bottom: 40px;
     }
-    .door-nav-slider {
+    /* .door-nav-slider {
       display: flex;
       flex-wrap: nowrap;
       flex-direction: row-reverse;
-      /* align-items: flex-end;
-      gap: 29px; */
       justify-content: flex-end;
-    }
+    } */
 
     .hotel-slider-max {
       display: flex;
