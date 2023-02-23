@@ -600,7 +600,8 @@ button.swiper-pagination-bullet {
 }
 .swiper-cube .swiper-cube-shadow:before {
   content: "";
-  background: #000;
+  /* background: #000; */
+  background: transparent;
   position: absolute;
   left: 0;
   top: 0;
