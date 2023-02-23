@@ -42,9 +42,18 @@
     background-size: cover;
     background-position: center;
   }
-  
+
+  .hotel-text-content {
+    margin-left: 17px;
+    /* 32-15=17 */
+    margin-bottom: 48px;
+    max-width: 243px;
+    
+    outline: 1px solid red;
+  }
+
   .label {
-    position: relative;
+    /* position: relative; */
     font-family: "Film P3";
     font-weight: 700;
     font-size: 40px;
@@ -52,24 +61,19 @@
     letter-spacing: 0.3em;
     color: var(--color-button-hover);
     margin-bottom: 12px;
-    text-align: center;
-  }
-  .description {
-    /* margin-right: 125px; */
-    margin-left: 32px;
-    margin-bottom: 48px;
+    text-align: right;
   }
 
   .hotel-text {
-    text-align: right;
-    margin-bottom: 20px;
-    margin-right: 38%;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--color-button-hover);
+
+    text-align: right;
+    margin-bottom: 20px;
   }
 
   .description-text {
@@ -80,7 +84,6 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #bababa;
-    max-width: 243px;
   }
   
   /* .door-nav-slider {
@@ -97,9 +100,9 @@
   
   .service-img {
     display: flex;
-    column-gap: calc(100vw * 20 / 414);
+    column-gap: 20px;
   
-    margin-bottom: calc(100vw * 16 / 414);
+    margin-bottom: 16px;
   }
   
   /* .door-img {
@@ -199,6 +202,7 @@
 
     .container-services {
       background-image: var(--background-gradient), url('../images/bedroom@1tab.jpg');
+      padding-top: 48px;
       /* max-width: 1024px; */
     }
   
@@ -211,37 +215,28 @@
           url('../images/bedroom@2tab.jpg');
       }
     }
-  
+    .hotel-text-content {
+      margin-left: 150px;
+        /* 197-47=150 */
+      max-width: 549px;
+      margin-bottom: 40px;
+    }
+
     .label {
       font-size: 64px;
       line-height: 1.078;
-      margin-top: 48px;
       margin-bottom: 16px;
-      margin-right: 263px;
-      margin-left: 529px;
     }
-  
-    .description {
-      margin-right: 263px;
-      margin-left: 182px;
-    }
+
     .hotel-text {
       text-align: right;
       margin-bottom: 8px;
       margin-right: 0;
     }
     .description-text {
-      max-width: 549px;
       font-size: 16px;
       line-height: 1.25;
-      margin-bottom: 40px;
     }
-    /* .door-nav-slider {
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-    } */
 
     .hotel-slider-max {
       display: flex;
@@ -281,14 +276,13 @@
     .container-services {
       /* min-width: 1280px; */
       background-image: var(--background-gradient), url('../images/bedroom@1pc.jpg');
-      padding-top: 48px;
     }
-    .container-services>.container {
+    .container-services > .container {
       min-width: 1280px;
       padding-left: 52px;
       padding-right: 85px;
     }
-    
+
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
       (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
       screen and(min-resolution: 192dpi) and (min-width: 1280px),
@@ -298,7 +292,7 @@
           url('../images/bedroom@2pc.jpg');
       }
     }
-  
+
   .service-img{
     flex-direction: row-reverse;
       column-gap: 86px;
@@ -306,45 +300,27 @@
       margin-bottom: 24px;
     }
   
-    /* .hotel-img-max {
-      min-width: 270px;
-      height: 270px;
-    } */
-  
     .service-btn {
       margin-left: 32px;
     }
-  
-  
-    .label {
-      margin-right: 323px;
-      margin-left: 725px;
-      margin-top: 0;
+
+    .hotel-text-content {
+      margin-left: 295px;
+      /* 347-52=295 */
+      max-width: 595px;
     }
-  
-    .description {
-      margin-right: 323px;
-      margin-left: 332px;
-    }
-  
+
     .hotel-text {
       font-size: 20px;
       line-height: 24px;
     
     }
   
-    .description-text {
-      max-width: 595px;
-    }
-  
     .hotel-nav-slider {
-      margin-top:0;
+      margin-top: 0;
       margin-bottom: 0;
     }
     
-    /* .door-nav-slider {
-      gap: 32px;
-    } */
     .hotel-slider-max {
       width:1280px;
       margin: 0;
