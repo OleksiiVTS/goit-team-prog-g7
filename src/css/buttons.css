@@ -161,7 +161,10 @@
 
 
 @media screen and (min-width: 1024px) {
-  
+  .button-up {
+    right: 50px;
+    bottom: 50px;
+  }
   .button-big-pointed {
     min-width: 592px;
     font-size: 24px;;
