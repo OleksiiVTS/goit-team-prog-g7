@@ -22,11 +22,11 @@
       href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">        
 
   
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script type="module" crossorigin src="/goit-team-prog-g7/assets/hotel-cfe4a842.js"></script>
   <link rel="modulepreload" crossorigin href="/goit-team-prog-g7/assets/buttonup-362421b2.js">
   <link rel="modulepreload" crossorigin href="/goit-team-prog-g7/assets/modal-windows-37b9c303.js">
-  <link rel="stylesheet" href="/goit-team-prog-g7/assets/buttonup-b140d35e.css">
+  <link rel="stylesheet" href="/goit-team-prog-g7/assets/buttonup-5add0f60.css">
 </head>
 <body>
   <!--header-->
@@ -144,13 +144,21 @@
   <!--choice-rooms-->
     <section>
       <div class="rooms-container container">
-        <div class="rooms-desktop-discription">
+        <div         data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="true" class="rooms-desktop-discription">
             <p class="rooms__text">Amet minim mollit non</p>
             <h1 class="rooms__logo">MIMIHO</h1>
             <h2 class="rooms__title" lang="uk">ДВОМІСНИЙ НОМЕР люкс</h2>
             <p class="rooms__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-        <picture class="rooms__picture">
+        <picture         data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="true" class="rooms__picture">
           <source 
             srcset="/goit-team-prog-g7/assets/desktop_460-4019a772.jpg 1x, /goit-team-prog-g7/assets/desktop_460@2x-7704d05d.jpg 2x"
             media="(min-width: 1280px)">
@@ -162,7 +170,7 @@
             media="(max-width: 1023px)">
             <img class="rooms__img" src="/goit-team-prog-g7/assets/mobile_244-750225fc.jpg" alt="">
         </picture>
-            <div dir="rtl" class="rooms-foto swiper-container">
+            <div dir="rtl" class="rooms-foto swiper-container" >
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="image-slide">
@@ -261,18 +269,28 @@
                     <button type="button" class="rooms-button__style button-black js-open-modal" data-modal="3" lang="uk">Переглянути ціни</button>
                 </div>
             </div>   
+
+            
 </div>
 <section class="section-rooms">
     <div class="rooms-container-right container">
            <div class="rooms-desktop-discription-right">
-                <div class="text-wrapper">
+                <div class="text-wrapper"       data-aos="fade-left"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-once="true">
                     <p class="rooms__text">Amet minim mollit non</p>
                     <h2 class="rooms__logo">MIMIHO</h2>
                     <h2 class="rooms__title rooms__title-right" lang="uk">ТРЬОХМІСНИЙ НОМЕР</h2>
                     <p class="rooms__description description-right">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </div>
     </div>
-          <picture class="rooms__picture-right">
+          <picture class="rooms__picture-right"       data-aos="fade-right"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-once="true">
             <source 
               srcset="/goit-team-prog-g7/assets/desktop_460-4019a772.jpg 1x, /goit-team-prog-g7/assets/desktop_460@2x-7704d05d.jpg 2x"
               media="(min-width: 1280px)">
@@ -386,13 +404,21 @@
       </div>
 </section>
 <div class="rooms-container container">
-    <div class="rooms-desktop-discription">
+    <div class="rooms-desktop-discription"       data-aos="fade-right"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-once="true">
         <p class="rooms__text">Amet minim mollit non</p>
         <h2 class="rooms__logo">MIMIHO</h2>
         <h2 class="rooms__title" lang="uk">ДВОМІСНИЙ НОМЕР</h2>
         <p class="rooms__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
     </div>
-    <picture class="rooms__picture">
+    <picture class="rooms__picture"       data-aos="fade-left"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-once="true">
       <source 
         srcset="/goit-team-prog-g7/assets/desktop_460-4019a772.jpg 1x, /goit-team-prog-g7/assets/desktop_460@2x-7704d05d.jpg 2x"
         media="(min-width: 1280px)">
@@ -879,5 +905,10 @@
 
   
   
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

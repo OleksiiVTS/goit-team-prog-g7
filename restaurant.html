@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant</title>
     <!--fouts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!--Нормалізатор стилів-->
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
-          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- jquery for calendar -->
-    <link 
-      rel="stylesheet" 
-      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">            
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
 
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script type="module" crossorigin src="/goit-team-prog-g7/assets/buttonup-362421b2.js"></script>
     <script type="module" crossorigin src="/goit-team-prog-g7/assets/modal-windows-37b9c303.js"></script>
     <script type="module" crossorigin src="/goit-team-prog-g7/assets/sliders-ebd5b5d6.js"></script>
-    <link rel="stylesheet" href="/goit-team-prog-g7/assets/buttonup-b140d35e.css">
+    <link rel="stylesheet" href="/goit-team-prog-g7/assets/buttonup-5add0f60.css">
   </head>
   <body>
-  <!--header-->
+    <!--header-->
     <header>
       
 
@@ -110,7 +117,7 @@
 </div>
   
     </header>
-  <!--main-->
+    <!--main-->
     <main>
       <button id="scrollToTopBtn" class="button-up">
     M
@@ -120,9 +127,9 @@
     <span></span>
     <span></span>
   </div>
-  <!--hero-->
-    <section>
-      <div class="section hero hero-restaurant">
+      <!--hero-->
+      <section>
+        <div class="section hero hero-restaurant">
   <div class="container container-hero">
     <address class="address">
       <a class="link-map" href="https://goo.gl/maps/Grp7XXtRsGtsApyo6" rel="noreferrer nofollow noopener " lang="uk" > <svg class="icon-map">
@@ -141,12 +148,18 @@
   </div>
 </div>
 
-    </section>
-  <!--description-->
-    <section class="section-3-cream">
-      <div class="container-maks">
+      </section>
+      <!--description-->
+      <section class="section-3-cream">
+        <div class="container-maks">
   <div class="restaurant-first-box">
-    <div>
+    <div
+      data-aos="fade-right"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
       <h2>Amet minim mollit non</h2>
       <h3>MIMIHO</h3>
       <p>
@@ -155,13 +168,19 @@
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <div>
+    <div
+      class="picture-width-animation"
+      data-aos="fade-left"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
       <picture>
         <source
           srcset="/goit-team-prog-g7/assets/kitchen-main-244x322-dbf676e7.jpg 1x, /goit-team-prog-g7/assets/kitchen-main-244x322@2x-684c22b5.jpg 2x"
           media="(max-width:1023px)"
           width="244"
-          
         />
 
         <source
@@ -185,8 +204,13 @@
     </div>
   </div>
   <div class="restaurant-second-box">
-    <div></div>
-    <picture>
+    <picture
+      data-aos="fade-right"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
       <source
         srcset="/goit-team-prog-g7/assets/kitchen-meat-200x278-5151c77e.jpg 1x, /goit-team-prog-g7/assets/kitchen-meat-200x278@2x-3f932c05.jpg 2x"
         media="(max-width:1023px)"
@@ -211,174 +235,195 @@
       />
     </picture>
 
-    <p>
+    <p
+      data-aos="fade-left"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
   </div>
-  <div class="swiper-maks">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <picture>
-          <source
-            srcset="/goit-team-prog-g7/assets/kitchen-hands-245x245-50f2dbe4.jpg 1x, /goit-team-prog-g7/assets/kitchen-hands-245x245@2x-2a6f9d44.jpg 2x"
-            media="(max-width:1023px)"
-            width="245"
-          />
 
-          <source
-            srcset="/goit-team-prog-g7/assets/kitchen-hands-194x194-cfe6e2d1.jpg 1x, /goit-team-prog-g7/assets/kitchen-hands-194x194@2x-fbb4645c.jpg 2x"
-            media="(min-width:1024px) and (max-width:1279px)"
-            width="194"
-          />
+  <div
+    data-aos="fade-down"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-once="true"
+  >
+    <div class="swiper-maks">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="/goit-team-prog-g7/assets/kitchen-hands-245x245-50f2dbe4.jpg 1x, /goit-team-prog-g7/assets/kitchen-hands-245x245@2x-2a6f9d44.jpg 2x"
+              media="(max-width:1023px)"
+              width="245"
+            />
 
-          <source
-            srcset="/goit-team-prog-g7/assets/kitchen-hands-254x254-898302d5.jpg 1x, /goit-team-prog-g7/assets/kitchen-hands-254x254@2x-5d20b78d.jpg 2x"
-            media="(min-width:1280px)"
-            width="254"
-          />
+            <source
+              srcset="/goit-team-prog-g7/assets/kitchen-hands-194x194-cfe6e2d1.jpg 1x, /goit-team-prog-g7/assets/kitchen-hands-194x194@2x-fbb4645c.jpg 2x"
+              media="(min-width:1024px) and (max-width:1279px)"
+              width="194"
+            />
 
-          <img
-            src="/goit-team-prog-g7/assets/kitchen-hands-254x254-898302d5.jpg"
-            alt="slider-1"
-          />
-        </picture>
+            <source
+              srcset="/goit-team-prog-g7/assets/kitchen-hands-254x254-898302d5.jpg 1x, /goit-team-prog-g7/assets/kitchen-hands-254x254@2x-5d20b78d.jpg 2x"
+              media="(min-width:1280px)"
+              width="254"
+            />
+
+            <img
+              src="/goit-team-prog-g7/assets/kitchen-hands-254x254-898302d5.jpg"
+              alt="slider-1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="/goit-team-prog-g7/assets/kitchen-pizza-245x245-c12eccbc.jpg 1x, /goit-team-prog-g7/assets/kitchen-pizza-245x245@2x-e92d7ee2.jpg 2x"
+              media="(max-width:1023px)"
+              width="245"
+            />
+
+            <source
+              srcset="/goit-team-prog-g7/assets/kitchen-pizza-194x194-805d50ec.jpg 1x, /goit-team-prog-g7/assets/kitchen-pizza-194x194@2x-8a8ebadf.jpg 2x"
+              media="(min-width:1024px) and (max-width:1279px)"
+              width="194"
+            />
+
+            <source
+              srcset="/goit-team-prog-g7/assets/kitchen-pizza-254x254-ec22becc.jpg 1x, /goit-team-prog-g7/assets/kitchen-pizza-254x254@2x-3ebfe571.jpg 2x"
+              media="(min-width:1280px)"
+              width="254"
+            />
+
+            <img
+              src="/goit-team-prog-g7/assets/kitchen-pizza-254x254-ec22becc.jpg"
+              width="245"
+              alt="slider-2"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="/goit-team-prog-g7/assets/9-slider-mobile-38bd227b.jpg 1x, /goit-team-prog-g7/assets/9-slider-mobile@2x-4c590df9.jpg 2x"
+              media="(max-width:1023px)"
+              width="245"
+            />
+
+            <source
+              srcset="/goit-team-prog-g7/assets/9-slider-tablet-211d456c.jpg 1x, /goit-team-prog-g7/assets/9-slider-tablet@2x-fc9f5ec6.jpg 2x"
+              media="(min-width:1024px) and (max-width:1279px)"
+              width="194"
+            />
+
+            <source
+              srcset="/goit-team-prog-g7/assets/9-slider-desktop-9a83190a.jpg 1x, /goit-team-prog-g7/assets/9-slider-desktop@2x-c0bee1dd.jpg 2x"
+              media="(min-width:1280px)"
+              width="254"
+            />
+
+            <img
+              src="/goit-team-prog-g7/assets/9-slider-desktop-9a83190a.jpg"
+              alt="slider-3"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="/goit-team-prog-g7/assets/16-slider-mobile-dc7257d7.jpg 1x, /goit-team-prog-g7/assets/16-slider-mobile@2x-3309821d.jpg 2x"
+              media="(max-width:1023px)"
+              width="245"
+            />
+
+            <source
+              srcset="/goit-team-prog-g7/assets/16-slider-tablet-c91004b3.jpg 1x, /goit-team-prog-g7/assets/16-slider-tablet@2x-08c5f5ad.jpg 2x"
+              media="(min-width:1024px) and (max-width:1279px)"
+              width="194"
+            />
+
+            <source
+              srcset="/goit-team-prog-g7/assets/16-slider-desktop-31896593.jpg 1x, /goit-team-prog-g7/assets/16-slider-desktop@2x-dd1adc1c.jpg 2x"
+              media="(min-width:1280px)"
+              width="254"
+            />
+
+            <img
+              src="/goit-team-prog-g7/assets/16-slider-desktop-31896593.jpg"
+              alt="slider-4"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="/goit-team-prog-g7/assets/6-slider-mobile-c528e2e7.jpg 1x, /goit-team-prog-g7/assets/6-slider-mobile@2x-49a562ba.jpg 2x"
+              media="(max-width:1023px)"
+              width="245"
+            />
+
+            <source
+              srcset="/goit-team-prog-g7/assets/6-slider-tablet-9f8b9f40.jpg 1x, /goit-team-prog-g7/assets/6-slider-tablet@2x-665ad944.jpg 2x"
+              media="(min-width:1024px) and (max-width:1279px)"
+              width="194"
+            />
+
+            <source
+              srcset="/goit-team-prog-g7/assets/6-slider-desktop-9f27d04d.jpg 1x, /goit-team-prog-g7/assets/6-slider-desktop@2x-116e8fc2.jpg 2x"
+              media="(min-width:1280px)"
+              width="254"
+            />
+
+            <img
+              src="/goit-team-prog-g7/assets/6-slider-desktop-9f27d04d.jpg"
+              alt="slider-5"
+            />
+          </picture>
+        </div>
       </div>
-      <div class="swiper-slide">
-        <picture>
-          <source
-            srcset="/goit-team-prog-g7/assets/kitchen-pizza-245x245-c12eccbc.jpg 1x, /goit-team-prog-g7/assets/kitchen-pizza-245x245@2x-e92d7ee2.jpg 2x"
-            media="(max-width:1023px)"
-            width="245"
-          />
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
 
-          <source
-            srcset="/goit-team-prog-g7/assets/kitchen-pizza-194x194-805d50ec.jpg 1x, /goit-team-prog-g7/assets/kitchen-pizza-194x194@2x-8a8ebadf.jpg 2x"
-            media="(min-width:1024px) and (max-width:1279px)"
-            width="194"
-          />
-
-          <source
-            srcset="/goit-team-prog-g7/assets/kitchen-pizza-254x254-ec22becc.jpg 1x, /goit-team-prog-g7/assets/kitchen-pizza-254x254@2x-3ebfe571.jpg 2x"
-            media="(min-width:1280px)"
-            width="254"
-          />
-
-          <img
-            src="/goit-team-prog-g7/assets/kitchen-pizza-254x254-ec22becc.jpg"
-            width="245"
-            alt="slider-2"
-          />
-        </picture>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-btn-position" role="group">
+        <div class="swiper-button-prev left-btn-swiper">
+          <svg class="svg-arrows">
+            <use href="/goit-team-prog-g7/assets/arrows-f8d223ab.svg#icon-arrow-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next right-btn-swiper">
+          <svg class="svg-arrows">
+            <use href="/goit-team-prog-g7/assets/arrows-f8d223ab.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
       </div>
-      <div class="swiper-slide">
-        <picture>
-          <source
-            srcset="/goit-team-prog-g7/assets/9-slider-mobile-38bd227b.jpg 1x, /goit-team-prog-g7/assets/9-slider-mobile@2x-4c590df9.jpg 2x"
-            media="(max-width:1023px)"
-            width="245"
-          />
 
-          <source
-            srcset="/goit-team-prog-g7/assets/9-slider-tablet-211d456c.jpg 1x, /goit-team-prog-g7/assets/9-slider-tablet@2x-fc9f5ec6.jpg 2x"
-            media="(min-width:1024px) and (max-width:1279px)"
-            width="194"
-          />
-
-          <source
-            srcset="/goit-team-prog-g7/assets/9-slider-desktop-9a83190a.jpg 1x, /goit-team-prog-g7/assets/9-slider-desktop@2x-c0bee1dd.jpg 2x"
-            media="(min-width:1280px)"
-            width="254"
-          />
-
-          <img
-            src="/goit-team-prog-g7/assets/9-slider-desktop-9a83190a.jpg"
-            alt="slider-3"
-          />
-        </picture>
-      </div>
-      <div class="swiper-slide">
-        <picture>
-          <source
-            srcset="/goit-team-prog-g7/assets/16-slider-mobile-dc7257d7.jpg 1x, /goit-team-prog-g7/assets/16-slider-mobile@2x-3309821d.jpg 2x"
-            media="(max-width:1023px)"
-            width="245"
-          />
-
-          <source
-            srcset="/goit-team-prog-g7/assets/16-slider-tablet-c91004b3.jpg 1x, /goit-team-prog-g7/assets/16-slider-tablet@2x-08c5f5ad.jpg 2x"
-            media="(min-width:1024px) and (max-width:1279px)"
-            width="194"
-          />
-
-          <source
-            srcset="/goit-team-prog-g7/assets/16-slider-desktop-31896593.jpg 1x, /goit-team-prog-g7/assets/16-slider-desktop@2x-dd1adc1c.jpg 2x"
-            media="(min-width:1280px)"
-            width="254"
-          />
-
-          <img
-            src="/goit-team-prog-g7/assets/16-slider-desktop-31896593.jpg"
-            alt="slider-4"
-          />
-        </picture>
-      </div>
-      <div class="swiper-slide">
-        <picture>
-          <source
-            srcset="/goit-team-prog-g7/assets/6-slider-mobile-c528e2e7.jpg 1x, /goit-team-prog-g7/assets/6-slider-mobile@2x-49a562ba.jpg 2x"
-            media="(max-width:1023px)"
-            width="245"
-          />
-
-          <source
-            srcset="/goit-team-prog-g7/assets/6-slider-tablet-9f8b9f40.jpg 1x, /goit-team-prog-g7/assets/6-slider-tablet@2x-665ad944.jpg 2x"
-            media="(min-width:1024px) and (max-width:1279px)"
-            width="194"
-          />
-
-          <source
-            srcset="/goit-team-prog-g7/assets/6-slider-desktop-9f27d04d.jpg 1x, /goit-team-prog-g7/assets/6-slider-desktop@2x-116e8fc2.jpg 2x"
-            media="(min-width:1280px)"
-            width="254"
-          />
-
-          <img
-            src="/goit-team-prog-g7/assets/6-slider-desktop-9f27d04d.jpg"
-            alt="slider-5"
-          />
-        </picture>
-      </div>
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
-    <!-- If we need pagination -->
-    <!-- <div class="swiper-pagination"></div> -->
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-btn-position" role="group">
-      <div class="swiper-button-prev left-btn-swiper">
-        <svg class="svg-arrows">
-          <use href="/goit-team-prog-g7/assets/arrows-f8d223ab.svg#icon-arrow-left"></use>
-        </svg>
-      </div>
-      <div class="swiper-button-next right-btn-swiper">
-        <svg class="svg-arrows">
-          <use href="/goit-team-prog-g7/assets/arrows-f8d223ab.svg#icon-arrow-right"></use>
-        </svg>
-      </div>
-    </div>
-
-    <!-- If we need scrollbar -->
-    <!-- <div class="swiper-scrollbar"></div> -->
   </div>
 </div>
 
-    </section>
-  <!--menu-->
-    <section>
-      
+      </section>
+      <!--menu-->
+      <section
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        
   <div class="container menu">
     <h2 id="menu" lang="uk" class="menu-caption">МЕНЮ РЕСТОРАНУ </h2>
     <div class="restaurant-position">
@@ -573,9 +618,9 @@
 
 
 
-    </section>
+      </section>
     </main>
-  <!--footer-->
+    <!--footer-->
     <footer>
       
 
@@ -631,8 +676,8 @@
         </div>
     </div>
     </footer>
-<!--modal-windows-->
-  <div class="container">
+    <!--modal-windows-->
+    <div class="container">
 
   <!--Modal TABLE-->
 
@@ -821,15 +866,20 @@
 </div>
 
 
-  <!-- jquery + bootstrap for calendar   -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- jquery + bootstrap for calendar   -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-  <!-- sript modal -->
-  
+    <!-- sript modal -->
+    
 
-<!--js-scrupt-->
-  
-  
+    <!--js-scrupt-->
+    
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
