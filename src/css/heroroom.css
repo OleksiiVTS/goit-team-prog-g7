@@ -14,7 +14,7 @@
   .container-services {
     margin-right: auto;
     margin-left: auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     max-width: 414px;
   }
 
@@ -31,12 +31,13 @@
     margin-right: auto;
     margin-left: auto;
   }
+
   /* ---------Mobile-first-styles--------- */
   .container-services {
-      padding-bottom: 40px;
-      padding-top: 24px;
+    padding-bottom: 40px;
+    padding-top: 24px;
     max-width: 100%;
-       background-image: var(--background-gradient), url('../images/bedroom@1mob.jpg');
+    background-image: var(--background-gradient), url('../images/bedroom@1mob.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -45,7 +46,6 @@
   .label {
     position: relative;
     font-family: "Film P3";
-    font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 1.075;
@@ -59,22 +59,22 @@
     margin-left: 32px;
     margin-bottom: 48px;
   }
-  .hotel {
+
+  .hotel-text {
     text-align: right;
     margin-bottom: 20px;
     margin-right: 38%;
     font-family: "Montserrat";
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--color-button-hover);
   }
+
   .description-text {
     text-align: left;
     font-family: "Montserrat";
-    font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
@@ -154,10 +154,7 @@
   
 
   @media screen and (min-width: 414px) {
-    /* .container-services {
-      max-width: 414px;
- 
-    } */
+
     /* .door-nav-slider {
       row-gap: 32px;
     } */
@@ -195,6 +192,11 @@
  
   /* -----------Tablet-styles--------- */
   @media screen and (min-width: 1024px) {
+    .container-services > .container {
+      min-width: 1024px;
+      padding: 0 47px;
+    }
+
     .container-services {
       background-image: var(--background-gradient), url('../images/bedroom@1tab.jpg');
       /* max-width: 1024px; */
@@ -223,7 +225,7 @@
       margin-right: 263px;
       margin-left: 182px;
     }
-    .hotel {
+    .hotel-text {
       text-align: right;
       margin-bottom: 8px;
       margin-right: 0;
@@ -275,16 +277,18 @@
 
   /* ------------Desctop-styles--------- */
   @media screen and (min-width: 1280px) {
-    /* .index-hotel{
-      min-width: 1280px;
-    } */
+
     .container-services {
-      min-width: 1280px;
+      /* min-width: 1280px; */
       background-image: var(--background-gradient), url('../images/bedroom@1pc.jpg');
-    padding-top: 48px;
-  
+      padding-top: 48px;
     }
-  
+    .container-services>.container {
+      min-width: 1280px;
+      padding-left: 52px;
+      padding-right: 85px;
+    }
+    
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
       (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
       screen and(min-resolution: 192dpi) and (min-width: 1280px),
@@ -323,7 +327,7 @@
       margin-left: 332px;
     }
   
-    .hotel {
+    .hotel-text {
       font-size: 20px;
       line-height: 24px;
     
