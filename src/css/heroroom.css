@@ -17,27 +17,27 @@
     padding: 0 15px;
     max-width: 414px;
   }
-  /* @media screen and (min-width: 1024px) {
-    .container {
-      width: 1024px;
-      padding: 0 47px;
+
+  @media screen and (max-width: 1023px) {
+    .hotel-details-max{
+      width: 414px;
+    margin-right: auto;
+margin-left: auto;
     }
   }
-  @media screen and (min-width: 1280px) {
-    .container {
-      width: 1280px;
-      padding: 0 85px;
-    }
-  } */
+
+  .hotel-details-max{
+max-width: 1180px;
+margin-right: auto;
+margin-left: auto;
+
+  }
   /* ---------Mobile-first-styles--------- */
   .container-services {
-    margin-right: auto;
-    margin-left: auto;
-    /* padding: 0 15px; */
-    padding-bottom: 40px;
+      padding-bottom: 40px;
       padding-top: 24px;
-    /* max-width: 414px; */
-    background-image: var(--background-gradient), url('../images/bedroom@1mob.jpg');
+    max-width: 100%;
+       background-image: var(--background-gradient), url('../images/bedroom@1mob.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -106,27 +106,51 @@
   
     margin-bottom: calc(100vw * 16 / 414);
   }
-  /* .service-img {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 48px;
-    margin-bottom: 16px;
-    margin-right: 25px;
-    margin-left: -15px;
-    gap: 20px;
-  } */
-  
   
   .door-img {
     height: calc(100vw * 270 / 414);
     max-width: 270px;
+    }
   
+  
+
+  
+  .button-transparent {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    width: 236px;
+    height: 48px;
+    padding: 14px 24px;
+    background-color: #000000;
+    border: 2px solid var(--back-color-criam);
+    border-radius: 25px;
+  
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--color-text-button);
+  }
+  .button-transparent>a{
+    color: var(--color-text-button);
+  }
+  
+  .button-transparent:hover,
+  .button-transparent:focus,
+  .button-transparent:hover,
+  .button-transparent:focus {
+    background-color: var(--color-text-button);
+    color: #000000;
   }
   
   
-  /* .hotel-img:first-child {
-    margin-right: 0;
-  } */
   
   .slider {
     display: flex;
@@ -158,28 +182,28 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    /* margin-left: 40px; */
+    margin-left: 40px;
     row-gap: 16px;
   }
+  .door-slider-max {
+    
+    margin-right: 25px;
+    margin-left: -15px;
+    overflow: hidden;
+  }
   
-  /* .service-btn:not(:last-child) {
-    margin-bottom: 16px;
-  } */
-  
+
   @media screen and (min-width: 414px) {
-    .container-services {
+    /* .container-services {
       max-width: 414px;
-      /* position: absolute;
-      left: 50%;
-      transform: translateX(-50%); */
-    }
+ 
+    } */
     .door-nav-slider {
       row-gap: 32px;
     }
-    .door-slider {
+    .door-slider-max {
       width: 374px;
-      margin-right: 25px;
-      margin-left: -15px;
+ 
     }
   
   .service-img{
@@ -213,7 +237,7 @@
   @media screen and (min-width: 1024px) {
     .container-services {
       background-image: var(--background-gradient), url('../images/bedroom@1tab.jpg');
-      max-width: 1024px;
+      /* max-width: 1024px; */
     }
   
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
@@ -258,15 +282,13 @@
       gap: 29px; */
       justify-content: flex-end;
     }
-    .door-slider {
+    .door-slider-max {
       display: flex;
       width: 1143px;
       margin: 0;
     }
   
-    /* .service-img {
-      display: none;
-    } */
+  
     .service-img {
       column-gap: 34px;
       /* margin-bottom: 24px; */
@@ -291,11 +313,11 @@
 
   /* ------------Desctop-styles--------- */
   @media screen and (min-width: 1280px) {
-    .index-hotel{
+    /* .index-hotel{
       min-width: 1280px;
-    }
+    } */
     .container-services {
-      max-width: 1280px;
+      min-width: 1280px;
       background-image: var(--background-gradient), url('../images/bedroom@1pc.jpg');
     padding-top: 48px;
   
@@ -357,7 +379,7 @@
     .door-nav-slider {
       gap: 32px;
     }
-    .door-slider {
+    .door-slider-max {
       width:1280px;
       margin: 0;
     }

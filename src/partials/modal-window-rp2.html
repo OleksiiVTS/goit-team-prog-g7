@@ -3,7 +3,7 @@
 <div class="container">
 <div class="modal" data-modal="4">
     <button type="button" class="modal-rp-close js-modal-close">
-        <svg class="" width="18" height="18">
+        <svg class="modal-rc-close-btn" width="18" height="18">
             <use href="./images/icons.svg#icon-btn_svg"></use>
         </svg>
     </button>
@@ -13,11 +13,11 @@
         <label class="modal-rb-label">Категорія номеру</label>
         <div class="modal-rb-flex">
             <div>
-                <input required type="number" name="argument" id="inpt2" class="modal-rb-imput" placeholder="0">
+                <input required type="number" name="argument" id="inpt2" class="modal-rb-imput" placeholder="0" min="1" max="10">
                 <label class="modal-rb-label">Кількість ночей</label>
             </div>
             <div>
-                <input disabled id="res2" name="result" class="modal-rb-imput" placeholder="0">
+                <input disabled type="number" id="res2" name="result" class="modal-rb-imput" placeholder="0">
                 <label class="modal-rb-label">грн</label>
             </div>
         </div>

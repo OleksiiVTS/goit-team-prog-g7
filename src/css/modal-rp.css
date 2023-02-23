@@ -1,3 +1,9 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
 .overlay {
 opacity: 0;
 visibility: hidden;
@@ -44,11 +50,18 @@ justify-content: center;
 align-items: center;
 color: var(--back-color-footer);
 background-color: var(--back-color-criam);
-border: 1.5px solid transparent;
+border: none;
 padding: 0;
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
 
+}
+
+
+.modal-rp-close:hover {
+    fill: var(--color-text-link);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .modal-rb-header {
