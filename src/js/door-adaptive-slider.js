@@ -7,37 +7,53 @@
 // }
 function doorSlider(obj) {
     let images = document.querySelectorAll(obj.selectorImage);
+    console.log(images);
+
     let sliderLine = document.querySelector(obj.selectorSliderLine);
     let keyNext = document.querySelector(obj.selectorKeyNext);
     let keyPrev = document.querySelector(obj.selectorKeyPrev);
     let count = 0;
     let width;
     let arr = {};
+
+
     function init(selectorSlider) {
         // console.log('resize');
         console.log(selectorSlider);
         let lenSprite = document.querySelector(selectorSlider).offsetWidth;
+        console.log(lenSprite);
+
         let totalWidth = 0;
-        let gaps = { 374: 20, 662: 34, 875: 87 };
+        let gaps = { 374: 20, 662: 34, 875: 87, 930: 34, 1143: 86 };
         // масив розміру картинок {0:270, 1:162, ....}
         arr = {};
         // 
         let aImageSize = { 162: 34, 270: 34, 274: 20 };
         let gap = 20;
         gap = gaps[lenSprite] ? gaps[lenSprite] : gap;
-        images.forEach((element, key) => {
-            // зміна розміру картинки під слайдер
-            // for ( let item in aImageSize ) {
-            //     if ((element.clientWidth <= item) && (aImageSize.item == gap)) {
-            //         element.width = item + 'px';
-            //         element.heidht = sliderLine.offsetHeight + 'px';
-            //     }
-            // }
-            // arr[key] = element.width + gap;
-            arr[key] = element.clientWidth + gap;
+
+        if (obj.reverse === true) {
+            for (let i = images.length-1, j = 0; i >= 0; i--, j++) {
+                arr[j] = images[i].clientWidth + gap;
+                totalWidth += arr[j];
+            }
+        }
+        else {
+                images.forEach((element, key) => {
+                    // зміна розміру картинки під слайдер
+                    // for ( let item in aImageSize ) {
+                    //     if ((element.clientWidth <= item) && (aImageSize.item == gap)) {
+                    //         element.width = item + 'px';
+                    //         element.heidht = sliderLine.offsetHeight + 'px';
+                    //     }
+                    // }
+                    // arr[key] = element.width + gap;
+                    arr[key] = element.clientWidth + gap;
         
-            totalWidth += arr[key];
-        })
+                    totalWidth += arr[key];
+                })
+        }
+
         width = arr[count];
         sliderLine.style.width = totalWidth + 'px';
     
@@ -79,7 +95,8 @@ const sliderObj = {
     selectorImage:      '.door-img',
     selectorSliderLine: '.door-slider-list',
     selectorKeyNext:    '.door-btn-next',
-    selectorKeyPrev:    '.door-btn-prev'
+    selectorKeyPrev:    '.door-btn-prev',
+    reverse:            false
 }
 doorSlider(sliderObj);
 
@@ -90,7 +107,8 @@ const sliderObj2 = {
     selectorImage:      '.hotel-img-max',    // всі картинки одного класу
     selectorSliderLine: '.service-img-list',          // div чи ul які огортають всі картинки
     selectorKeyNext:    '.icon-right',           // кнопка, картинка з стрілкою ->
-    selectorKeyPrev:    '.icon-left'             // кнопка, картинка з стрілкою <-
+    selectorKeyPrev: '.icon-left',
+    reverse:            true             // кнопка, картинка з стрілкою <-
 }
 doorSlider(sliderObj2);
 

@@ -91,6 +91,7 @@
   .service-img-list {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
     column-gap: 20px;
   
     margin-bottom: 16px;
@@ -158,7 +159,7 @@
   @media screen and (min-width: 414px) {
 
     .hotel-slider-max {
-      width: 375px;
+      width: 374px;
     }
   
   .service-img-list{
@@ -283,8 +284,6 @@
           url('../images/bedroom@2pc.jpg');
       }
     }
-element.style {}
-
 
   .hotel-text-content {
       margin-left: 295px;
