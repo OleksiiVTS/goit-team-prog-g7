@@ -145,8 +145,8 @@ margin-left: auto;
     margin-left: 40px;
     row-gap: 16px;
   }
-  .door-slider-max {
-    
+
+  .hotel-slider-max {
     margin-right: 25px;
     margin-left: -15px;
     overflow: hidden;
@@ -161,7 +161,7 @@ margin-left: auto;
     .door-nav-slider {
       row-gap: 32px;
     }
-    .door-slider-max {
+    .hotel-slider-max {
       width: 374px;
  
     }
@@ -242,7 +242,7 @@ margin-left: auto;
       gap: 29px; */
       justify-content: flex-end;
     }
-    .door-slider-max {
+    .hotel-slider-max {
       display: flex;
       width: 1143px;
       margin: 0;
@@ -339,7 +339,7 @@ margin-left: auto;
     .door-nav-slider {
       gap: 32px;
     }
-    .door-slider-max {
+    .hotel-slider-max {
       width:1280px;
       margin: 0;
     }
