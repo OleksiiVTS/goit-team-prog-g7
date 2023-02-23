@@ -10,7 +10,9 @@
 .button-big-pointed 
 
 *//*--buttons--*//*--buttons--*/
-
+.container{
+  outline: 1px solid blue;
+}
   .container-services {
     margin-right: auto;
     margin-left: auto;
@@ -52,8 +54,8 @@
     outline: 1px solid red;
   }
 
-  .label {
-    /* position: relative; */
+  .label,
+  .hotel-letter {
     font-family: "Film P3";
     font-weight: 700;
     font-size: 40px;
@@ -62,6 +64,11 @@
     color: var(--color-button-hover);
     margin-bottom: 12px;
     text-align: right;
+  }
+
+  .hotel-letter{
+    font-size: inherit;
+    letter-spacing: 0em;
   }
 
   .hotel-text {
@@ -86,36 +93,18 @@
     color: #bababa;
   }
   
-  /* .door-nav-slider {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    
-  } */
-  
-  /* .door-slider {
-    overflow: hidden;
-  } */
-  
   .service-img {
     display: flex;
     column-gap: 20px;
   
     margin-bottom: 16px;
   }
-  
-  /* .door-img {
-    height: calc(100vw * 270 / 414);
-    max-width: 270px;
-    }
-   */
+
   .hotel-nav-slider {
     display: flex;
     gap: 32px;
     margin-top: 16px;
     margin-bottom: 32px;
-    /* margin-right: 25px; */
     justify-content: right;
   }
   
@@ -158,9 +147,6 @@
 
   @media screen and (min-width: 414px) {
 
-    /* .door-nav-slider {
-      row-gap: 32px;
-    } */
     .hotel-slider-max {
       width: 374px;
  
@@ -171,13 +157,6 @@
     column-gap: 20px;
     margin-bottom: 0;
   }
-  /* .door-img {
-    max-width: 274px;
-    height: 270px;
-  } */
-  /* .service-btn{
-    margin-left: 40px;
-    } */
   
   }
   
@@ -203,7 +182,6 @@
     .container-services {
       background-image: var(--background-gradient), url('../images/bedroom@1tab.jpg');
       padding-top: 48px;
-      /* max-width: 1024px; */
     }
   
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
@@ -246,7 +224,6 @@
   
     .service-img {
       column-gap: 34px;
-      /* margin-bottom: 24px; */
     }
     
   .hotel-nav-slider{
@@ -313,7 +290,6 @@
     .hotel-text {
       font-size: 20px;
       line-height: 24px;
-    
     }
   
     .hotel-nav-slider {
