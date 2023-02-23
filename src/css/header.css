@@ -84,7 +84,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 7px;
+    gap: 20px;
   }
   .header-navigation-list { 
     display: flex;
@@ -162,7 +162,13 @@
   }
 
   
-  
+  @media screen and (max-width: 414px) {
+    .header-navigation {
+      gap: 2px;
+    }
+  }
+
+
   /******************==============<TABLET>===============******************* */
               /* виношу в макс відс */
     /* from 1024 to 1280 =====> for tablet */

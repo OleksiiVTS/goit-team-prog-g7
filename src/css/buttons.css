@@ -2,7 +2,8 @@
 .button-black,
 .button-transparent,
 .button-big,
-.button-big-pointed {
+.button-big-pointed,
+.button-big-plas {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -34,7 +35,8 @@
   border: 2px solid var(--color-text-button);
 }
 .button-big,
-.button-big-pointed {
+.button-big-pointed,
+.button-big-plas {
   min-width: 384px;
   height: 64px;
   padding: 20px 43px;
@@ -48,7 +50,11 @@
 .button-big-pointed {
   border-radius: 2px;
 }
+.button-big-plas {
+  min-width: 345px;
+}
 .button-big:hover, .button-big:focus,
+.button-big-plas:hover, .button-big-plas:focus,
 .button-big-pointed:hover, .button-big-pointed:focus {
   background-color: var(--color-text-button);
   color: #000000;
@@ -163,7 +169,8 @@
 }
 @media screen and (min-width: 1280px) {
   
-  .button-big {
+  .button-big,
+  .button-big-plas {
     min-width: 434px;
     height: 65px;
     font-size: 24px;;
