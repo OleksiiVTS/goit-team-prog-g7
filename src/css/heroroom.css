@@ -128,43 +128,6 @@
     margin-right: 0;
   } */
   
-  .button-transparent {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-    width: 236px;
-    height: 48px;
-    /* padding: 14px 24px; */
-    background-color: #000000;
-    border: 2px solid var(--back-color-criam);
-    border-radius: 25px;
-  
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-  
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--color-text-button);
-  }
-  .button-transparent>a{
-    color: var(--color-text-button);
-  }
-  
-  .button-transparent:hover,
-  .button-transparent:focus,
-  .button-transparent:hover,
-  .button-transparent:focus {
-    background-color: var(--color-text-button);
-    color: #000000;
-  }
-  
-  
-  
   .slider {
     display: flex;
     gap: 32px;
