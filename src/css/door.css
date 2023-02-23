@@ -2,7 +2,7 @@
   /* SSerg */
 .door {
 	/* max-width: 414px;	 */
-	min-width: 414px;
+	max-width: 414px;
 
 	margin-left: auto;
 	margin-right: auto;

@@ -45,7 +45,7 @@
   }
   .menu-name {
     padding-top: 8px;
-    min-width: 225px;
+    max-width: 225px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -56,7 +56,7 @@
   }
   .menu-name-basic {
     padding-top: 8px;
-    min-width: 225px;
+    max-width: 225px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -200,3 +200,5 @@
       }
       
     }
+
+    

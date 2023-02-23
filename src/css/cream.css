@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 1024px) {
   .container-maks {
-    width: 414px;
+    max-width: 414px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -275,7 +275,7 @@
 /* SLIDERS */
 
 .swiper-maks {
-  width: 548px;
+  max-width: 548px;
   height: 300px;
   /* background-color: #b9b9b9; */
   margin-left: auto;
@@ -285,7 +285,7 @@
 
 @media screen and (max-width: 1023px) {
   .swiper-maks {
-    width: 330px;
+    max-width: 330px;
     transform: translateX(15px);
   }
 }
