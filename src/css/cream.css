@@ -1,4 +1,4 @@
-  /* приховати код */ /*
+/* приховати код */ /*
 
 .visually-hidden 
 
@@ -197,6 +197,10 @@
 @media screen and (min-width: 1024px) {
   .section-3-cream {
     /* padding-bottom: 32px; */
+  }
+
+  .picture-width-animation {
+    width: 470px;
   }
 
   .section-3-cream p {
