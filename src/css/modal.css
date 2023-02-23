@@ -249,6 +249,15 @@
         display: inline-block;
         }*/
 
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight
+{
+  background-color: #F3C653;
+  border-color: var(--color-text-link);
+  color:rgba(0, 0, 0, 0.90);
+}
+
 /*-----------MODAL-ROOM---------------*/
 
 .room-modal {
