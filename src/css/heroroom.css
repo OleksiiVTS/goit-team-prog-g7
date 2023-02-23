@@ -112,7 +112,7 @@ margin-left: auto;
     max-width: 270px;
     }
   
-  .slider {
+  .hotel-nav-slider {
     display: flex;
     gap: 32px;
     margin-top: 16px;
@@ -254,7 +254,7 @@ margin-left: auto;
       /* margin-bottom: 24px; */
     }
     
-  .slider{
+  .hotel-nav-slider{
     margin-bottom: 0;
   }
     .service-btn {
@@ -331,7 +331,7 @@ margin-left: auto;
       max-width: 595px;
     }
   
-    .slider {
+    .hotel-nav-slider {
       margin-top:0;
       margin-bottom: 0;
     }
