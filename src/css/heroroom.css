@@ -21,8 +21,8 @@
   @media screen and (max-width: 1023px) {
     .hotel-details-max{
       max-width: 414px;
-    margin-right: auto;
-margin-left: auto;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
@@ -169,10 +169,10 @@ margin-left: auto;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
-  (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
-  screen and(min-resolution: 192dpi) and (max-width: 1024px),
-  screen and(min-resolution: 2dppx) and (max-width: 1024px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+  (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px),
+  screen and(min-resolution: 192dpi) and (max-width: 1023px),
+  screen and(min-resolution: 2dppx) and (max-width: 1023px) {
   .container-services {
     background-image: var(--background-gradient),
       url('../images/about-hotel/dooh-bg-mobile@2x.jpg');
@@ -259,36 +259,21 @@ margin-left: auto;
 
 /* ------------Desctop-styles--------- */
 @media screen and (min-width: 1280px) {
-  .container-services {
-    /* min-width: 1280px; */
-    background-image: var(--background-gradient),
-      url('../images/about-hotel/dooh-bg-desktop.jpg');
 
-  
-
-  @media screen and (min-width: 414px) {
-    /* .container-services {
-      max-width: 414px;
- 
-    } */
-    .door-nav-slider {
-      row-gap: 32px;
-    }
-    .door-slider-max {
-      max-width: 374px;
- 
-
-    }
-  
   .service-img-list{
     width: 100%;
     column-gap: 20px;
     margin-bottom: 0;
   }
   .container-services > .container {
-    min-width: 1280px;
+    max-width: 1280px;
     padding-left: 52px;
     padding-right: 85px;
+  }
+
+  .container-services {
+      background-image: var(--background-gradient),
+        url('../images/about-hotel/dooh-bg-desktop.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
@@ -345,4 +330,5 @@ margin-left: auto;
   /* .service-btn{
       max-width: 236px;
     } */
+  
 }
