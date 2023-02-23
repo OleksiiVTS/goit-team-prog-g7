@@ -10,9 +10,6 @@
 .button-big-pointed 
 
 *//*--buttons--*//*--buttons--*/
-.container{
-  outline: 1px solid blue;
-}
   .container-services {
     margin-right: auto;
     margin-left: auto;
@@ -21,18 +18,18 @@
   }
 
   @media screen and (max-width: 1023px) {
-    .hotel-details-max{
+    /* .hotel-details-max{
       width: 414px;
       margin-right: auto;
       margin-left: auto;
-    }
+    } */
   }
 
-  .hotel-details-max{
+  /* .hotel-details-max{
     max-width: 1180px;
     margin-right: auto;
     margin-left: auto;
-  }
+  } */
 
   /* ---------Mobile-first-styles--------- */
   .container-services {
@@ -50,8 +47,6 @@
     /* 32-15=17 */
     margin-bottom: 48px;
     max-width: 243px;
-    
-    outline: 1px solid red;
   }
 
   .label,
@@ -66,7 +61,7 @@
     text-align: right;
   }
 
-  .hotel-letter{
+  .hotel-letter {
     font-size: inherit;
     letter-spacing: 0em;
   }
@@ -93,19 +88,32 @@
     color: #bababa;
   }
   
-  .service-img {
+  .service-img-list {
     display: flex;
     column-gap: 20px;
   
     margin-bottom: 16px;
   }
+  
+  .hotel-nav-slider-max {
+  	display: flex;
+  	flex-direction: column;
+  	flex-wrap: nowrap;
+  	row-gap: 32px;
+  }
 
-  .hotel-nav-slider {
+  .hotel-slider-img{
     display: flex;
+    flex-direction: column;
+  }
+
+  .hotel-btn-slider {
+    display: flex;
+    justify-content: right;
     gap: 32px;
+
     margin-top: 16px;
     margin-bottom: 32px;
-    justify-content: right;
   }
   
   .hotel-img-max {
@@ -134,9 +142,10 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     row-gap: 16px;
   }
+
 
   .hotel-slider-max {
     margin-right: 25px;
@@ -148,12 +157,11 @@
   @media screen and (min-width: 414px) {
 
     .hotel-slider-max {
-      width: 374px;
- 
+      width: 375px;
     }
   
-  .service-img{
-    /* width: 100%; */
+  .service-img-list{
+    width: 100%;
     column-gap: 20px;
     margin-bottom: 0;
   }
@@ -218,29 +226,34 @@
 
     .hotel-slider-max {
       display: flex;
-      width: 1143px;
+  	  flex-direction: row;
+  	  align-items: flex-end;
+      justify-content: flex-end;
+  	  gap: 32px;
+  	}
+
+    .hotel-slider-max {
+      width: 930px;
       margin: 0;
     }
   
-    .service-img {
+
+    .service-img-list {
       column-gap: 34px;
     }
     
-  .hotel-nav-slider{
-    margin-bottom: 0;
-  }
-  .hotel-img-max {
-    max-width: 270px;
-    height: 270px;
-  }
-  .service-btn {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;
-      margin-left: 40px;
-      row-gap: 16px;
-      margin-top: 160px;
+    .hotel-btn-slider{
+      margin-bottom: 0;
+    }
+    .hotel-img-max {
+      max-width: 270px;
+      height: 270px;
+    }
+
+    .service-btn {
+      margin-bottom: 52px;
+      /* margin-left: 32px;
+      margin-top: 160px; */
    }
     
 }
@@ -269,40 +282,53 @@
           url('../images/bedroom@2pc.jpg');
       }
     }
+element.style {}
 
-  .service-img{
-    flex-direction: row-reverse;
-      column-gap: 86px;
-      margin-left: 37px;
-      margin-bottom: 24px;
-    }
-  
-    .service-btn {
-      margin-left: 32px;
-    }
 
-    .hotel-text-content {
+  .hotel-text-content {
       margin-left: 295px;
       /* 347-52=295 */
       max-width: 595px;
-    }
+  }
 
     .hotel-text {
       font-size: 20px;
       line-height: 24px;
     }
   
-    .hotel-nav-slider {
+    /* .hotel-slider-img {
+       width: 875px;
+    } */
+      
+    .service-img-list {
+      /* flex-direction: row-reverse; */
+      column-gap: 86px;
+      margin-left: 37px;
+      margin-bottom: 24px;
+    }
+
+    .hotel-btn-slider {
       margin-top: 0;
       margin-bottom: 0;
     }
     
     .hotel-slider-max {
-      width:1280px;
+      width: 1143px;
       margin: 0;
     }
   
+   	.container-services .button-black {
+   	  background-color: transparent;
+   	}
+      
+   	.container-services .button-black:hover,
+   	.container-services .button-black:focus {
+   	  background-color: #FFFFFF;
+     	}
   
+    /* .service-btn{
+      max-width: 236px;
+    } */
   
   
   }
