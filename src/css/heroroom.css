@@ -169,10 +169,10 @@ margin-left: auto;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
-  (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
-  screen and(min-resolution: 192dpi) and (max-width: 1024px),
-  screen and(min-resolution: 2dppx) and (max-width: 1024px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+  (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px),
+  screen and(min-resolution: 192dpi) and (max-width: 1023px),
+  screen and(min-resolution: 2dppx) and (max-width: 1023px) {
   .container-services {
     background-image: var(--background-gradient),
       url('../images/about-hotel/dooh-bg-mobile@2x.jpg');
@@ -329,7 +329,7 @@ margin-left: auto;
   }
 
   .hotel-slider-max {
-    width: 1143px;
+    /* width: 1143px; */
     margin: 0;
   }
 
