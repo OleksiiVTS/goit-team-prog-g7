@@ -249,6 +249,8 @@
         display: inline-block;
         }*/
 
+/* ===============  Календар ============ */
+/* == today == */
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight
@@ -257,6 +259,7 @@
   border-color: var(--color-text-link);
   color:rgba(0, 0, 0, 0.90);
 }
+/* === end === */
 
 /*-----------MODAL-ROOM---------------*/
 
