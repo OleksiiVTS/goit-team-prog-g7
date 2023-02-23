@@ -467,7 +467,7 @@
   /* ===========================================<TABLET>============================================ */
   @media screen and (min-width: 1024px){
 
-    .footer-wrapper {
+    .footer-wrapper.container {
         max-width: 1279px; 
         background-color: #0E0C07;
         padding-right: 47px;
