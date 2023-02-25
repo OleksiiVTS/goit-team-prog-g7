@@ -2,7 +2,7 @@
   /* SSerg */
 .door {
 	/* max-width: 414px;	 */
-	min-width: 414px;
+	max-width: 414px;
 
 	margin-left: auto;
 	margin-right: auto;
@@ -131,6 +131,7 @@
 	flex-wrap: nowrap;
   /* row-gap: calc(100vw * 16 / 414); */
 	row-gap: 16px;
+	margin: 0 auto;
 }
 
 .door .button-black {
@@ -310,6 +311,7 @@
 		flex-direction: row-reverse;
 		align-items: flex-end;
 		gap: 29px;
+		margin: 0 auto;
 	}
 
 	.door-slider {
