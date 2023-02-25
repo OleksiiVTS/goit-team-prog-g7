@@ -102,14 +102,14 @@ doorSlider(sliderObj);
 
 // Для 2го слайдеру.
 // Розкоментувати та прописати свої селектори (класи)
-const sliderObj2 = {
-    selectorSlider:     '.hotel-slider-max',       // div слайдера
-    selectorImage:      '.hotel-img-max',    // всі картинки одного класу
-    selectorSliderLine: '.service-img-list',          // div чи ul які огортають всі картинки
-    selectorKeyNext:    '.icon-right',           // кнопка, картинка з стрілкою ->
-    selectorKeyPrev: '.icon-left',
-    reverse:            true             // кнопка, картинка з стрілкою <-
-}
-doorSlider(sliderObj2);
+// const sliderObj2 = {
+//     selectorSlider:     '.hotel-slider-max',       // div слайдера
+//     selectorImage:      '.hotel-img-max',    // всі картинки одного класу
+//     selectorSliderLine: '.service-img-list',          // div чи ul які огортають всі картинки
+//     selectorKeyNext:    '.icon-right',           // кнопка, картинка з стрілкою ->
+//     selectorKeyPrev: '.icon-left',
+//     reverse:            true             // кнопка, картинка з стрілкою <-
+// }
+// doorSlider(sliderObj2);
 
 

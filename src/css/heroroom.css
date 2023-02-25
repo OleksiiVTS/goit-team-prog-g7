@@ -16,36 +16,34 @@
 */
 /*--buttons--*/
 /*--buttons--*/
+
 .container-services {
   margin-right: auto;
   margin-left: auto;
   /* padding: 0 15px; */
-  max-width: 414px;
+  max-width: 100%;
 }
-
-@media screen and (max-width: 1023px) {
-  /* .hotel-details-max{
-      width: 414px;
-      margin-right: auto;
-      margin-left: auto;
-    } */
-}
-
-/* .hotel-details-max{
-    max-width: 1180px;
-    margin-right: auto;
-    margin-left: auto;
-  } */
 
 /* ---------Mobile-first-styles--------- */
 .container-services {
   padding-bottom: 40px;
   padding-top: 24px;
   max-width: 100%;
-  background-image: var(--background-gradient), url('../images/bedroom@1mob.jpg');
+  background-image: var(--background-gradient), url('../images/about-hotel/dooh-bg-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		.container-services {
+			background-image: linear-gradient(to right,
+      	    rgba(0, 0, 0, 0.65),
+        	  rgba(0, 0, 0, 0.65)),
+          url("../images/about-hotel/dooh-bg-mobile@2x.jpg");
+  }
 }
 
 .hotel-text-content {
@@ -96,7 +94,7 @@
 
 .service-img-list {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   justify-content: flex-end;
   column-gap: 20px;
 
@@ -152,15 +150,16 @@
   align-items: center;
   /* margin-left: 40px; */
   row-gap: 16px;
+  margin: 0 auto;
 }
 
 
 .hotel-slider-max {
   margin-right: 25px;
+  /* 40-15=25 */
   margin-left: -15px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-
 
 @media screen and (min-width: 414px) {
 
@@ -177,16 +176,6 @@
 }
 
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
-(-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
-screen and(min-resolution: 192dpi) and (max-width: 1024px),
-screen and(min-resolution: 2dppx) and (max-width: 1024px) {
-  .container-services {
-    background-image: var(--background-gradient),
-      url('../images/bedroom@2mob.jpg');
-  }
-}
-
 
 /* -----------Tablet-styles--------- */
 @media screen and (min-width: 1024px) {
@@ -196,17 +185,21 @@ screen and(min-resolution: 2dppx) and (max-width: 1024px) {
   }
 
   .container-services {
-    background-image: var(--background-gradient), url('../images/bedroom@1tab.jpg');
+    background-image: linear-gradient(to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)),
+        url("../images/about-hotel/dooh-bg-tablet.jpg");
     padding-top: 48px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
-  (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px),
-  screen and(min-resolution: 192dpi) and (min-width: 1024px),
-  screen and(min-resolution: 2dppx) and (min-width: 1024px) {
-    .container-services {
-      background-image: var(--background-gradient),
-        url('../images/bedroom@2tab.jpg');
+  @media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		.container-services {
+			background-image: linear-gradient(to right,
+      	    rgba(0, 0, 0, 0.65),
+        	  rgba(0, 0, 0, 0.65)),
+          url("../images/about-hotel/dooh-bg-tablet@2x.jpg");
     }
   }
 
@@ -275,24 +268,28 @@ screen and(min-resolution: 2dppx) and (max-width: 1024px) {
 @media screen and (min-width: 1280px) {
 
   .container-services {
-    /* min-width: 1280px; */
-    background-image: var(--background-gradient), url('../images/bedroom@1pc.jpg');
+    background-image: linear-gradient(to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)),
+        url("../images/about-hotel/dooh-bg-desktop.jpg");
+    padding-top: 48px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		.container-services {
+			background-image: linear-gradient(to right,
+      	    rgba(0, 0, 0, 0.65),
+        	  rgba(0, 0, 0, 0.65)),
+          url("../images/about-hotel/dooh-bg-desktop@2x.jpg");
+    }
   }
 
   .container-services>.container {
     min-width: 1280px;
     padding-left: 52px;
     padding-right: 85px;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
-  (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
-  screen and(min-resolution: 192dpi) and (min-width: 1280px),
-  screen and(min-resolution: 2dppx) and (min-width: 1280px) {
-    .container-services {
-      background-image: var(--background-gradient),
-        url('../images/bedroom@2pc.jpg');
-    }
   }
 
   .hotel-text-content {
