@@ -2,7 +2,7 @@
   /* SSerg */
 .door {
 	/* max-width: 414px;	 */
-	max-width: 414px;
+	max-width: 100%;
 
 	margin-left: auto;
 	margin-right: auto;
@@ -181,7 +181,10 @@
   	padding-top: 24px;
     padding-bottom: 40px;
 	}
-  
+	.door > .container {
+		min-width: 414px;
+		max-width: 100%;}
+
 	.door-block-text {
   	margin-left: 125px;
     /* 140-15=125 */
@@ -247,8 +250,8 @@
 @media screen and (min-width: 1024px) {
 	/* Details of our restaurant (door) */
 	.door > .container {
-		min-width: 1024px;
-		max-width: initial;
+		/* min-width: 1024px; */
+		max-width: 100%;
 		/* max-width: 1024px; */
 		padding: 0 47px;
 		/* 47+236+29+662+50 = 1024 */
@@ -341,6 +344,7 @@
 	/* Details of our restaurant (door) */
 	.door > .container {
 		min-width: 1280px;
+		max-width: 100%;
 		/* width: 1280px;
 		max-width: 1600px; */
 		padding: 0 52px 0 85px;
