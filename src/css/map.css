@@ -324,6 +324,9 @@
         width: 264px;
     }
 
+    .map-field-address > .map-block-address {
+        margin-left: 0;
+    }
     .map-block-address {
         width: 285px;
         min-width: 285px;
