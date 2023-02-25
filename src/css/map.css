@@ -127,13 +127,17 @@
     min-width: calc(100vw * 144 / 414); */
     /* width: 124px; */
     min-width: 144px;
-
+    min-width: 100%;
     outline: 0.5px solid var(--color-text-button);
     border-radius: 2px;
     background-color: var(--color-button-hover);
 }
-.map-block-address {
-    margin-left: 124px;
+/* .map-tels-hotel {
+    min-width: 100%;
+} */
+
+.map-field-address > .map-block-address {
+    margin-left: 0px;
 }
 
 .map-list-tels-hotel {
@@ -257,6 +261,10 @@
 		padding-bottom: 7px;
 		padding-right: 33px;
 	}
+
+    .map-field-address > .map-block-address {
+        margin-left: 124px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
