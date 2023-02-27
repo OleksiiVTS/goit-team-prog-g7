@@ -51,7 +51,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 416px;
+        width: 100%;
         min-height: 668px;
         padding: 60px 15px;
         
@@ -255,7 +255,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 416px;
+    width: 100%;
     min-height: 780px;
     padding: 60px 15px 60px 15px;
     
